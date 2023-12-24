@@ -1,0 +1,35 @@
+{
+  "id": "gx_explore_pin_publish_tool_bar",
+  "type": "gaia-template",
+  "package": {
+    "id": "gx_explore_pin_publish_tool_bar",
+    "version": "0.0.1",
+    "modify-timestamp": "Sat Nov 12 2022 17:44:37 GMT+0800 (中国标准时间)",
+    "constraint-size": { "width": 375, "height": 48, "zoom": 1 },
+    "dependencies": {}
+  },
+  "layers": [
+    {
+      "id": "ItemsLeftContainer",
+      "type": "view",
+      "layers": [
+        { "id": "TopicItem", "type": "view" },
+        {
+          "id": "AtItem",
+          "type": "view",
+          "layers": [{ "id": "AtItemImage", "type": "image" }]
+        },
+        {
+          "id": "LocationItem",
+          "type": "view",
+          "layers": [{ "id": "LocationImage", "type": "image" }]
+        },
+        { "id": "CustomItem", "type": "view" }
+      ]
+    },
+    {
+      "id": "MediaSelectorItem",
+      "type": "view"
+    }
+  ]
+}

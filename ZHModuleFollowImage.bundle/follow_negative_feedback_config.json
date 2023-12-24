@@ -1,0 +1,51 @@
+{
+    "uninterested_article": {
+        "name": "不看该文章",
+        "confirm_title": "确认不看该文章",
+        "confirm_digest": "",
+        "confirm_toast": "已为你过滤该文章",
+        "can_show": true
+    },
+    "uninterested_question": {
+        "name": "不看该问题",
+        "confirm_title": "确认不看该问题(包含问题下的所有回答)",
+        "confirm_digest": "",
+        "confirm_toast": "已为你过滤该问题",
+        "can_show": true
+    },
+    "uninterested_people": {
+        "name": "不看该用户的动态",
+        "confirm_title": "不看 TA 的动态",
+        "confirm_digest": "你将不会在推荐、想法动态和关注中看到 TA 的动态，这不会影响你们的关注关系",
+        "confirm_toast": "已为你屏蔽该用户的内容和动态",
+        "can_show": true
+    },
+    "interested_people": {
+        "name": "恢复查看 TA 的动态",
+        "confirm_title": "",
+        "confirm_digest": "",
+        "confirm_toast": "",
+        "can_show": true
+    },
+    "follow_people": {
+        "name": "关注该用户",
+        "confirm_title": "",
+        "confirm_digest": "",
+        "confirm_toast": "关注成功",
+        "can_show": true
+    },
+    "unfollow_people": {
+        "name": "不再关注该用户",
+        "confirm_title": "确认不再关注该用户吗？",
+        "confirm_digest": "",
+        "confirm_toast": "取消关注成功",
+        "can_show": true
+    },
+    "report": {
+        "name": "举报",
+        "confirm_title": "",
+        "confirm_digest": "",
+        "confirm_toast": "",
+        "can_show": true
+    }
+}

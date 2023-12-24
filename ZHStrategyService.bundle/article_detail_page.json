@@ -1,0 +1,60 @@
+{
+    "code": 200,
+    "data": {
+        "scene": "article_detail_page",
+        "strategy_data": [
+            {
+                "scene": "article_detail_page",
+                "content_id": "",
+                "content_type": "",
+                "page_id": "125",
+                "strategy": [
+                    {
+                        "id": "article_favorite_guide",
+                        "group_id": "community_favorite",
+                        "priority": 300,
+                        "interrupt_low_priority": true,
+                        "queue_type": "guideQueue",
+                        "frequency_control": {},
+                        "trigger_condition": {
+                            "type": "And",
+                            "and_condition": [
+                                {
+                                    "type": "Feature",
+                                    "feature": {
+                                        "feature_type": "CustomAction",
+                                        "mapping_type": "feature",
+                                        "page_ids": [
+                                            "125"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Expression",
+                                    "expression": {
+                                        "attribute": "customAction",
+                                        "operator": "equal",
+                                        "target": "short_container_collection_dialog"
+                                    }
+                                },
+                                {
+                                    "type": "Expression",
+                                    "expression": {
+                                        "attribute": "pageId",
+                                        "operator": "equal",
+                                        "target": "125"
+                                    }
+                                }
+                            ]
+                        },
+                        "trigger_action": {
+                            "action": "short_container_collection_dialog",
+                            "show_duration": 5
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "message": ""
+}

@@ -1,0 +1,56 @@
+{
+  "data": {
+    "avatar": { "value": "$target.author.avatar_url" },
+    "name": { "value": "$target.author.name" },
+    "badge": {
+      "extend": {
+        "display": "($bage_labe_one  == '') && ($bage_labe_two == '') ? 'none' : 'flex'"
+      }
+    },
+    "badge_right": {
+      "value": "$bage_labe_two",
+      "extend": { "display": "$bage_labe_two != '' ? 'flex' : 'none'" }
+    },
+    "badge_left": {
+      "value": "$bage_labe_one",
+      "extend": { "display": "$bage_labe_one != '' ? 'flex' : 'none'" }
+    },
+    "ask": { "value": "'的提问'" },
+    "content": { "value": "$target.title" },
+    "answer_follow_count": {
+      "value": "$answer_follower_count",
+      "extend": { "display": "$answer_follower_count != '' ? 'flex' : 'none'" }
+    }
+  },
+  "event": {
+    "gx_topic_unanswer_card": {
+      "type": "'tap'",
+      "param": "$target.type == 'question' ? ('zhihu://questions/'+ $string_question_id) : $target.url",
+      "actionType": "'event_open_url'"
+    },
+    "user_info": {
+      "type": "'tap'",
+      "param": "(($target.author.id != null) && ($target.author.id != '') && ($target.author.id != '0') && ($target.author.id != 0)) ? ('zhihu://people/'+ $target.author.url_token) : ''",
+      "actionType": "'event_open_url'"
+    }
+  },
+  "track": {
+       "gx_topic_unanswer_card": {
+            "show": {
+                 "enable": "true",
+                  "locationType": "'Card'",
+                  "contentType": "$target.type",
+                  "contentToken": "$string_question_id",
+                  "contentId": "$string_question_id"
+            },
+            "click": {
+                    "enable": "true",
+                    "actionType": "'OpenUrl'",
+                    "locationType": "'Card'",
+                    "contentType": "$target.type",
+                    "contentToken": "$string_question_id",
+                    "contentId": "$string_question_id"
+             }
+        }
+   }
+}

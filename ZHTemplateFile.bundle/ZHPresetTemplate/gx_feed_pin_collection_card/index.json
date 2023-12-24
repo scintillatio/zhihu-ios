@@ -1,0 +1,77 @@
+{
+  "id": "gx_feed_pin_collection_card",
+  "type": "gaia-template",
+  "package": {
+    "id": "gx_feed_pin_collection_card",
+    "version": "0.0.1",
+    "modify-timestamp": "Wed Oct 18 2023 15:50:40 GMT+0800 (中国标准时间)",
+    "dependencies": {}
+  },
+  "layers": [
+    {
+      "id": "container_collection_title",
+      "type": "view",
+      "layers": [
+        { "id": "pin_theme_icon", "type": "image" },
+        {
+          "id": "container_pin_theme_title_text",
+          "type": "view",
+          "layers": [
+            { "id": "theme_title", "type": "text" },
+            { "id": "theme_desc", "type": "text" }
+          ]
+        },
+        { "id": "arrow_right", "type": "image" }
+      ]
+    },
+    {
+      "id": "container_image_list_area",
+      "type": "view",
+      "layers": [
+        {
+          "id": "container_margin_pin1",
+          "type": "view",
+          "layers": [
+            {
+              "id": "container_pin1",
+              "type": "view",
+              "layers": [
+                { "id": "image_pin1", "type": "image" },
+                {
+                  "id": "pin_message_area",
+                  "type": "view",
+                  "layers": [
+                    { "id": "pin_content", "type": "text" },
+                    { "id": "pin_reaction_desc", "type": "text" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "container_margin_percent_group_23",
+          "type": "view",
+          "layers": [
+            {
+              "id": "container_margin_group23",
+              "type": "view",
+              "layers": [
+                {
+                  "id": "container_pin2",
+                  "type": "view",
+                  "layers": [{ "id": "image_pin2", "type": "image" }]
+                },
+                {
+                  "id": "container_pin3",
+                  "type": "view",
+                  "layers": [{ "id": "image_pin3", "type": "image" }]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

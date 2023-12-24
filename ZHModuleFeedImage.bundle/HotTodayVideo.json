@@ -1,0 +1,20 @@
+[
+    {
+        "title":"每日精选",
+        "link":"https://www.zhihu.com/hot/daily?zh_hide_nav_bar=true",
+        "icon":"",
+        "font_color":"#FFFFFF",
+        "background_image":"",
+        "background_color":"#FFFFFF",
+        "icon_type":"date"
+    },
+    {
+        "title":"进站必看",
+        "link":"https://www.zhihu.com/hot/highlight?zh_hide_nav_bar=true",
+        "icon":"https://pic3.zhimg.com/v2-e1051b312e473d7d8f0709fd328890c5.png",
+        "font_color":"#FFFFFF",
+        "background_image":"",
+        "background_color":"#FFFFFF",
+        "icon_type":"image"
+    }
+]

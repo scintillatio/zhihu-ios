@@ -1,0 +1,341 @@
+#gx_question_feed_article_short_container {
+  width: 100%;
+  height: 100%;
+  background-color: GBK99A;
+}
+#container_vertical {
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-radius: 0%;
+  height: 100%;
+  padding-left: 16px;
+  padding-right: 12px;
+  margin-top: 16px;
+}
+#weak_related_title {
+  text-overflow: ellipsis;
+  color: GBK02A;
+  font-size: 17px;
+  fit-content: true;
+  lines: 3;
+  margin-bottom: 8px;
+  margin-right: 4px;
+  align-self: stretch;
+  font-weight: 500;
+}
+#title_container {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 4px;
+  align-self: stretch;
+}
+#infoView {
+  align-items: center;
+  flex-grow: 1;
+}
+#avatar {
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 0px;
+}
+#infoContainerView {
+  flex-direction: column;
+  width: 100px;
+  margin-left: 8px;
+  max-height: 30px;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+#userInfoContainerView {
+  width: 100%;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  max-height: 18px;
+  align-items: center;
+}
+#author_name {
+  text-overflow: ellipsis;
+  color: GBK04A;
+  font-size: 13px;
+  fit-content: true;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+}
+#commercial_jd_11 {
+  border-radius: 6px;
+  height: 12px;
+  margin-left: 4px;
+  width: 12px;
+  aspect-ratio: 1;
+  mode: scaleToFill;
+}
+#authentication {
+  margin-left: 4px;
+  align-self: center;
+  min-width: 12px;
+  min-height: 12px;
+}
+#vip_tag {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  margin-left: 4px;
+  mode: scaleToFill;
+}
+#badge_view {
+  height: 12px;
+  border-radius: 6px;
+  width: 12px;
+  margin-left: 4px;
+  mode: scaleToFill;
+}
+#tenYearsAnswer {
+  text-overflow: ellipsis;
+  color: GBK06A;
+  font-size: 10px;
+  min-width: 20px;
+  min-height: 14px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+#followButton {
+  align-self: center;
+  aspect-ratio: auto;
+  width: 64px;
+  height: 26px;
+  margin-left: 10px;
+}
+#label_line {
+  height: 20px;
+  margin-top: 8px;
+  margin-right: 4px;
+  align-self: stretch;
+}
+#label_container {
+  height: 20px;
+  align-items: center;
+}
+#label_bg {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  position: absolute;
+  opacity: 0.08;
+}
+#label_icon {
+  height: 16px;
+  width: 16px;
+  border-radius: 0px;
+  margin-left: 4px;
+}
+#label_text {
+  text-overflow: ellipsis;
+  color: #999999;
+  margin-left: 2px;
+  font-size: 13px;
+  fit-content: true;
+  margin-right: 6px;
+  font-weight: 500;
+}
+#bigCardSummary {
+  margin-top: 8px;
+  margin-right: 4px;
+}
+#image_container {
+  width: 100%;
+  flex-direction: column;
+  align-items: stretch;
+  margin-top: 8px;
+}
+#image_container_size_one {
+  align-items: flex-start;
+  flex-direction: row;
+  margin-right: 4px;
+}
+#img {
+  border-radius: 6px;
+  mode: aspectFill;
+  background-color: GBK10A;
+}
+#play_icon_container_single {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
+#play_icon_round_bg {
+  width: 56px;
+  height: 56px;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 9px;
+  border-radius: 28px;
+}
+#play_icon_single {
+  color: #444444;
+  width: 32px;
+  height: 32px;
+}
+#image_container_size_three {
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#container {
+  width: 33.33%;
+  padding-right: 4px;
+  aspect-ratio: 1;
+}
+#image1 {
+  width: 100%;
+  flex-grow: 1;
+  padding-right: 4px;
+  aspect-ratio: 1;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  mode: aspectFill;
+  height: 100%;
+  background-color: GBK10A;
+}
+#image1_maskView {
+  width: 100%;
+  background-color: #00000008;
+  aspect-ratio: 1;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  margin-left: -100%;
+}
+#icon {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding-right: 4px;
+  justify-content: center;
+  align-items: center;
+}
+#play_icon {
+  width: 32px;
+  height: 32px;
+  color: #e5ffffff;
+}
+#container2 {
+  width: 33.33%;
+  padding-right: 4px;
+  aspect-ratio: 1;
+}
+#image2 {
+  width: 100%;
+  flex-grow: 1;
+  padding-right: 4px;
+  aspect-ratio: 1;
+  border-radius: 0px;
+  mode: aspectFill;
+  background-color: GBK10A;
+}
+#image2_maskView {
+  width: 100%;
+  background-color: #00000008;
+  aspect-ratio: 1;
+  margin-left: -100%;
+}
+#icon_container2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding-right: 4px;
+  justify-content: center;
+  align-items: center;
+}
+#play_icon2 {
+  width: 32px;
+  height: 32px;
+  color: #e5ffffff;
+}
+#container3 {
+  width: 33.33%;
+  padding-right: 4px;
+  aspect-ratio: 1;
+}
+#image3 {
+  width: 100%;
+  flex-grow: 1;
+  padding-right: 4px;
+  aspect-ratio: 1;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 0px;
+  mode: aspectFill;
+  background-color: GBK10A;
+}
+#image3_maskView {
+  width: 100%;
+  opacity: 1;
+  background-color: #00000008;
+  aspect-ratio: 1;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  margin-left: -100%;
+}
+#icon_container3 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding-right: 4px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px;
+}
+#play_icon3 {
+  width: 32px;
+  height: 32px;
+  color: #e5ffffff;
+}
+#more_img_text {
+  text-overflow: ellipsis;
+  color: #ffffff;
+  font-size: 22px;
+  fit-content: true;
+  font-weight: 500;
+}
+#maskView {
+  width: 100%;
+  height: 40px;
+  border-radius: 0px;
+  margin-top: -72px;
+}
+#lookAllTitleContainer {
+  width: 100%;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  background-color: GBK99A;
+}
+#lookAllTitleLabel {
+  text-overflow: ellipsis;
+  height: 20px;
+  color: GBL07A;
+  font-size: 13px;
+  max-height: 20px;
+  fit-content: true;
+}
+#lookAllTitleArrow {
+  width: 16px;
+  height: 16px;
+  border-radius: 0px;
+}

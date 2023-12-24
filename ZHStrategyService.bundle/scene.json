@@ -1,0 +1,89 @@
+{
+    "scene": "answer_detail",
+    "strategyData": [{
+        "scene": "answer_detail",
+        "pageId": "44",
+        "strategy": [{
+            "id": "ssfsddf34",
+            "priority": 1,
+            "interruptLowPriority": true,
+            "queueType": "guideQueue",
+            "frequencyControl": {
+                "groupId": "45434",
+                "groupCycleDuration": 3454354,
+                "groupIntervalDuration": 34534,
+                "groupCount": 6,
+             
+                "strategyId": "4455",
+                "strategyCycleDuration": 44354,
+                "strategyIntervalDuration": 362342,
+                "strategyCount": 6,
+             
+                "groupContentId": "34543",
+                "groupContentCycleDuration": 345345,
+                "groupContentCount": 3,
+                "groupContentIntervalDuration": 35435,
+                 
+                "strategyContentId": "2543254",
+                "strategyContentCycleDuration": 43554,
+                "strategyContentCount": 2,
+                "strategyContentIntervalDuration": 35345
+
+            },
+            "triggerCondition": {
+                "type": "Step",
+                "stepCondition": [{
+                        "type": "Count",
+                        "target": "3",
+                        "countCondition": {
+                            "type": "And",
+                            "andCondition": [
+                                {
+                                    "type": "Feature",
+                                    "feature": {
+                                        "featureType": "OpenPage",
+                                        "mappingType":"feature",
+                                        "pageIds": ["11002"]
+                                    }
+                                },
+                                {
+                                    "type": "Expression",
+                                    "expression": {
+                                        "attribute": "pageId",
+                                        "operator": "equal",
+                                        "target": "11002"
+                                    }
+                                }
+                            ]
+                        }
+                    }, {
+                        "type": "And",
+                        "andCondition": [
+                            {
+                                "type": "Feature",
+                                "feature": {
+                                    "featureType": "OpenPage",
+                                    "mappingType":"feature",
+                                    "pageIds": ["44"]
+                                }
+                            },
+                            {
+                                "type": "Expression",
+                                "expression": {
+                                    "attribute": "pageId",
+                                    "operator": "equal",
+                                    "target": "44"
+                                }
+                            }
+                        ]
+                    }
+                     
+                ]
+            },
+            "triggerAction": {
+                "content": "",
+                "action": "dialog"
+            }
+        }]
+    }]
+}

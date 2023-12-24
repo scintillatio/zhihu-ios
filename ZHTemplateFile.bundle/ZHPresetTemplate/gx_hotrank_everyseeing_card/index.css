@@ -1,0 +1,219 @@
+#gx_hotrank_everyseeing_card {
+  width: 100%;
+  height: 100%;
+}
+#container_vertical {
+  height: 100%;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  flex-direction: column;
+}
+#title_label {
+  width: 100%;
+  text-overflow: ellipsis;
+  color: GBK02A;
+  font-size: 16px;
+  fit-content: true;
+  lines: 2;
+  line-height: 22px;
+  font-weight: 500;
+  min-height: 22px;
+  margin-top: 14px;
+}
+#summary_container {
+  width: 100%;
+  align-items: flex-start;
+  margin-top: 6px;
+}
+#summary_title_label {
+  text-overflow: ellipsis;
+  color: GBK03A;
+  font-size: 14px;
+  line-height: 20px;
+  fit-content: true;
+  lines: 3;
+  flex-grow: 1;
+  min-height: 20px;
+  margin-right: 98px;
+}
+#summary_image_view {
+  width: 86px;
+  height: 60px;
+  border-radius: 6px;
+  mode: aspectFill;
+  position: absolute;
+  right: 0px;
+}
+#approval_area_container {
+  width: 100%;
+  height: 26px;
+  margin-top: 10px;
+  align-items: center;
+}
+#approval_info_container {
+  height: 100%;
+  align-items: center;
+  border-radius: 13px;
+  background-image: linear-gradient(
+    to right,
+    G_#F3F3F3_#212121 0%,
+    G_#F3F3F300_#21212100 100%
+  );
+}
+#approval_avatars_container {
+  align-items: center;
+  margin-left: 4px;
+  margin-top: -0.5px;
+  height: 20px;
+}
+#approval_avatar_1_container {
+  align-items: center;
+  border-radius: 10px;
+  background-color: GBK99A;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+}
+#approval_avatar_1 {
+  width: 18px;
+  height: 18px;
+  border-radius: 9px;
+}
+#approval_avatar_2_container {
+  align-items: center;
+  margin-left: -7px;
+  background-color: GBK99A;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  justify-content: center;
+}
+#approval_avatar_2 {
+  width: 18px;
+  height: 18px;
+  border-radius: 9px;
+}
+#approval_avatar_3_container {
+  align-items: center;
+  margin-left: -7px;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: GBK99A;
+  justify-content: center;
+}
+#approval_avatar_3 {
+  width: 18px;
+  height: 18px;
+  border-radius: 9px;
+}
+#approval_title_label {
+  text-overflow: ellipsis;
+  height: 18px;
+  color: GBK06A;
+  font-size: 13px;
+  line-height: 18px;
+  fit-content: true;
+  margin-right: 4px;
+  margin-left: 6px;
+  text-align: left;
+}
+#tag_zhi_add_area_container {
+  height: 17px;
+  border-radius: 4px;
+  align-items: center;
+  margin-left: 4px;
+}
+#tag_zhi_add_bg_view {
+  width: 100%;
+  height: 100%;
+  opacity: 0.08;
+  position: absolute;
+}
+#tag_tag_zhi_add_title_label {
+  text-overflow: ellipsis;
+  color: #000000;
+  font-size: 11px;
+  line-height: 12px;
+  height: 17px;
+  fit-content: true;
+  text-align: center;
+  opacity: 1;
+  font-weight: 500;
+  min-height: 17px;
+  margin-left: 5.5px;
+  margin-right: 5px;
+}
+#tag_personalized_area_container {
+  height: 17px;
+  align-items: center;
+  border-radius: 4px;
+  margin-left: 4px;
+}
+#tag_personalized_bg_view {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.1;
+  background-color: GYL01A;
+}
+#tag_personalized_title_label {
+  text-overflow: ellipsis;
+  height: 17px;
+  color: GYL01A;
+  font-size: 11px;
+  line-height: 12px;
+  fit-content: true;
+  font-weight: 500;
+  min-height: 17px;
+  text-align: center;
+  margin-left: 5.5px;
+  margin-right: 5px;
+}
+#taskstroll_area_container {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 17px;
+  background-image: linear-gradient(
+    to right,
+    G_#F3F3F3_#212121 0%,
+    G_#F3F3F300_#21212100 100%
+  );
+}
+#taskstroll_avatar_container {
+  height: 20px;
+  background-color: GBK99A;
+  width: 20px;
+  border-radius: 10px;
+  margin-top: 7px;
+  margin-left: 5px;
+  justify-content: center;
+  align-items: center;
+}
+#taskstroll_avatar {
+  width: 18px;
+  height: 18px;
+  border-radius: 9px;
+  mode: aspectFill;
+}
+#taskstroll_title_label {
+  text-overflow: ellipsis;
+  color: GBK03A;
+  font-size: 13px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  fit-content: true;
+  lines: 2;
+  flex-grow: 1;
+  line-height: 18px;
+  margin-left: 6px;
+  margin-right: 6px;
+  min-height: 18px;
+}
+#divider_line {
+  height: 0.5px;
+  background-color: GBK09B;
+  align-self: stretch;
+  margin-top: 14px;
+}

@@ -1,0 +1,29 @@
+{
+  "id": "zhihu_hotRank_ideaCard",
+  "type": "gaia-template",
+  "package": {
+    "id": "zhihu_hotRank_ideaCard",
+    "version": "0.0.1",
+    "modify-timestamp": "Wed Jul 06 2022 11:38:52 GMT+0800 (中国标准时间)",
+    "dependencies": {}
+  },
+  "layers": [
+    { "id": "title", "type": "text" },
+    {
+      "id": "descView",
+      "type": "view",
+      "layers": [
+        {
+          "id": "topicContentView",
+          "type": "view",
+          "layers": [
+            { "id": "topicIcon", "type": "image" },
+            { "id": "topicTitle", "type": "text" }
+          ]
+        },
+        { "id": "publishTitle", "type": "text" }
+      ]
+    },
+    { "id": "segmentationView", "type": "view" }
+  ]
+}

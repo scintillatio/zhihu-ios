@@ -1,0 +1,220 @@
+{
+  "desc": "自动播列表起播之前的配置",
+  "config": {
+    "card": {
+      "layout_id": "inline_before_start"
+    }
+  },
+  "blocks": [
+    {
+      "block_id": "card_cover_block",
+      "plugins": [
+        "coverImagePlugin",
+        "playStartBtnPlugin",
+        "initLoadingPlugin"
+      ]
+    },
+    {
+      "block_id": "card_cover_duration_block",
+      "plugins": [
+        "coverDurationTextPlugin",
+        "remainingProgressPlugin",
+      ]
+    },
+    {
+      "block_id": "video_screen",
+      "plugins": [
+        "videoPlayerPlugin"
+      ]
+    }
+  ],
+  "plugins": [
+    {
+      "plugin_id": "coverImagePlugin",
+      "data": {
+        "type": "TDataImageCover",
+        "video_width": 1920,
+        "video_height": 1080,
+        "cover_image_width": 1920,
+        "cover_image_height": 1080,
+        "image": "https://pic1.zhimg.com/v2-f9717cf72f64cd70ef87a5309dc528a9_1440w.jpg?source=12a79843"
+      },
+      "card": {
+        "is_visible": true,
+        "view_attribute": {
+          "type": "TCoverAttr",
+          "scale_type": "AspectFill",
+          "use_blur_placeholder": false,
+          "radius": 6
+        }
+      }
+    },
+    {
+      "plugin_id": "remainingProgressPlugin",
+      "plugin_imp_type": "remainingProgressPlugin",
+      "card": {
+        "is_visible": false,
+        "view_attribute": {
+          "type": "TTextViewAttr",
+          "gravity": "end|bottom",
+          "background_color_16": "#00000000",
+          "font_size": 12
+        }
+      }
+    },
+    {
+      "plugin_id": "playStartBtnPlugin",
+      "card": {
+        "is_visible": true,
+        "view_attribute": {
+          "type": "TImageAttr",
+          "width": 48,
+          "height": 48,
+          "icon": "video_player_ic_play",
+          "gravity": "center",
+          "layout_gravity": "center"
+        }
+      }
+    },
+    {
+      "plugin_id": "coverDurationTextPlugin",
+      "plugin_imp_type": "coverDurationTextPlugin",
+      "data": {
+        "type": "TDataVideoDuration",
+        "duration": 5000
+      },
+      "card": {
+        "is_visible": true,
+        "view_attribute": {
+          "type": "TIconAndTextAttr",
+          "is_visible_icon": false,
+          "gravity": "end|center",
+          "layout_gravity": "end|bottom",
+          "text_style": "bold",
+          "background_color_16": "#00000000",
+          "font_size": 12
+        }
+      }
+    },
+    {
+      "plugin_id": "videoPlayerPlugin",
+      "data": {
+        "type": "TDataVideoScaleType",
+        "scale_type": "AspectFit"
+      }
+    },
+    {
+      "plugin_id": "startPlayScenePlugin",
+      "card": {
+        "is_visible": false,
+        "events": [
+          {
+            "event_id": "onStart",
+            "event_name": "visible",
+            "event_type": "0",
+            "event_touch_type": "",
+            "event_trigger_type": "defaultVideoStart",
+            "params": {
+              "type": "TEventVisible",
+              "observers": {
+              "remainingProgressPlugin": true,
+              "coverImagePlugin": false,
+              "playStartBtnPlugin":  false,
+              "coverDurationTextPlugin": false,
+              "coverTipsTextPlugin": false
+             }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "plugin_id": "defaultStopScenePlugin",
+      "card": {
+        "is_visible": false,
+        "events": [
+          {
+            "event_id": "onStop",
+            "event_trigger_type": "defaultVideoStop",
+            "event_name": "visible",
+            "event_type": "0",
+            "event_touch_type": "",
+            "params": {
+              "type": "TEventVisible",
+              "observers": {
+                "coverImagePlugin": true,
+                "playStartBtnPlugin": true,
+                "coverDurationTextPlugin": true,
+                "remainingProgressPlugin": false,
+                "loadingPlugin": false
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "plugin_id": "errorShowCoverPlugin",
+      "card": {
+        "is_visible": false,
+        "events": [
+          {
+            "event_id": "onError",
+            "event_trigger_type": "defaultVideoError",
+            "event_name": "visible",
+            "event_type": "0",
+            "event_touch_type": "",
+            "params": {
+              "type": "TEventVisible",
+              "observers": {
+                "coverImagePlugin": true,
+                "playStartBtnPlugin": true,
+                "coverDurationTextPlugin": true,
+                "remainingProgressPlugin": false,
+                "loadingPlugin": false
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "plugin_id": "initLoadingPlugin",
+      "card": {
+        "is_visible": false,
+        "view_attribute": {
+          "type": "TAttr",
+          "layout_gravity": "center",
+          "gravity": "center",
+          "width": 60,
+          "height": 60
+        }
+      }
+    },
+    {
+      "plugin_id": "errorShowCoverPlugin",
+      "card": {
+        "is_visible": false,
+        "events": [
+          {
+            "event_id": "onError",
+            "event_trigger_type": "defaultVideoError",
+            "event_name": "visible",
+            "event_type": "0",
+            "event_touch_type": "",
+            "params": {
+              "type": "TEventVisible",
+              "observers": {
+                "coverImagePlugin": true,
+                "playStartBtnPlugin": true,
+                "coverDurationTextPlugin": true,
+                "remainingProgressPlugin": false,
+                "loadingPlugin": false
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

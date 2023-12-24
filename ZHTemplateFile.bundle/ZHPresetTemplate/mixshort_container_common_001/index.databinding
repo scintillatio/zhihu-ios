@@ -1,0 +1,142 @@
+{
+  "event": {
+    "container": { "type": "'tap'", "custom": { "type": "'openNextAnimate'" } },
+    "avatar": {
+      "type": "'tap'",
+      "param": "$userUrl",
+      "actionType": "'event_open_url'"
+    },
+    "name": {
+      "type": "'tap'",
+      "param": "$userUrl",
+      "actionType": "'event_open_url'"
+    },
+    "icon1": {
+      "type": "'tap'",
+      "custom": {
+        "type": "$__data_mapping.pin.elements.author.badge[0].extra.type"
+      }
+    },
+    "icon2": {
+      "type": "'tap'",
+      "custom": {
+        "type": "$__data_mapping.pin.elements.author.badge[1].extra.type"
+      }
+    },
+    "moreButton": { "type": "'tap'", "custom": { "type": "'share'" } },
+    "single_image": {
+      "type": "'tap'",
+      "custom": { "type": "'openImage'", "index": 0 }
+    },
+    "image1": {
+      "type": "'tap'",
+      "custom": { "type": "'openImage'", "index": 0 }
+    },
+    "image2": {
+      "type": "'tap'",
+      "custom": { "type": "'openImage'", "index": 1 }
+    },
+    "image3": {
+      "type": "'tap'",
+      "custom": { "type": "'openImage'", "index": 2 }
+    },
+    "image_more_container": {
+      "type": "'tap'",
+      "custom": { "type": "'openNextAnimate'" }
+    }
+  },
+  "data": {
+    "avatar": {
+      "value": "$__data_mapping.pin.elements.author.avatar.avatar_url"
+    },
+    "name": {
+      "value": "$__data_mapping.pin.elements.author.name",
+      "extend": { "fit-content": "true" }
+    },
+    "icon1": {
+      "value": "$__data_mapping.pin.elements.author.badge[0].url",
+      "extend": {
+        "display": "$__data_mapping.pin.elements.author.badge[0] == null ? 'none' : 'flex'"
+      }
+    },
+    "icon2": {
+      "value": "$__data_mapping.pin.elements.author.badge[1].url",
+      "extend": {
+        "display": "$__data_mapping.pin.elements.author.badge[1] == null ? 'none' : 'flex'"
+      }
+    },
+    "desc": {
+      "value": "$__data_mapping.pin.elements.author.desc.desc1",
+      "extend": {
+        "height": "$__data_mapping.pin.elements.author.desc.desc1 == '' ? '0' : '20'"
+      }
+    },
+    "followButton": { "value": "$target.author" },
+    "moreButton": { "value": "'local:zhicon_icon_24_dots'" },
+    "container_image": {
+      "extend": {
+        "display": "(size($__data_mapping.pin.elements.media.elements) == 0) ? 'none' : 'flex'"
+      }
+    },
+    "single_image": {
+      "value": "$__data_mapping.pin.elements.media.elements[0].url",
+      "extend": {
+        "display": "size($__data_mapping.pin.elements.media.elements) == 1 ? 'flex' : 'none'",
+        "width": "(($__data_mapping.pin.elements.media.elements[0].width / $__data_mapping.pin.elements.media.elements[0].height) <= 0.8) ? '33.33%' : '44.44%'",
+        "aspect-ratio": "(($__data_mapping.pin.elements.media.elements[0].width / $__data_mapping.pin.elements.media.elements[0].height) <= 0.8) ? '0.75' : '1'"
+      }
+    },
+    "multiple_image_container": {
+      "extend": {
+        "display": "size($__data_mapping.pin.elements.media.elements) > 1 ? 'flex':'none'"
+      }
+    },
+    "image1": { "value": "$__data_mapping.pin.elements.media.elements[0].url" },
+    "image2": {
+      "extend": {
+        "border-top-right-radius": "(size($__data_mapping.pin.elements.media.elements) > 2 ) ? '0px' :'6px'",
+        "border-bottom-right-radius": "(size($__data_mapping.pin.elements.media.elements) > 2 ) ? '0px' :'6px'",
+        "border-top-left-radius": "'0px'",
+        "border-bottom-left-radius": "'0px'"
+      },
+      "value": "$__data_mapping.pin.elements.media.elements[1].url"
+    },
+    "image3_container": {
+      "extend": {
+        "display": "size($__data_mapping.pin.elements.media.elements) > 2 ? 'flex':'none'"
+      }
+    },
+    "image3": { "value": "$__data_mapping.pin.elements.media.elements[2].url" },
+    "image_more_container": {
+      "extend": {
+        "display": "($__data_mapping.pin.elements.media.more == null || $__data_mapping.pin.elements.media.more == '')? 'none' : 'flex'"
+      }
+    },
+    "text_more": { "value": "$__data_mapping.pin.elements.media.more" },
+    "summary": {
+      "extend": {
+        "display": "$__data_mapping.pin.elements.content.elements[0].text == null || $__data_mapping.pin.elements.content.elements[0].text == '' ? 'none' : 'flex'",
+        "height": "$__data_mapping.pin.elements.content.elements[0].height",
+        "width": "$__data_mapping.pin.elements.content.elements[0].width"
+      },
+      "value": "$__data_mapping.pin.elements.content.elements[0]"
+    }
+  },
+  "track": {
+    "avatar": {
+      "click": {
+        "enable": "true",
+        "moduleId": "'detail_big_card'",
+        "actionType": "'OpenUrl'",
+        "locationType": "'Button'",
+        "contentType": "'User'",
+        "contentToken": "$target.author.url_token",
+        "contentId": "$target.author.id",
+        "parentContentType": "'pin'",
+        "parentContentToken": "$contentToken",
+        "linkUrl": "'fakeurl://user_detail/user_' + $target.author.id",
+        "parentCardIndex": "$cardIndex"
+      }
+    }
+  }
+}

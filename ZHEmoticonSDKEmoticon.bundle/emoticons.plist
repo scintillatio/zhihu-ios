@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>packages</key>
+	<array>
+		<dict>
+			<key>id</key>
+			<string>com.zhihu.default</string>
+			<key>version</key>
+			<integer>1</integer>
+			<key>group_name</key>
+			<string>默认</string>
+			<key>group_type</key>
+			<integer>1</integer>
+			<key>icon</key>
+			<string>tab_icon@2x.png</string>
+			<key>state</key>
+			<integer>1</integer>
+		</dict>
+        <dict>
+            <key>id</key>
+            <string>com.zhihu.baozi</string>
+            <key>version</key>
+            <integer>1</integer>
+            <key>group_name</key>
+            <string>包子</string>
+            <key>group_type</key>
+            <integer>2</integer>
+            <key>icon</key>
+            <string>tab_icon@2x.png</string>
+            <key>selelcted_icon</key>
+            <string>selelcted_tab_icon@2x.png</string>
+            <key>state</key>
+            <integer>1</integer>
+        </dict>
+	</array>
+</dict>
+</plist>

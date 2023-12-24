@@ -1,0 +1,168 @@
+{
+  "id": "gx_question_feed_article_short_container",
+  "type": "gaia-template",
+  "package": {
+    "id": "gx_question_feed_article_short_container",
+    "version": "0.0.1",
+    "modify-timestamp": "Sun Aug 07 2022 15:29:08 GMT+0800 (中国标准时间)",
+    "dependencies": {}
+  },
+  "layers": [
+    {
+      "id": "container_vertical",
+      "type": "view",
+      "layers": [
+        { "id": "weak_related_title", "type": "text" },
+        {
+          "id": "title_container",
+          "type": "view",
+          "layers": [
+            {
+              "id": "infoView",
+              "type": "view",
+              "layers": [
+                {
+                  "id": "avatar",
+                  "type": "custom",
+                  "view-class-ios": "ZHGaiaAvatarImageView",
+                  "view-class-android": "com.zhihu.android.answer.module.mixshort.holder.view.AnswerCardAvatarView"
+                },
+                {
+                  "id": "infoContainerView",
+                  "type": "view",
+                  "layers": [
+                    {
+                      "id": "userInfoContainerView",
+                      "type": "view",
+                      "layers": [
+                        { "id": "author_name", "type": "text" },
+                        { "id": "commercial_jd_11", "type": "image" },
+                        {
+                          "id": "authentication",
+                          "type": "custom",
+                          "view-class-ios": "ZHGaiaAuthorPersonBadgeImageView",
+                          "view-class-android": "com.zhihu.android.answer.module.mixshort.holder.view.AnswerAuthMultiDrawView"
+                        },
+                        { "id": "vip_tag", "type": "image" },
+                        { "id": "badge_view", "type": "image" }
+                      ]
+                    },
+                    { "id": "tenYearsAnswer", "type": "text" }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "followButton",
+              "type": "custom",
+              "view-class-ios": "ZHGaiaFollowButton",
+              "view-class-android": "com.zhihu.android.answer.module.mixshort.holder.view.AnswerFollowBtnView"
+            }
+          ]
+        },
+        {
+          "id": "label_line",
+          "type": "view",
+          "layers": [
+            {
+              "id": "label_container",
+              "type": "view",
+              "layers": [
+                { "id": "label_bg", "type": "view" },
+                { "id": "label_icon", "type": "image" },
+                { "id": "label_text", "type": "text" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bigCardSummary",
+          "type": "custom",
+          "view-class-ios": "ZHGaiaExcerptLabelView",
+          "view-class-android": "com.zhihu.android.answer.module.mixshort.holder.view.AnswerMixShortMiddleContentView"
+        },
+        {
+          "id": "image_container",
+          "type": "view",
+          "layers": [
+            {
+              "id": "image_container_size_one",
+              "type": "view",
+              "layers": [
+                { "id": "img", "type": "image" },
+                {
+                  "id": "play_icon_container_single",
+                  "type": "view",
+                  "layers": [
+                    {
+                      "id": "play_icon_round_bg",
+                      "type": "view",
+                      "layers": [{ "id": "play_icon_single", "type": "image" }]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "image_container_size_three",
+              "type": "view",
+              "layers": [
+                {
+                  "id": "container",
+                  "type": "view",
+                  "layers": [
+                    { "id": "image1", "type": "image" },
+                    { "id": "image1_maskView", "type": "view" },
+                    {
+                      "id": "icon",
+                      "type": "view",
+                      "layers": [{ "id": "play_icon", "type": "image" }]
+                    }
+                  ]
+                },
+                {
+                  "id": "container2",
+                  "type": "view",
+                  "layers": [
+                    { "id": "image2", "type": "image" },
+                    { "id": "image2_maskView", "type": "view" },
+                    {
+                      "id": "icon_container2",
+                      "type": "view",
+                      "layers": [{ "id": "play_icon2", "type": "image" }]
+                    }
+                  ]
+                },
+                {
+                  "id": "container3",
+                  "type": "view",
+                  "layers": [
+                    { "id": "image3", "type": "image" },
+                    { "id": "image3_maskView", "type": "view" },
+                    {
+                      "id": "icon_container3",
+                      "type": "view",
+                      "layers": [
+                        { "id": "play_icon3", "type": "image" },
+                        { "id": "more_img_text", "type": "text" }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        { "id": "maskView", "type": "image" },
+        {
+          "id": "lookAllTitleContainer",
+          "type": "view",
+          "layers": [
+            { "id": "lookAllTitleLabel", "type": "text" },
+            { "id": "lookAllTitleArrow", "type": "image" }
+          ]
+        }
+      ]
+    }
+  ]
+}

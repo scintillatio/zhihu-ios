@@ -1,0 +1,71 @@
+{
+    "data": {
+        "zhihu_hotRank_ideaCard": {
+            "value": "$zhihu_hotRank_ideaCard"
+        },
+        "title": {
+            "value": "$title",
+            "extend": {
+                "color": "'GBK02A'",
+                "fit-content": "true"
+            }
+        },
+        "topicIcon": {
+            "value":"$topicIcon"
+        },
+        "topicTitle": {
+            "value": "$topicTitle",
+            "extend": {
+                "fit-content": "true",
+                "color": "$topicTitleColor"
+            }
+        },
+        "publishTitle": {
+            "value": "$publishTitle",
+            "extend":{
+                "color": "'GBK06A'"
+            }
+        },
+        "topicContentView": {
+            "value": "$topicContentCanDisplay",
+            "extend": {
+                "width": "'auto'",
+                "background-color": "$topicContentViewBGColor",
+                "display": "$topicContentCanDisplay ? 'flex' : 'none'"
+       
+            }
+        },
+        "segmentationView": {
+            "value": "$segmentationView",
+            "extend": {
+                "background-color": "'GBK09B'"
+       
+            }
+        }
+    },
+    "event": {
+        "topicContentView": {
+            "type": "'tap'",
+            "actionType": "'event_open_url'",
+            "param": "$topicLinkUrl"
+        },
+        "zhihu_hotRank_ideaCard": {
+            "type": "'tap'",
+            "actionType": "'event_open_url'",
+            "param": "$ideaCardLinkUrl"
+        }
+        
+    },
+    "track": {
+        "zhihu_hotRank_ideaCard": {
+            "show": "$ideaCardShowLog",
+            "click": "$ideaCardClickLog"
+        },
+        "topicContentView": {
+            "click": "$topicClickLog"
+        }
+    }
+    
+}
+
+

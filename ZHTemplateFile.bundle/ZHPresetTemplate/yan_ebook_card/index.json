@@ -1,0 +1,53 @@
+{
+  "id": "yan_ebook_card",
+  "type": "gaia-template",
+  "package": {
+    "id": "yan_ebook_card",
+    "version": "0.0.1",
+    "modify-timestamp": "Sun Jun 25 2023 14:42:43 GMT+0800 (China Standard Time)",
+    "constraint-size": { "width": 375, "height": 375, "zoom": 1 },
+    "dependencies": {}
+  },
+  "layers": [
+    {
+      "id": "bubble",
+      "class": "text-area",
+      "type": "view",
+      "layers": [
+        { "id": "cover_placeholder", "type": "image" },
+        { "id": "cover", "type": "image" },
+        { "id": "cover_border", "type": "view" },
+        {
+          "id": "text_container",
+          "type": "view",
+          "layers": [
+            { "id": "title", "type": "text" },
+            { "id": "sub_title", "type": "text" },
+            { "id": "desc", "type": "text" },
+            {
+              "id": "bottom_container",
+              "type": "view",
+              "layers": [
+                {
+                  "id": "bottom_left",
+                  "type": "view",
+                  "layers": [
+                    { "id": "bottom_text1", "type": "text" },
+                    { "id": "divide_line", "type": "view" },
+                    { "id": "bottom_text2", "type": "text" }
+                  ]
+                },
+                { "id": "progress", "type": "text" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "off_shelf_view",
+          "type": "view",
+          "layers": [{ "id": "off_shelf_text", "type": "text" }]
+        }
+      ]
+    }
+  ]
+}

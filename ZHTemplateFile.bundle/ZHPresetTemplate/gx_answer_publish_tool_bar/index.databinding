@@ -1,0 +1,136 @@
+{
+  "event": {
+    "AaItem": {
+      "type": "'tap'",
+      "param": "$action.name",
+      "actionType": "'open_aa'",
+      "extend": {
+              "width": "$AaItem_isDefaultWidth ? '16.66%':'14.28%'",
+              "display": "$AaItem_display?'flex': 'none'"
+            }
+    },
+    "PictureSelectorItem": {
+      "type": "'tap'",
+      "param": "$action.name",
+      "actionType": "'open_picture_selector'"
+    },
+    "GoodsItem": {
+      "type": "'tap'",
+      "param": "$action.name",
+      "actionType": "'open_goods'"
+    },
+    "AddItem": {
+      "type": "'tap'",
+      "param": "$action.name",
+      "actionType": "'open_add'"
+    },
+    "UndoSelectorItem": {
+      "type": "'tap'",
+      "param": "$action.name",
+      "actionType": "'set_undo'"
+    },
+    "RedoSelectorItem": {
+      "type": "'tap'",
+      "param": "$action.name",
+      "actionType": "'set_redo'"
+    },
+    "SettingSelectorItem": {
+      "type": "'tap'",
+      "param": "$action.name",
+      "actionType": "'open_setting_selector'"
+    }
+  },
+  "data": {
+    "AaImage": {
+      "value": "'local:zhicon_icon_24_text_format'",
+      "extend": {
+        "color": "$AaItem_isHighLight ? 'GBL01A':'GBK02A'",
+        "opacity": "$AaItem_enable?1:0.3"
+      }
+    },
+    "AaItem": {
+        "extend": {
+            "width": "$AaItem_isDefaultWidth ? '16.66%':'14.28%'",
+            "display": "$AaItem_display?'flex': 'none'"
+        }
+    },
+    "PictureSelectorImage": {
+      "value": "'local:zhicon_icon_24_image'",
+      "extend": {
+        "color": "$PictureSelectorItem_isHighLight ? 'GBL01A':'GBK02A'",
+        "opacity": "$PictureSelectorItem_enable?1:0.3"
+      }
+    },
+    "PictureSelectorItem": {
+        "extend": {
+            "width": "$PictureSelectorItem_isDefaultWidth ? '16.66%':'14.28%'",
+            "display": "$PictureSelectorItem_display?'flex': 'none'"
+        }
+    },
+    "GoodsImage": {
+      "value": "'local:zhicon_icon_24_money_bag'",
+      "extend": {
+        "color": "$GoodsItem_isHighLight ? 'GBL01A':'GBK02A'",
+        "opacity": "$GoodsItem_enable?1:0.3"
+      }
+    },
+    "GoodsItem": {
+        "extend": {
+            "width": "$GoodsItem_isDefaultWidth ? '0%':'14.28%'",
+            "display": "$GoodsItem_display?'flex': 'none'"
+        }
+    },
+    "AddImage": {
+      "value": "'local:zhicon_icon_24_plus_circle'",
+      "extend": {
+        "color": "$AddItem_isHighLight ? 'GBL01A':'GBK02A'",
+        "opacity": "$AddItem_enable?1:0.3"
+      }
+    },
+    "AddItem": {
+        "extend": {
+            "width": "$AddItem_isDefaultWidth ? '16.66%':'14.28%'",
+            "display": "$AddItem_display?'flex': 'none'"
+        }
+    },
+    "UndoSelectorImage": {
+      "value": "'local:zhicon_icon_24_arrow_uturn_left'",
+      "extend": {
+        "color": "$UndoSelectorItem_isHighLight ? 'GBL01A':'GBK02A'",
+        "opacity": "$UndoSelectorItem_enable?1:0.3"
+      }
+    },
+    "UndoSelectorItem": {
+        "extend": {
+            "width": "$UndoSelectorItem_isDefaultWidth ? '16.66%':'14.28%'",
+            "display": "$UndoSelectorItem_display?'flex': 'none'"
+        }
+    },
+    "RedoSelectorImage": {
+      "value": "'local:zhicon_icon_24_arrow_uturn_right'",
+      "extend": {
+        "color": "$RedoSelectorItem_isHighLight ? 'GBL01A':'GBK02A'",
+        "opacity": "$RedoSelectorItem_enable?1:0.3"
+      }
+    },
+    "RedoSelectorItem": {
+        "extend": {
+            "width": "$RedoSelectorItem_isDefaultWidth ? '16.66%':'14.28%'",
+            "display": "$RedoSelectorItem_display?'flex': 'none'"
+        }
+    },
+    "SettingSelectorImage": {
+      "value": "'local:zhicon_icon_24_gear'",
+      "extend": {
+        "color": "$SettingSelectorItem_isHighLight ? 'GBL01A':'GBK02A'",
+        "opacity": "$SettingSelectorItem_enable?1:0.3"
+      }
+    },
+    "SettingSelectorItem": {
+        "extend": {
+            "width": "$SettingSelectorItem_isDefaultWidth ? '16.66%':'14.28%'",
+            "display": "$SettingSelectorItem_display?'flex': 'none'"
+        }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "event": {
+    "PictureSelectorItem": {
+      "type": "'tap'",
+      "param": "$action.name",
+      "actionType": "'open_picture_selector'"
+    },
+    "AtSelectorItem": {
+      "type": "'tap'",
+      "param": "$action.name",
+      "actionType": "'open_at_panel'"
+    },
+    "LinkSelectorItem": {
+      "type": "'tap'",
+      "param": "$action.name",
+      "actionType": "'open_link_selector'"
+    },
+    "UndoSelectorItem": {
+      "type": "'tap'",
+      "param": "$action.name",
+      "actionType": "'set_undo'"
+    },
+    "RedoSelectorItem": {
+      "type": "'tap'",
+      "param": "$action.name",
+      "actionType": "'set_redo'"
+    },
+    "SettingSelectorItem": {
+      "type": "'tap'",
+      "param": "$action.name",
+      "actionType": "'open_setting_selector'"
+    }
+  },
+  "data": {
+    "PictureSelectorImage": {
+      "value": "'local:zhicon_icon_24_image'",
+      "extend": {
+        "color": "$PictureSelectorItem_isHighLight ? 'GBL01A':'GBK02A'",
+        "opacity": "$PictureSelectorItem_enable?1:0.3"
+      }
+    },
+    "AtSelectorImage": {
+      "value": "'local:zhicon_icon_24_at'",
+      "extend": {
+        "color": "$AtSelectorItem_isHighLight ? 'GBL01A':'GBK02A'",
+        "opacity": "$AtSelectorItem_enable?1:0.3"
+      }
+    },
+    "LinkSelectorImage": {
+      "value": "'local:zhicon_icon_24_link'",
+      "extend": {
+        "color": "$LinkSelectorItem_isHighLight ? 'GBL01A':'GBK02A'",
+        "opacity": "$LinkSelectorItem_enable?1:0.3"
+      }
+    },
+    "UndoSelectorImage": {
+      "value": "'local:zhicon_icon_24_arrow_uturn_left'",
+      "extend": {
+        "color": "$UndoSelectorItem_isHighLight ? 'GBL01A':'GBK02A'",
+        "opacity": "$UndoSelectorItem_enable?1:0.3"
+      }
+    },
+    "RedoSelectorImage": {
+      "value": "'local:zhicon_icon_24_arrow_uturn_right'",
+      "extend": {
+        "color": "$RedoSelectorItem_isHighLight ? 'GBL01A':'GBK02A'",
+        "opacity": "$RedoSelectorItem_enable?1:0.3"
+      }
+    },
+    "SettingSelectorImage": {
+      "value": "'local:zhicon_icon_24_gear'",
+      "extend": {
+        "color": "$SettingSelectorItem_isHighLight ? 'GBL01A':'GBK02A'",
+        "opacity": "$SettingSelectorItem_enable?1:0.3"
+      }
+    }
+  }
+}

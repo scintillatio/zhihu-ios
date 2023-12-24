@@ -1,0 +1,101 @@
+{
+  "data": {
+   "BGImage": {
+      "extend": {
+         "background-color": "'GYL06A'"
+      },
+      "value": {
+        "lightImg": "$artwork.day_url",
+        "nightImg": "$artwork.night_url"
+      }
+    },
+    "title": {
+        "extend": {
+            "color": "$title_color != null && $title_color != '' ? $title_color : 'GYL12A'"
+        },
+        "value": "$title"
+    },
+    "subtitle": {
+      "extend": {
+        "color": "$sub_title_color != null && $sub_title_color != '' ? $sub_title_color : 'GYL10A'",
+        "highlight-color": "$sub_title_highlight_color != null && $sub_title_highlight_color != '' ? $sub_title_highlight_color : 'GRD03A'",
+        "highlight-tag": "'##'"
+      },
+      "value": "$sub_title_list[0]"
+    },
+    "subtitle2": {
+      "extend": {
+        "color": "$sub_title_color != null && $sub_title_color != '' ? $sub_title_color : 'GYL10A'",
+        "highlight-color": "$sub_title_highlight_color != null && $sub_title_highlight_color != '' ? $sub_title_highlight_color : 'GRD03A'",
+        "highlight-tag": "'##'"
+      },
+      "value": "$sub_title_list != null && size($sub_title_list) > 1 ? $sub_title_list[1] : null"
+    },
+    "pay_button": {
+      "extend": {
+        "background-image": "'linear-gradient(to bottom right, ' + ($button_background_color != null && size($button_background_color) > 0 ? $button_background_color[0] : 'GYL06A') + ' 0%, ' + ($button_background_color != null && size($button_background_color) > 1 ? $button_background_color[1] : ($button_background_color != null && size($button_background_color) > 0 ? $button_background_color[0] : 'GYL08A')) + ' 100%)'"
+      }
+    },
+    "pay_button_title": {
+      "extend": {
+        "color": "$button_text_color != null && $button_text_color != '' ? $button_text_color : 'GYL12A'"
+      },
+      "value": "$button_text"
+    },
+    "discount_button": {
+      "extend": {
+        "display": "$right_icon_text != null && $right_icon_text != '' ? 'flex' : 'none'",
+        "background-image": "'linear-gradient(to bottom right, ' + ($right_icon_background_color != null && size($right_icon_background_color) > 0 ? $right_icon_background_color[0] : 'GRD10A') + ' 0%, ' + ($right_icon_background_color != null && size($right_icon_background_color) > 1 ? $right_icon_background_color[1] : ($right_icon_background_color != null && size($right_icon_background_color) > 0 ? $right_icon_background_color[0] : 'GRD10A')) + ' 100%)'"
+      }
+    },
+    "discount_title": {
+      "extend": {
+        "color": "$right_icon_text_color != null && $right_icon_text_color != '' ? $right_icon_text_color : 'GBK99B'"
+      },
+      "value": "$right_icon_text"
+    }
+  },
+  "event": {
+    "ContentContainer": { "type": "'tap'", "param": "$card_jump_url", "actionType": "'event_open_url'" },
+    "pay_button": { "type": "'tap'", "param": "$jump_url", "actionType": "'event_open_url'" }
+  },
+  "track": {
+    "pay_button": {
+      "show": {
+        "locationType":"'Button'",
+        "blockText": "'VipCard'",
+        "locationText": "$title",
+        "viewUrl": "'fakeurl://zhihuvip_personal_info'"
+      },
+      "click": {
+        "enable": "$jump_url != ''",
+        "locationType": "'Button'",
+        "actionType": "'OpenUrl'",
+        "blockText": "'VipCard'",
+        "locationText": "$button_text",
+        "viewUrl": "'fakeurl://zhihuvip_personal_info'",
+        "linkUrl": "$jump_url"
+      }
+    },
+    "ContentContainer": {
+      "click": {
+        "enable": "$card_jump_url != ''",
+        "locationType": "'Button'",
+        "actionType": "'OpenUrl'",
+        "blockText": "'VipCard'",
+        "locationText": "$title",
+        "viewUrl": "'fakeurl://zhihuvip_personal_info'",
+        "linkUrl": "$card_jump_url"
+      }
+    },
+    "discount_button": {
+      "show": {
+        "enable": "$right_icon_text != ''",
+        "locationType": "'Popup'",
+        "locationText": "$right_icon_text",
+        "blockText": "'我的tab营销气泡曝光'",
+        "viewUrl": "'fakeurl://zhihuvip_personal_info'"
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "km_my_vip_card",
+  "type": "gaia-template",
+  "package": {
+    "id": "km_my_vip_card",
+    "version": "0.0.1",
+    "modify-timestamp": "Thu Nov 17 2022 18:11:46 GMT+0800 (中国标准时间)",
+    "constraint-size": { "width": 375, "height": 65, "zoom": 1 },
+    "dependencies": {}
+  },
+  "layers": [
+    { "id": "BGImage", "type": "image" },
+    {
+      "id": "ContentContainer",
+      "type": "view",
+      "layers": [
+        {
+          "id": "TextContainer",
+          "type": "view",
+          "layers": [
+            { "id": "title", "type": "text" },
+            {
+              "id": "SubtitleContainer",
+              "type": "view",
+              "layers": [
+                { "id": "subtitle", "type": "richtext" },
+                { "id": "subtitle2", "type": "richtext" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ButtonContainer",
+          "type": "view",
+          "layers": [
+            {
+              "id": "pay_button",
+              "type": "view",
+              "layers": [{ "id": "pay_button_title", "type": "text" }]
+            },
+            {
+              "id": "discount_button",
+              "type": "view",
+              "layers": [{ "id": "discount_title", "type": "text" }]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

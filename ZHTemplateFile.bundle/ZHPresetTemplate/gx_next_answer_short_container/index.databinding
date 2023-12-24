@@ -1,0 +1,262 @@
+{
+  "data": {
+    "weak_related_title": {
+      "extend": {
+        "fit-content": "true",
+        "display": "(($type == 'question_related_card') || ($strategy_info.sub_name == 'NEXT_OTHER_QUESTION_ANSWER')) && (($target.question.title != null) && ($target.question.title != '')) ? 'flex' : 'none'"
+      },
+      "value": "$target.question.title"
+    },
+    "avatar": { "value": "$target.author" },
+    "author_name": {
+      "value": "$target.author.name",
+      "extend": { "fit-content": "true" }
+    },
+    "commercial_jd_11": {
+      "value": "$doubleElevenUrl",
+      "extend": {
+        "margin-left": "(($doubleElevenUrl == null) || ($doubleElevenUrl == '')) ? '0px' : '4px'",
+        "width": "(($doubleElevenUrl == null) || ($doubleElevenUrl == '')) ? '0px' : '12px'",
+        "aspect-ratio": "$ratio"
+      }
+    },
+    "authentication": {
+      "value": "$target.author",
+      "extend": {
+        "display": "$showAuthentication ? 'flex' : 'none'",
+        "width": "$authentication_width",
+        "height": "$authentication_height"
+      }
+    },
+    "vip_tag": {
+      "value": "$vip_tag",
+      "extend": {
+        "width": "(($vip_tag == null)||($vip_tag == '')) ? '0px' : '12px'",
+        "margin-left": "(($vip_tag == null)|| ($vip_tag == '')) ? '0px' : '4px'"
+      }
+    },
+    "badge_view": {
+      "value": "$badgeUrl",
+      "extend": {
+        "width": "(($badgeUrl == null)|| ($badgeUrl == '')) ? '0px' : '12px'",
+        "margin-left": "(($badgeUrl == null)|| ($badgeUrl == '')) ? '0px' : '4px'"
+      }
+    },
+    "tenYearsAnswer": {
+      "value": "$tenYearsAnswer",
+      "extend": {
+        "display": "(($tenYearsAnswer == null)||($tenYearsAnswer == '')) ? 'none' : 'flex'",
+        "fit-content": "false"
+      }
+    },
+    "followButton": {
+      "value": "$target.author",
+      "extend": { "display": "$showFollowButton ? 'flex':'none'" }
+    },
+    "label_line": {
+      "extend": {
+        "display": "(($target.label_info.icon_url == null) || ($target.label_info.icon_url == '')) ? 'none' : 'flex'"
+      }
+    },
+    "label_bg": {
+      "extend": {
+        "background-color": "$target.label_info.foreground_color.group"
+      }
+    },
+    "label_icon": {
+      "value": "$target.label_info.icon_url",
+      "extend": {
+        "color": "$target.label_info.foreground_color.group",
+        "opacity": "$target.label_info.foreground_color.alpha"
+      }
+    },
+    "label_text": {
+      "value": "$target.label_info.text",
+      "extend": {
+        "fit-content": "true",
+        "color": "$target.label_info.foreground_color.group",
+        "opacity": "$target.label_info.foreground_color.alpha"
+      }
+    },
+    "bigCardSummary": {
+      "value": "$target",
+      "extend": {
+        "display": "(($target.big_card_summary == null) || ($target.big_card_summary == '')) ? 'none' : 'flex'",
+        "height": "$bigCardSummaryHeight",
+        "width": "$bigCardSummaryWidth"
+      }
+    },
+    "video_inline_container": {
+      "extend": {
+        "display": "(($target.attachment.type == 'VIDEO') || ($target.attachment.type == 'video') || ($target.attachment.type == 'zvideo')) ? 'flex' : 'none'"
+      }
+    },
+    "image_container": {
+      "extend": {
+        "display": "(($target.attachment.type == 'VIDEO') || ($target.attachment.type == 'video') || ($target.attachment.type == 'zvideo')||($target.thumbnail_info.count == 0)) ? 'none' : 'flex'"
+      }
+    },
+    "image_container_size_one": {
+      "extend": {
+        "display": "($target.thumbnail_info.count == 1) ? 'flex' : 'none'"
+      }
+    },
+    "img": {
+      "extend": {
+        "display": "$target.thumbnail_info.thumbnails[0].url == null ? 'none' : 'flex'",
+        "width": "($target.thumbnail_info.thumbnails[0].type == 'video') ? '100%' : $singleImageWidth",
+        "height": "($target.thumbnail_info.thumbnails[0].type == 'video') ? 'null' : $singleImageHeight",
+        "mode": "$singleImageScale",
+        "aspect-ratio": "($target.thumbnail_info.thumbnails[0].type == 'video') ? '1.78' : 'null'"
+      },
+      "value": "$target.thumbnail_info.thumbnails[0].url"
+    },
+    "play_icon_container_single": {
+      "extend": {
+        "display": "($target.thumbnail_info.thumbnails[0].type == 'video') ? 'flex' : 'none'"
+      }
+    },
+    "play_icon_single": { "value": "'local:zhicon_icon_24_play_fill'" },
+    "image_container_size_three": {
+      "extend": {
+        "display": "$target.thumbnail_info.count >=2 ? 'flex' : 'none'"
+      }
+    },
+    "image1": {
+      "value": "$target.thumbnail_info.thumbnails[0].url",
+      "extend": {
+        "border-top-right-radius": "($target.thumbnail_info.count >= 2 ) ? '0px' :'6px'",
+        "border-bottom-right-radius": "($target.thumbnail_info.count >= 2 ) ? '0px' :'6px'",
+        "border-top-left-radius": "'6px'",
+        "border-bottom-left-radius": "'6px'"
+      }
+    },
+    "image1_maskView": {
+      "value": "$image1_maskView",
+      "extend": {
+        "background-color": "'#00000008'"
+      }
+    },
+    "play_icon": {
+      "value": "'local:zhicon_icon_16_arrow_right_alt'",
+      "extend": {
+        "display": "$target.thumbnail_info.thumbnails[0].type == 'video' ? 'flex' : 'none'"
+      }
+    },
+    "container2": {
+      "extend": {
+        "display": "($target.thumbnail_info.count >= 2 )? 'flex': 'none'"
+      }
+    },
+    "image2": {
+      "value": "$target.thumbnail_info.thumbnails[1].url",
+      "extend": {
+        "border-top-right-radius": "($target.thumbnail_info.count >= 3 ) ? '0px' :'6px'",
+        "border-bottom-right-radius": "($target.thumbnail_info.count >= 3 ) ? '0px' :'6px'"
+      }
+    },
+    "image2_maskView": {
+      "value": "$image2_maskView",
+      "extend": {
+        "background-color": "'#00000008'",
+ 	"border-top-right-radius": "($target.thumbnail_info.count >= 3 ) ? '0px' :'6px'",
+        "border-bottom-right-radius": "($target.thumbnail_info.count >= 3 ) ? '0px' :'6px'"
+      }
+    },
+    "play_icon2": {
+      "value": "'local:zhicon_icon_16_arrow_right_alt'",
+      "extend": {
+        "display": "$target.thumbnail_info.thumbnails[1].type == 'video' ? 'flex' : 'none'"
+      }
+    },
+    "container3": {
+      "extend": {
+        "display": "($target.thumbnail_info.count >= 3 ) ? 'flex' :'none'"
+      }
+    },
+    "image3": { "value": "$target.thumbnail_info.thumbnails[2].url" },
+     "image3_maskView": {
+          "value": "$image3_maskView",
+          "extend": {
+            "background-color": "$target.thumbnail_info.count > 3 ? '#00000033' : '#00000008'"
+          }
+        },
+    "play_icon3": {
+      "value": "'local:zhicon_icon_16_arrow_right_alt'",
+      "extend": {
+        "display": "($target.thumbnail_info.count <= 3 ) &&($target.thumbnail_info.thumbnails[2].type == 'video') ? 'flex' : 'none'"
+      }
+    },
+    "more_img_text": {
+      "extend": {
+        "fit-content": "true",
+        "display": "$target.thumbnail_info.count > 3 ? 'flex' : 'none'"
+      },
+      "value": "$extraImageCount"
+    },
+    "maskView": {
+      "extend": {
+        "display": "($lookAllTitle == false || $target.attachment.type == 'VIDEO' || $target.attachment.type == 'video' || $target.attachment.type == 'zvideo') ? 'none' : 'flex'"
+      },
+      "value": "$maskViewImg"
+    },
+    "lookAllTitleContainer": {
+      "extend": {
+        "display": "($lookAllTitle == false || $target.attachment.type == 'VIDEO' || $target.attachment.type == 'video' || $target.attachment.type == 'zvideo') ? 'none' : 'flex'"
+      },
+      "value": "$lookAllTitleContainer"
+    },
+    "lookAllTitleLabel": {
+      "value": "'查看全文'"
+    },
+    "lookAllTitleArrow": {
+      "value": "'local:zhicon_icon_16_arrow_right_alt'",
+      "extend": {
+        "color": "'GBL07A'"
+      }
+   },
+    "strong_related_title": {
+      "extend": {
+        "fit-content": "true",
+        "display": "(($strategy_info.sub_name == 'NEXT_SIM_QUESTION_ANSWER') && ($target.question.title != null) && ($target.question.title != '')) ? 'flex' : 'none'"
+      },
+      "value": "'来自问题: ' + $target.question.title"
+    }
+  },
+  "event": {
+    "title_container": {
+      "type": "'tap'",
+      "param": "(($target.author.id != null) && ($target.author.id != '') && ($target.author.id != '0') && ($target.author.id != 0)) ? $userUrl : ''",
+      "actionType": "'event_open_url'"
+    },
+    "authentication": {
+      "type": "'tap'",
+      "param": "$people"
+    },
+    "vip_tag": {
+      "type": "'tap'",
+      "param": "$memberUrl",
+      "actionType": "'event_open_url'"
+    },
+    "badge_view": {
+      "type": "'tap'"
+    }
+  },
+         "track": {
+            "title_container": {
+              "click": {
+                "enable" : "(($target.author.id != null) && ($target.author.id != '') && ($target.author.id != '0') && ($target.author.id != 0))",
+                "moduleId": "'detail_big_card'",
+                "actionType": "'OpenUrl'",
+                "locationType": "'Button'",
+                "contentType": "'User'",
+                "contentToken": "$target.author.url_token",
+                "contentId": "$target.author.id",
+                "parentContentType": "'post'",
+                "parentContentToken": "$contentToken",
+                "linkUrl": "'fakeurl://user_my_detail/user_' + $target.author.id",
+                "parentCardIndex": "$cardIndex"
+              }
+            }
+          }
+}

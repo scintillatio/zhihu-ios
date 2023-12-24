@@ -1,0 +1,12 @@
+{
+  "id": "invite_list_timeline",
+  "type": "gaia-template",
+  "package": {
+    "id": "invite_list_timeline",
+    "version": "0.0.1",
+    "modify-timestamp": "Tue Apr 11 2023 14:18:14 GMT+0800 (中国标准时间)",
+    "constraint-size": { "width": 375, "height": 375, "zoom": 1 },
+    "dependencies": {}
+  },
+  "layers": [{ "id": "timeline", "type": "text" }]
+}

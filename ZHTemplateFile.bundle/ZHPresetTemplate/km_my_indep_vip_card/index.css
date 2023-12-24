@@ -1,0 +1,120 @@
+#km_my_indep_vip_card {
+  width: 100%;
+  height: 65px;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+#BGImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  mode: aspectFill;
+  position: absolute;
+}
+
+#ContentContainer {
+  width: 100%;
+  height: 65px;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  opacity: 1;
+  border-radius: 10px;
+}
+
+#TextContainer {
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 16px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+#title {
+  text-overflow: ellipsis;
+  height: 20px;
+  font-size: 18px;
+  font-family: SourceHanSerifCN-Bold;
+  font-weight: 500;
+  overflow: visible;
+  width: 100%;
+}
+
+#SubtitleContainer {
+  margin-top: 4px;
+  height: 20px;
+  flex-direction: column;
+}
+
+#subtitle {
+  text-overflow: ellipsis;
+  font-size: 12px;
+  font-weight: 400;
+  height: 20px;
+  width: 100%;
+}
+
+#subtitle2 {
+  text-overflow: ellipsis;
+  font-size: 12px;
+  font-weight: 400;
+  height: 20px;
+  margin-top: 8px;
+  width: 100%;
+}
+
+#ButtonContainer {
+  height: 100%;
+  align-items: center;
+  margin-right: 16px;
+}
+
+#pay_button {
+  height: 35px;
+  align-self: center;
+  border-radius: 17.5px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+#pay_button_title {
+  text-overflow: ellipsis;
+  fit-content: true;
+  height: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  align-self: center;
+  text-align: center;
+}
+
+#discount_button {
+  height: 15px;
+  position: absolute;
+  top: 8px;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  border-top-left-radius: 7.5px;
+  border-top-right-radius: 7.5px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 7.5px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+#discount_title {
+  text-overflow: ellipsis;
+  height: 15px;
+  font-size: 10px;
+  text-align: right;
+  overflow: visible;
+  fit-content: true;
+  align-self: center;
+}

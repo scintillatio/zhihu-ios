@@ -1,0 +1,76 @@
+{
+  "id": "gx_next_relevant_search_transparent",
+  "type": "gaia-template",
+  "package": {
+    "id": "gx_next_relevant_search_transparent",
+    "version": "0.0.1",
+    "modify-timestamp": "Tue Feb 07 2023 12:51:02 GMT+0800 (中国标准时间)",
+    "dependencies": {}
+  },
+  "layers": [
+    {
+      "id": "container",
+      "type": "view",
+      "layers": [
+        { "id": "title", "type": "text" },
+        {
+          "id": "tag_container",
+          "type": "view",
+          "layers": [
+            {
+              "id": "row0",
+              "type": "view",
+              "layers": [
+                {
+                  "id": "Tag0",
+                  "type": "view",
+                  "layers": [{ "id": "text0", "type": "text" }]
+                },
+                { "id": "line0", "type": "view" },
+                {
+                  "id": "Tag1",
+                  "type": "view",
+                  "layers": [{ "id": "text1", "type": "text" }]
+                }
+              ]
+            },
+            {
+              "id": "row1",
+              "type": "view",
+              "layers": [
+                {
+                  "id": "Tag2",
+                  "type": "view",
+                  "layers": [{ "id": "text2", "type": "text" }]
+                },
+                { "id": "line1", "type": "view" },
+                {
+                  "id": "Tag3",
+                  "type": "view",
+                  "layers": [{ "id": "text3", "type": "text" }]
+                }
+              ]
+            },
+            {
+              "id": "row2",
+              "type": "view",
+              "layers": [
+                {
+                  "id": "Tag4",
+                  "type": "view",
+                  "layers": [{ "id": "text4", "type": "text" }]
+                },
+                { "id": "line2", "type": "view" },
+                {
+                  "id": "Tag5",
+                  "type": "view",
+                  "layers": [{ "id": "text5", "type": "text" }]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

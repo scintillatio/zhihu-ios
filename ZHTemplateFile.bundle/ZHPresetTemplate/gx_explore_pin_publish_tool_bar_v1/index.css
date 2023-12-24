@@ -1,0 +1,63 @@
+#gx_explore_pin_publish_tool_bar {
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  background-color: GBK99A;
+  margin-left: 0px;
+  margin-right: 0px;
+  flex-grow: 1;
+  width: 100%;
+}
+#ItemsLeftContainer {
+  height: 48pt;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 0px;
+  margin-left: 0px;
+  flex-grow: 1;
+}
+#TopicItem {
+  width: 48px;
+  height: 48px;
+  margin-left: 4px;
+  margin-right: 0px;
+  background-color: GBK99A;
+}
+#AtItem {
+  width: 48pt;
+  height: 48pt;
+  align-items: center;
+  justify-content: center;
+}
+#AtItemImage {
+  width: 24pt;
+  height: 24pt;
+  border-radius: 0px;
+}
+#LocationItem {
+  width: 48pt;
+  height: 48pt;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#LocationImage {
+  width: 24pt;
+  height: 24pt;
+  border-radius: 0px;
+}
+#CustomItem {
+  width: 48px;
+  height: 48px;
+  margin-left: 0px;
+  background-color: GBK99A;
+}
+#MediaSelectorItem {
+  width: 92pt;
+  height: 48pt;
+  margin-right: 4px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0px;
+}

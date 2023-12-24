@@ -1,0 +1,42 @@
+{
+    "event":{
+        "TextTemplateItem":{
+            "type":"'tap'",
+            "param":"$action.name",
+            "actionType":"'open_template_panel'"
+        },
+        "AtItem":{
+            "type":"'tap'",
+            "param":"$action.name",
+            "actionType":"'open_at_panel'"
+        },
+        "LocationItem":{
+            "type":"'tap'",
+            "param":"$action.name",
+            "actionType":"'open_location_panel'"
+        }
+    },
+    "data":{
+        "TextTemplateItemImage":{
+            "value":"'local:zhicon_icon_24_text_stars'",
+            "extend":{
+                "color":"$TextTemplateItem_isHighLight ? 'GBL01A':'GBK03A'",
+                "opacity":"$TextTemplateItem_enable?1:0.3"
+            }
+        },
+        "AtItemImage":{
+            "value":"'local:zhicon_icon_24_at'",
+            "extend":{
+                "color":"$AtItem_isHighLight ? 'GBL01A':'GBK03A'",
+                "opacity":"$AtItem_enable?1:0.3"
+            }
+        },
+        "LocationImage":{
+            "value":"'local:zhicon_icon_24_location'",
+            "extend":{
+                "color":"$LocationItem_isHighLight ? 'GBL01A':'GBK03A'",
+                "opacity":"$LocationItem_enable?1:0.3"
+            }
+        }
+    }
+}

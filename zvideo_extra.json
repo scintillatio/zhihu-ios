@@ -1,0 +1,168 @@
+{
+    "version":1,
+    "data":{
+        "keyboard":{},
+        "mediaSelectorV4":{
+            "extend":{
+                "type":"multimedia",
+                "disable_tail_watermark": false,
+                "source_type": "other",
+                "hidden_draft_button_album": true
+            }
+        },
+        "intro": {},
+        "uploadImageV2":{
+            "extend":{
+                "source":"zvideo"
+            }
+        },
+        "uploadVideoV2":{
+            "extend":{
+                "source":"zvideo"
+            }
+        },
+        "commonDraft":{},
+        "control":{},
+        "title":{},
+        "description":{},
+        "addInteraction":{},
+        "topic":{
+            "extend":{
+                "maxTopic":6,
+                "minTopic":1
+            }
+        },
+        "originalReprint":{},
+        "contribute":{},
+        "chapters":{},
+        "zvideoCollections":{},
+        "mcnRecommend":{},
+        "media":{},
+        "mediaPre":{},
+        "coverEdit":{},
+        "syncPerson":{},
+        "category":{},
+        "zvideoContribute":{},
+        "column":{},
+        "closeUI":{
+            "extend":{
+                "icon":"local:zhicon_icon_24_xmark"
+            }
+        },
+        "navigationTitleUI":{
+            "extend":{
+                "title":""
+            }
+        },
+        "zvideoPostUI": {
+            "extend": {
+                "title": "发布",
+                "insertTitle": "添加",
+                "style": "button"
+            }
+        },
+        "zvideoSelectVideoUI": {},
+        "zvideoPlayVideoUI": {},
+        "zvideoEditCoverUI":{
+            "extend":{
+                "title":"编辑封面",
+            }
+        },
+        "zvideoAddInteractionUI":{
+            "extend":{
+                "title":"添加互动",
+            }
+        },
+        "zvideoTitleUI":{
+            "extend":{
+                "placeholder":"标题会让更多人看到你的视频（必填）",
+                "maxLength":40,
+                "minLength":5,
+                "suggestingLength":30
+            }
+        },
+        "zvideoIntroUI":{
+            "extend":{
+                "placeholder":"输入视频介绍",
+                "maxLength":300,
+                "minLength":0,
+                "suggestingLength":290
+            }
+        },
+        "zvideoTagUI":{
+            "extend":{
+                "title":"所属领域（必填）",
+            }
+        },
+        "zvideoTopicUI":{
+            "extend":{
+                "title":"绑定话题（必填）",
+                "maxSelectionLimit": 6
+            }
+        },
+        "zvideoOriginalUI":{
+            "extend":{
+                "title":"原创内容（必填）",
+            }
+        },
+        "zvideoContributeUI": {
+            "extend":{
+                "title":"投稿问题",
+            }
+        },
+        "zvideoKeyNoteUI": {
+            "extend":{
+                "title":"视频知识点",
+            }
+        },
+        "zvideoCollectionUI": {
+            "extend":{
+                "title":"添加合集",
+            }
+        },
+        "zvideoCollectionUI_1": {
+            "extend":{
+                "title":"添加合集",
+            }
+        },
+        "zvideoColumUI": {
+            "extend":{
+                "title":"添加专栏",
+            }
+        },
+        "zvideoColumUI_1": {
+            "extend":{
+                "title":"添加专栏",
+            }
+        },
+        "zvideoGoodUI": {
+            "extend":{
+                "title":"添加好物",
+            }
+        },
+        "zvideoGoodUI_1": {
+            "extend":{
+                "title":"添加好物",
+            }
+        },
+        "zvideoSyncMeUI": {
+            "extend":{
+                "title":"同步到个人主页「视频」列表",
+            }
+        },
+        "hybridInfo": {
+            "extend":{
+            },
+            "tars":"publish_content_source"
+        },
+        "contentStatementUI": {
+            "extend":{
+                "title":"内容来源",
+                "headImage":"local:zhicon_icon_24_paper_text",
+                "key": "contentSource",
+                "url": "https://www.zhihu.com/publish-setting/content-source?type=zvideo"
+            },
+            "tars":"publish_content_source"
+        }
+    }
+}

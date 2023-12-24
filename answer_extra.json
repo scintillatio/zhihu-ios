@@ -1,0 +1,370 @@
+{
+    "version":1,
+    "data":{
+        "gaiaX":{
+            "extend":{
+                "templateId":"gx_answer_publish_tool_bar",
+                "source":"answer",
+                "height":48,
+                "sceneCode":"answer_publish",
+                "viewState":{
+                    "AaItem_isHighLight":false,
+                    "AaItem_enable":false,
+                    "AaItem_responseState":true,
+                    "AaItem_isDefaultWidth":true,
+                    "AaItem_display":true,
+                    "PictureSelectorItem_isHighLight":false,
+                    "PictureSelectorItem_enable":false,
+                    "PictureSelectorItem_responseState":true,
+                    "PictureSelectorItem_isDefaultWidth":true,
+                    "PictureSelectorItem_display":true,
+                    "GoodsItem_isHighLight":false,
+                    "GoodsItem_enable":true,
+                    "GoodsItem_responseState":true,
+                    "GoodsItem_isDefaultWidth":true,
+                    "GoodsItem_display":false,
+                    "AddItem_isHighLight":false,
+                    "AddItem_enable":false,
+                    "AddItem_responseState":true,
+                    "AddItem_isDefaultWidth":true,
+                    "AddItem_display":true,
+                    "UndoSelectorItem_isHighLight":false,
+                    "UndoSelectorItem_enable":false,
+                    "UndoSelectorItem_responseState":false,
+                    "UndoSelectorItem_isDefaultWidth":true,
+                    "UndoSelectorItem_display":true,
+                    "RedoSelectorItem_isHighLight":false,
+                    "RedoSelectorItem_enable":false,
+                    "RedoSelectorItem_isDefaultWidth":true,
+                    "RedoSelectorItem_display":true,
+                    "RedoSelectorItem_responseState":false,
+                    "SettingSelectorItem_isHighLight":false,
+                    "SettingSelectorItem_enable":true,
+                    "SettingSelectorItem_responseState":false,
+                    "SettingSelectorItem_isDefaultWidth":true,
+                    "SettingSelectorItem_display":true
+                }
+            }
+        },
+        "title":{
+            
+        },
+        "keyboard":{
+
+        },
+        "at":{
+
+        },
+        "uploadImageV2":{
+            "extend":{
+                "source":"answer"
+            }
+        },
+        "uploadVideoV2":{
+
+        },
+        "hybrid":{
+            "extend":{
+                "url":"https://www.zhihu.com/appview/entity-editor",
+                "appid":"300009",
+                "placeholder":"输入图文回答内容"
+            }
+        },
+        "navigationTitleUI":{
+            "extend":{
+                "title":"写文章"
+            }
+        },
+        "hybridUI":{
+
+        },
+        "commonDraft":{
+
+        },
+        "toolBarUI":{
+
+        },
+        "control":{
+
+        },
+        "customLink":{
+
+        },
+        "guidePage":{
+            "extend":{
+                "url":"https://www.zhihu.com/appview/editor/guide?scene=article",
+                "title":"新功能引导"
+            }
+        },
+        "guideUI":{
+            "extend":{
+                "itemType":"route",
+                "title":"看看有哪些新功能？",
+                "headImage":"local:zhicon_icon_16_question_circle"
+            }
+        },
+        "mediaSelector":{
+            
+        },
+        "toolBar":{
+
+        },
+        "settingContainerUI":{
+            "extend":{
+                "plugins":[
+                    [
+                        "columnUI",
+                        "createStatementUI"
+                    ],
+                    [
+                        "forbiddenReprintUI",
+                        "commentCellUI",
+                        "pushToFollowerUI",
+                        "appreciateUI",
+                    ],
+                    [
+                        "defaultManagerUI"
+                    ],
+                    [
+                        "guideUI"
+                    ]
+                ]
+            }
+        },
+        "closeUI":{
+            "extend":{
+                "title":"取消"
+            }
+        },
+        "postUI":{
+            "extend":{
+                "title":"发布",
+                "style":"label"
+            }
+        },
+        "addContainerUI":{
+            "extend":{
+                "plugins":[
+                    [
+                        "addLinkUI",
+                        "addVideoUI",
+                        "quoteArticleUI",
+                        "addAttachmentUI",
+                        "addUserUI",
+                        "historyUI",
+                        "thxInviterUI"
+                    ]
+                ]
+            }
+        },
+        "addLinkUI":{
+
+        },
+        "addVideoUI":{
+            "extend":{
+                "isSupportVideoAlbum":false
+            }
+        },
+        "addAttachmentUI":{
+            "extend":{
+                "url":"zhihu://editor/attachment/baidu",
+                "maxFileCount":10
+            }
+        },
+        "addUserUI":{
+
+        },
+        "historyUI":{
+            "extend":{
+                "type":"question"
+            }
+        },
+        "column":{
+
+        },
+        "columnUI":{
+            "extend":{
+                "itemType":"button",
+                "subTitle":"未收录",
+                "title":"收录到专栏"
+            }
+        },
+        "creationStatement":{
+
+        },
+        "createStatementUI":{
+            "extend":{
+                "itemType":"button",
+                "title":"创作声明",
+                "subTitle":"无声明",
+                "hasHint":true
+            }
+        },
+        "reprint":{
+            "extend":{
+                "default":"public"
+            }
+        },
+        "italicUI":{
+
+        },
+        "blodUI":{
+
+        },
+        "headerOneUI":{
+
+        },
+        "headerTwoUI":{
+
+        },
+        "blockquoteUI":{
+
+        },
+        "dividerUI":{
+
+        },
+        "orderedListUI":{
+
+        },
+        "unorderedListUI":{
+
+        },
+        "aaContainerUI":{
+            "extend":{
+                "plugins":[
+                    [
+                        "headerOneUI",
+                        "headerTwoUI"
+                    ],
+                    [
+                        "blodUI",
+                        "italicUI"
+                    ],
+                    [
+                        "blockquoteUI",
+                        "dividerUI",
+                        "orderedListUI",
+                        "unorderedListUI"
+                    ]
+                ]
+            }
+        },
+        "videoEntity":{
+
+        },
+        "mcnV2":{
+
+        },
+        "inputStatisticsUI":{
+
+        },
+        "hybridFooterView":{
+
+        },
+        "media":{
+
+        },
+        "answerTitleUI":{
+
+        },
+        "quoteArticle":{
+
+        },
+        "quoteArticleUI":{
+
+        },
+        "contentsTables":{
+
+        },
+        "commentsPermission":{
+
+        },
+        "toFollower":{
+
+        },
+        "thanksInvitation":{
+
+        },
+        "thxInviterUI":{
+
+        },
+        "thxInviterCardUI":{
+            
+        },
+        "answerNavigationUI":{
+
+        },
+        "thxInviterTipUI":{
+            
+        },
+        "appreciate":{
+            
+        },
+        "originalReprint":{
+            
+        },
+        "publishSwitch":{
+            "extend":{
+                "normal":[
+                    "thxInviter",
+                    "anonymity",
+                    "creationStatement",
+                    "reprint",
+                    "toFollower",
+                    "thxInviterUI",
+                    "createStatementUI",
+                    "forbiddenReprintUI",
+                    "pushToFollowerUI",
+                    "addUserUI",
+                    "addVideoUI"
+                ]
+            }
+        },
+        "anonymity":{
+        },
+        "imageEdit":{
+            
+        },
+        "defaultManagerUI":{
+            "extend":{
+                "itemType":"route",
+                "title":"管理默认设置",
+                "headImage":"local:zhicon_icon_24_gear"
+            }
+        },
+        "forbiddenReprintUI":{
+            "extend":{
+                "itemType":"switch",
+                "title":"禁止转载",
+                "isSwitchOn":false
+            }
+        },
+        "commentCellUI":{
+            "extend":{
+                "itemType":"button",
+                "subTitle":"任何人都可以评论",
+                "title":"评论权限"
+            }
+        },
+        "pushToFollowerUI":{
+            "extend":{
+                "itemType":"switch",
+                "title":"推送给我的关注者",
+                "isSwitchOn":true
+            }
+        },
+        "appreciateUI":{
+            "extend":{
+                "itemType":"switch",
+                "title":"开启赞赏",
+                "isSwitchOn":false
+            }
+        },
+        "extra_info":{
+
+        },
+        "hybridFooterUI":{
+            
+        }
+    }
+}

@@ -1,0 +1,2416 @@
+{
+    "template":{
+        "desc":"视频详情页预置配置",
+        "template": {
+            "play_config": {
+                "android": {
+                    "decode_type": "software",
+                    "manifest": true,
+                    "save_progress_to_file": true
+                },
+                "ios": {
+                    "auto_play": 1,
+                    "close_agent": 1,
+                    "decode_type": "hardware"
+                }
+            },
+            "ui_config": {
+                "config": {
+                    "card": {
+                        "layout_id": "zvideo_detail_card"
+                    },
+                    "full_screen": {
+                        "layout_id": "zvideo_detail_fullscreen"
+                    },
+                    "float_window": {
+                        "layout_id": "zvideo_detail_card"
+                    }
+                },
+                "blocks": [{
+                    "block_id": "card_top_bg_block",
+                    "plugins": ["topBackgroundPlugin"]
+                }, {
+                    "block_id": "fullscreen_top_bg_block",
+                    "plugins": ["topBackgroundPlugin"]
+                }, {
+                    "block_id": "card_bottom_bg_block",
+                    "plugins": ["bottomBackgroundPlugin"]
+                }, {
+                    "block_id": "fullscreen_bottom_bg_block",
+                    "plugins": ["bottomBackgroundPlugin"]
+                }, {
+                    "block_id": "card_cover_block",
+                    "plugins": ["coverImagePlugin", "initLoadingPlugin", "loadingPlugin", "startPlayScenePlugin", "pauseScenePlugin", "defaultEndScenePlugin", "defaultStopScenePlugin"]
+                }, {
+                    "block_id": "fullscreen_cover_block",
+                    "plugins": ["coverImagePlugin", "initLoadingPlugin", "loadingPlugin", "startPlayScenePlugin", "pauseScenePlugin", "defaultEndScenePlugin", "defaultStopScenePlugin", "compatibleEndPlugin"]
+                }, {
+                    "block_id": "card_center_block",
+                    "plugins": ["playStartBtnPlugin"]
+                }, {
+                    "block_id": "fullscreen_center_block",
+                    "plugins": ["playStartBtnPlugin"]
+                }, {
+                    "block_id": "card_cover_tips_block",
+                    "plugins": ["coverTipsTextPlugin"]
+                }, {
+                    "block_id": "fullscreen_cover_tips_block",
+                    "plugins": ["coverTipsTextPlugin"]
+                }, {
+                    "block_id": "video_screen",
+                    "plugins": ["videoPlayerPlugin"]
+                }, {
+                    "block_id": "card_watermark_block",
+                    "plugins": ["watermarkImgPlugin"]
+                }, {
+                    "block_id": "fullscreen_watermark_block",
+                    "plugins": ["watermarkImgPlugin"]
+                }, {
+                    "block_id": "card_gesture_block",
+                    "plugins": ["gesturePlugin", "playbackControlGroupPlugin", "errorPlugin"]
+                }, {
+                    "block_id": "fullscreen_gesture_block",
+                    "plugins": ["gesturePlugin", "playbackControlGroupPlugin", "errorPlugin"]
+                }, {
+                    "block_id": "card_play_handle_prompt_block",
+                    "plugins": ["volumeOverlayPlugin", "brightnessOverlayPlugin", "rateOverlayPlugin", "seekTimeOverlayPlugin"]
+                }, {
+                    "block_id": "fullscreen_play_handle_prompt_block",
+                    "plugins": ["volumeOverlayPlugin", "brightnessOverlayPlugin", "rateOverlayPlugin", "seekTimeOverlayPlugin"]
+                }, {
+                    "block_id": "card_toast_block",
+                    "plugins": ["toastPlugin"]
+                }, {
+                    "block_id": "fullscreen_toast_block",
+                    "plugins": ["toastPlugin"]
+                }, {
+                    "block_id": "fullscreen_play_control_block",
+                    "plugins": ["playControlBtnPlugin"]
+                }, {
+                    "block_id": "card_progressbar_block",
+                    "plugins": ["playControlBtnPlugin", "currentPlayTimeTextPlugin", "progressPlugin", "durationTextPlugin", "fullScreenBtnPlugin"]
+                }, {
+                    "block_id": "fullscreen_progressbar_block",
+                    "plugins": ["currentPlayTimeTextPlugin", "progressPlugin", "durationTextPlugin"]
+                }, {
+                    "block_id": "fullscreen_bottom_tools_block",
+                    "plugins": ["barragePlugin", "barrageTextInputPlugin"]
+                }, {
+                    "block_id": "card_page_back_block",
+                    "plugins": ["pageBackBtnPlugin", "floatWindowBtnPlugin"]
+                }, {
+                    "block_id": "fullscreen_page_back_block",
+                    "plugins": ["pageBackBtnPlugin", "floatWindowBtnPlugin", "titleTextPlugin"]
+                }, {
+                    "block_id": "card_top_tools_block",
+                    "plugins": ["moreBtnPlugin"]
+                }, {
+                    "block_id": "fullscreen_top_tools_block",
+                    "plugins": ["shareBtnPlugin", "moreBtnPlugin"]
+                }, {
+                    "block_id": "fullscreen_panel_block",
+                    "plugins": ["ratePanelPlugin", "qualityPanelPlugin", "menuPanelPlugin", "sharePanelPlugin"]
+                }, {
+                    "block_id": "fullscreen_play_handle_block",
+                    "plugins": ["switchRateBtnPlugin", "switchQualityBtnPlugin"]
+                }, {
+                    "block_id": "fullscreen_right_tools_block",
+                    "plugins": ["lockScreenBtnPlugin"]
+                }, {
+                    "block_id": "card_mini_progressbar_block",
+                    "plugins": ["miniProgressPlugin"]
+                }, {
+                    "block_id": "fullscreen_mini_progressbar_block",
+                    "plugins": ["miniProgressPlugin"]
+                }, {
+                    "block_id": "card_barrage_output_block",
+                    "plugins": ["barrageOutputPlugin", "compatibleEndPlugin", "compatibleInteractivePlugin"]
+                }, {
+                    "block_id": "card_content_source_provider_block",
+                    "plugins": ["compatibleContentProviderPlugin"]
+                }, {
+                    "block_id": "fullscreen_content_source_provider_block",
+                    "plugins": ["compatibleContentProviderPlugin"]
+                }, {
+                    "block_id": "fullscreen_barrage_output_block",
+                    "plugins": ["barrageOutputPlugin", "compatibleInteractivePlugin"]
+                }],
+                "plugins": [{
+                    "plugin_id": "topBackgroundPlugin",
+                    "card": {
+                        "is_visible": true
+                    },
+                    "full_screen": {
+                        "is_visible": true
+                    }
+                }, {
+                    "plugin_id": "bottomBackgroundPlugin",
+                    "card": {
+                        "is_visible": true
+                    },
+                    "full_screen": {
+                        "is_visible": true
+                    }
+                }, {
+                    "plugin_id": "playbackControlGroupPlugin",
+                    "card": {
+                        "is_visible": true,
+                        "events": [{
+                            "event_name": "visible",
+                            "event_type": "",
+                            "event_touch_type": "",
+                            "event_trigger_type": "hidePlaybackControl",
+                            "params": {
+                                "type": "TEventVisible",
+                                "observers": {
+                                    "playControlBtnPlugin": false,
+                                    "currentPlayTimeTextPlugin": false,
+                                    "progressPlugin": false,
+                                    "durationTextPlugin": false,
+                                    "fullScreenBtnPlugin": false,
+                                    "moreBtnPlugin": false,
+                                    "compatibleContentProviderPlugin": false,
+                                    "topBackgroundPlugin": false,
+                                    "bottomBackgroundPlugin": false,
+                                    "miniProgressPlugin": true
+                                }
+                            }
+                        }, {
+                            "event_name": "animateView",
+                            "event_type": "",
+                            "event_touch_type": "",
+                            "event_trigger_type": "hidePlaybackControl",
+                            "params": {
+                                "type": "TAnimator",
+                                "animator_type": "translateY",
+                                "from": 0,
+                                "to": 44,
+                                "receivers": ["toastPlugin"]
+                            }
+                        }, {
+                            "event_name": "visible",
+                            "event_type": "",
+                            "event_touch_type": "",
+                            "event_trigger_type": "showPlaybackControl",
+                            "params": {
+                                "type": "TEventVisible",
+                                "observers": {
+                                    "playControlBtnPlugin": true,
+                                    "currentPlayTimeTextPlugin": true,
+                                    "progressPlugin": true,
+                                    "durationTextPlugin": true,
+                                    "fullScreenBtnPlugin": true,
+                                    "moreBtnPlugin": true,
+                                    "compatibleContentProviderPlugin": true,
+                                    "topBackgroundPlugin": true,
+                                    "bottomBackgroundPlugin": true,
+                                    "miniProgressPlugin": false
+                                }
+                            }
+                        }, {
+                            "event_name": "animateView",
+                            "event_type": "",
+                            "event_touch_type": "",
+                            "event_trigger_type": "showPlaybackControl",
+                            "params": {
+                                "type": "TAnimator",
+                                "animator_type": "translateY",
+                                "from": 44,
+                                "to": 0,
+                                "receivers": ["toastPlugin"]
+                            }
+                        }]
+                    },
+                    "full_screen": {
+                        "is_visible": true,
+                        "events": [{
+                            "event_name": "visible",
+                            "event_type": "",
+                            "event_touch_type": "",
+                            "event_trigger_type": "hidePlaybackControl",
+                            "params": {
+                                "type": "TEventVisible",
+                                "observers": {
+                                    "playControlBtnPlugin": false,
+                                    "currentPlayTimeTextPlugin": false,
+                                    "progressPlugin": false,
+                                    "durationTextPlugin": false,
+                                    "pageBackBtnPlugin": false,
+                                    "floatWindowBtnPlugin": false,
+                                    "titleTextPlugin": false,
+                                    "shareBtnPlugin": false,
+                                    "moreBtnPlugin": false,
+                                    "barragePlugin": false,
+                                    "barrageTextInputPlugin": false,
+                                    "switchRateBtnPlugin": false,
+                                    "switchQualityBtnPlugin": false,
+                                    "lockScreenBtnPlugin": false,
+                                    "compatibleContentProviderPlugin": false,
+                                    "topBackgroundPlugin": false,
+                                    "bottomBackgroundPlugin": false,
+                                    "miniProgressPlugin": true
+                                }
+                            }
+                        }, {
+                            "event_name": "animateView",
+                            "event_type": "",
+                            "event_touch_type": "",
+                            "event_trigger_type": "hidePlaybackControl",
+                            "params": {
+                                "type": "TAnimator",
+                                "animator_type": "translateY",
+                                "from": 0,
+                                "to": 44,
+                                "receivers": ["toastPlugin"]
+                            }
+                        }, {
+                            "event_name": "statistic/network",
+                            "event_type": "",
+                            "event_touch_type": "",
+                            "event_trigger_type": "hidePlaybackControl",
+                            "params": {
+                                "type": "TEventZa",
+                                "statistic_element_type": 16,
+                                "statistic_event_type_code": 10,
+                                "statistic_block_text": "HideToolBar"
+                            }
+                        }, {
+                            "event_name": "visible",
+                            "event_type": "",
+                            "event_touch_type": "",
+                            "event_trigger_type": "showPlaybackControl",
+                            "params": {
+                                "type": "TEventVisible",
+                                "observers": {
+                                    "playControlBtnPlugin": true,
+                                    "currentPlayTimeTextPlugin": true,
+                                    "progressPlugin": true,
+                                    "durationTextPlugin": true,
+                                    "pageBackBtnPlugin": true,
+                                    "titleTextPlugin": true,
+                                    "floatWindowBtnPlugin": true,
+                                    "shareBtnPlugin": true,
+                                    "moreBtnPlugin": true,
+                                    "barragePlugin": true,
+                                    "barrageTextInputPlugin": true,
+                                    "switchRateBtnPlugin": true,
+                                    "switchQualityBtnPlugin": true,
+                                    "lockScreenBtnPlugin": true,
+                                    "compatibleContentProviderPlugin": true,
+                                    "topBackgroundPlugin": true,
+                                    "bottomBackgroundPlugin": true,
+                                    "miniProgressPlugin": false
+                                }
+                            }
+                        }, {
+                            "event_name": "enableGesture",
+                            "event_type": "",
+                            "event_touch_type": "",
+                            "event_trigger_type": "showPlaybackControl",
+                            "params": {
+                                "type": "TEventGestureEnable",
+                                "enable_long_press": true,
+                                "enable_double_tap": true,
+                                "enable_scroll_left_vertical": true,
+                                "enable_scroll_right_vertical": true,
+                                "enable_scroll_horizontal": true
+                            }
+                        }, {
+                            "event_name": "animateView",
+                            "event_type": "",
+                            "event_touch_type": "",
+                            "event_trigger_type": "showPlaybackControl",
+                            "params": {
+                                "type": "TAnimator",
+                                "animator_type": "translateY",
+                                "from": 44,
+                                "to": 0,
+                                "receivers": ["toastPlugin"]
+                            }
+                        }, {
+                            "event_name": "statistic/network",
+                            "event_type": "",
+                            "event_touch_type": "",
+                            "event_trigger_type": "showPlaybackControl",
+                            "params": {
+                                "type": "TEventZa",
+                                "statistic_element_type": 16,
+                                "statistic_event_type_code": 10,
+                                "statistic_block_text": "DisplayToolBar"
+                            }
+                        }, {
+                            "event_name": "visible",
+                            "event_type": "",
+                            "event_touch_type": "",
+                            "event_trigger_type": "hidePlaybackControlWhenLocked",
+                            "params": {
+                                "type": "TEventVisible",
+                                "observers": {
+                                    "lockScreenBtnPlugin": false,
+                                    "miniProgressPlugin": true,
+                                    "playControlBtnPlugin": false,
+                                    "currentPlayTimeTextPlugin": false,
+                                    "progressPlugin": false,
+                                    "durationTextPlugin": false,
+                                    "pageBackBtnPlugin": false,
+                                    "titleTextPlugin": false,
+                                    "floatWindowBtnPlugin": false,
+                                    "shareBtnPlugin": false,
+                                    "moreBtnPlugin": false,
+                                    "barragePlugin": false,
+                                    "barrageTextInputPlugin": false,
+                                    "switchRateBtnPlugin": false,
+                                    "switchQualityBtnPlugin": false,
+                                    "compatibleContentProviderPlugin": false,
+                                    "topBackgroundPlugin": false,
+                                    "bottomBackgroundPlugin": false
+                                }
+                            }
+                        }, {
+                            "event_name": "animateView",
+                            "event_type": "",
+                            "event_touch_type": "",
+                            "event_trigger_type": "hidePlaybackControlWhenLocked",
+                            "params": {
+                                "type": "TAnimator",
+                                "animator_type": "translateY",
+                                "from": 0,
+                                "to": 44,
+                                "receivers": ["toastPlugin"]
+                            }
+                        }, {
+                            "event_name": "animateView",
+                            "event_type": "",
+                            "event_touch_type": "",
+                            "event_trigger_type": "hidePlaybackControlWhenLocked",
+                            "params": {
+                                "type": "TEventGestureEnable",
+                                "animator_type": "translateY",
+                                "from": 0,
+                                "to": 44,
+                                "receivers": ["toastPlugin"]
+                            }
+                        }, {
+                            "event_name": "statistic/network",
+                            "event_type": "",
+                            "event_touch_type": "",
+                            "event_trigger_type": "hidePlaybackControlWhenLocked",
+                            "params": {
+                                "type": "TEventZa",
+                                "statistic_element_type": 16,
+                                "statistic_event_type_code": 10,
+                                "statistic_block_text": "HideToolBar"
+                            }
+                        }, {
+                            "event_name": "visible",
+                            "event_type": "",
+                            "event_touch_type": "",
+                            "event_trigger_type": "showPlaybackControlWhenLocked",
+                            "params": {
+                                "type": "TEventVisible",
+                                "observers": {
+                                    "lockScreenBtnPlugin": true,
+                                    "miniProgressPlugin": true,
+                                    "playControlBtnPlugin": false,
+                                    "currentPlayTimeTextPlugin": false,
+                                    "progressPlugin": false,
+                                    "durationTextPlugin": false,
+                                    "pageBackBtnPlugin": false,
+                                    "titleTextPlugin": false,
+                                    "floatWindowBtnPlugin": false,
+                                    "shareBtnPlugin": false,
+                                    "moreBtnPlugin": false,
+                                    "barragePlugin": false,
+                                    "barrageTextInputPlugin": false,
+                                    "switchRateBtnPlugin": false,
+                                    "switchQualityBtnPlugin": false,
+                                    "compatibleContentProviderPlugin": false,
+                                    "topBackgroundPlugin": false,
+                                    "bottomBackgroundPlugin": false
+                                }
+                            }
+                        }, {
+                            "event_name": "animateView",
+                            "event_type": "",
+                            "event_touch_type": "",
+                            "event_trigger_type": "showPlaybackControlWhenLocked",
+                            "params": {
+                                "type": "TAnimator",
+                                "animator_type": "translateY",
+                                "from": 44,
+                                "to": 0,
+                                "receivers": ["toastPlugin"]
+                            }
+                        }, {
+                            "event_name": "statistic/network",
+                            "event_type": "",
+                            "event_touch_type": "",
+                            "event_trigger_type": "showPlaybackControlWhenLocked",
+                            "params": {
+                                "type": "TEventZa",
+                                "statistic_element_type": 16,
+                                "statistic_event_type_code": 10,
+                                "statistic_block_text": "DisplayToolBar"
+                            }
+                        }, {
+                            "event_name": "enableGesture",
+                            "event_type": "",
+                            "event_touch_type": "",
+                            "event_trigger_type": "showPlaybackControlWhenLocked",
+                            "params": {
+                                "type": "TEventGestureEnable",
+                                "enable_long_press": false,
+                                "enable_double_tap": false,
+                                "enable_scroll_left_vertical": false,
+                                "enable_scroll_right_vertical": false,
+                                "enable_scroll_horizontal": false
+                            }
+                        }]
+                    }
+                }, {
+                    "plugin_id": "coverImagePlugin",
+                    "data": {
+                        "type": "TDataImageCover",
+                        "image": "https://www.zhihu.com/xen/market/ecom-page/1690735339877175296"
+                    },
+                    "card": {
+                        "is_visible": true,
+                        "view_attribute": {
+                            "type": "TCoverAttr",
+                            "scale_type": "AspectFill",
+                            "use_blur_placeholder": false,
+                            "gradient_height": 40,
+                            "radius": 6
+                        }
+                    },
+                    "full_screen": {
+                        "is_visible": true,
+                        "view_attribute": {
+                            "type": "TCoverAttr",
+                            "scale_type": "AspectFill",
+                            "use_blur_placeholder": false,
+                            "gradient_height": 40,
+                            "radius": 6
+                        }
+                    }
+                }, {
+                    "plugin_id": "playStartBtnPlugin",
+                    "card": {
+                        "is_visible": true,
+                        "view_attribute": {
+                            "type": "TImageAttr",
+                            "width": 48,
+                            "height": 48,
+                            "icon": "player_new_icon_play"
+                        },
+                        "events": [{
+                            "event_name": "play",
+                            "event_type": "",
+                            "event_touch_type": "click"
+                        }, {
+                            "event_name": "statistic/network",
+                            "event_type": "0",
+                            "event_touch_type": "click",
+                            "params": {
+                                "type": "TEventZa",
+                                "statistic_element_type": 1,
+                                "statistic_event_type_code": 10,
+                                "statistic_action_auto_play_pause": true
+                            }
+                        }]
+                    },
+                    "full_screen": {
+                        "is_visible": true,
+                        "view_attribute": {
+                            "type": "TImageAttr",
+                            "width": 48,
+                            "height": 48,
+                            "icon": "player_new_icon_play"
+                        },
+                        "events": [{
+                            "event_name": "play",
+                            "event_type": "",
+                            "event_touch_type": "click"
+                        }, {
+                            "event_name": "statistic/network",
+                            "event_type": "0",
+                            "event_touch_type": "click",
+                            "params": {
+                                "type": "TEventZa",
+                                "statistic_element_type": 1,
+                                "statistic_event_type_code": 10,
+                                "statistic_action_auto_play_pause": true
+                            }
+                        }]
+                    }
+                }, {
+                    "plugin_id": "coverTipsTextPlugin",
+                    "data": {
+                        "type": "TDataText"
+                    },
+                    "card": {
+                        "is_visible": true
+                    },
+                    "full_screen": {
+                        "is_visible": true
+                    }
+                }, {
+                    "plugin_id": "initLoadingPlugin",
+                    "card": {
+                        "is_visible": true
+                    },
+                    "full_screen": {
+                        "is_visible": true
+                    }
+                }, {
+                    "plugin_id": "videoPlayerPlugin",
+                    "card": {
+                        "is_visible": true,
+                        "view_attribute": {
+                            "type": "TDataVideoScaleType",
+                            "scale_type": "AspectFit"
+                        }
+                    },
+                    "full_screen": {
+                        "is_visible": true,
+                        "view_attribute": {
+                            "type": "TDataVideoScaleType",
+                            "scale_type": "AspectFit"
+                        }
+                    }
+                }, {
+                    "plugin_id": "watermarkImgPlugin",
+                    "data": {
+                        "type": "TDataWaterMark"
+                    },
+                    "card": {
+                        "is_visible": true,
+                        "view_attribute": {
+                            "type": "TImageAttr",
+                            "width": -1,
+                            "height": -1,
+                            "margin": {
+                                "top_margin": -1,
+                                "right_margin": -1
+                            }
+                        }
+                    },
+                    "full_screen": {
+                        "is_visible": true,
+                        "view_attribute": {
+                            "type": "TImageAttr",
+                            "width": -1,
+                            "height": -1,
+                            "margin": {
+                                "top_margin": -1,
+                                "right_margin": -1
+                            }
+                        }
+                    }
+                }, {
+                    "plugin_id": "gesturePlugin",
+                    "card": {
+                        "is_visible": true,
+                        "events": [{
+                            "event_name": "showPlaybackControlGroup",
+                            "event_type": "0",
+                            "event_touch_type": "click",
+                            "params": {
+                                "type": "TEventPlaybackControlGroupParam",
+                                "auto_switch": true,
+                                "auto_hide": true
+                            }
+                        }, {
+                            "event_name": "autoSwitchPlayPause",
+                            "event_type": "1",
+                            "event_touch_type": "doubleClick"
+                        }, {
+                            "event_name": "statistic/network",
+                            "event_type": "1",
+                            "event_touch_type": "doubleClick",
+                            "params": {
+                                "type": "TEventZa",
+                                "statistic_event_type_code": 8,
+                                "statistic_element_type": 16,
+                                "statistic_action_auto_play_pause": true
+                            }
+                        }, {
+                            "event_name": "visible",
+                            "event_type": "2",
+                            "event_touch_type": "longPress",
+                            "event_trigger_type": "longPressDown",
+                            "params": {
+                                "type": "TEventVisible",
+                                "observers": {
+                                    "rateOverlayPlugin": true
+                                }
+                            }
+                        }, {
+                            "event_name": "visible",
+                            "event_type": "2",
+                            "event_touch_type": "longPress",
+                            "event_trigger_type": "longPressUp",
+                            "params": {
+                                "type": "TEventVisible",
+                                "observers": {
+                                    "rateOverlayPlugin": false
+                                }
+                            }
+                        }, {
+                            "event_name": "updateProgress",
+                            "event_type": "3",
+                            "event_touch_type": "dragVerticalLeft",
+                            "event_trigger_type": "scrollStart",
+                            "params": {
+                                "type": "TEventProgressParam",
+                                "visible": true,
+                                "receivers": ["brightnessOverlayPlugin"]
+                            }
+                        }, {
+                            "event_name": "updateProgress",
+                            "event_type": "3",
+                            "event_touch_type": "dragVerticalLeft",
+                            "event_trigger_type": "scrollStop",
+                            "params": {
+                                "type": "TEventProgressParam",
+                                "visible": false,
+                                "receivers": ["brightnessOverlayPlugin"]
+                            }
+                        }, {
+                            "event_name": "updateProgress",
+                            "event_type": "4",
+                            "event_touch_type": "dragVerticalRight",
+                            "event_trigger_type": "scrollStart",
+                            "params": {
+                                "type": "TEventProgressParam",
+                                "visible": true,
+                                "receivers": ["volumeOverlayPlugin"]
+                            }
+                        }, {
+                            "event_name": "updateProgress",
+                            "event_type": "4",
+                            "event_touch_type": "dragVerticalRight",
+                            "event_trigger_type": "scrollStop",
+                            "params": {
+                                "type": "TEventProgressParam",
+                                "visible": false,
+                                "receivers": ["volumeOverlayPlugin"]
+                            }
+                        }, {
+                            "event_name": "updateProgress",
+                            "event_type": "5",
+                            "event_touch_type": "dragHorizontal",
+                            "event_trigger_type": "scrollStart",
+                            "params": {
+                                "type": "TEventProgressParam",
+                                "visible": true,
+                                "receivers": ["seekTimeOverlayPlugin"]
+                            }
+                        }, {
+                            "event_name": "updateProgress",
+                            "event_type": "5",
+                            "event_touch_type": "dragHorizontal",
+                            "event_trigger_type": "scrollStop",
+                            "params": {
+                                "type": "TEventProgressParam",
+                                "visible": false,
+                                "receivers": ["seekTimeOverlayPlugin"]
+                            }
+                        }]
+                    },
+                    "full_screen": {
+                        "is_visible": true,
+                        "events": [{
+                            "event_name": "showPlaybackControlGroup",
+                            "event_type": "0",
+                            "event_touch_type": "click",
+                            "params": {
+                                "type": "TEventPlaybackControlGroupParam",
+                                "auto_switch": true,
+                                "auto_hide": true
+                            }
+                        }, {
+                            "event_name": "autoSwitchPlayPause",
+                            "event_type": "1",
+                            "event_touch_type": "doubleClick"
+                        }, {
+                            "event_name": "statistic/network",
+                            "event_type": "1",
+                            "event_touch_type": "doubleClick",
+                            "params": {
+                                "type": "TEventZa",
+                                "statistic_event_type_code": 8,
+                                "statistic_element_type": 16,
+                                "statistic_action_auto_play_pause": true
+                            }
+                        }, {
+                            "event_name": "visible",
+                            "event_type": "2",
+                            "event_touch_type": "longPress",
+                            "event_trigger_type": "longPressDown",
+                            "params": {
+                                "type": "TEventVisible",
+                                "observers": {
+                                    "rateOverlayPlugin": true
+                                }
+                            }
+                        }, {
+                            "event_name": "visible",
+                            "event_type": "2",
+                            "event_touch_type": "longPress",
+                            "event_trigger_type": "longPressUp",
+                            "params": {
+                                "type": "TEventVisible",
+                                "observers": {
+                                    "rateOverlayPlugin": false
+                                }
+                            }
+                        }, {
+                            "event_name": "updateProgress",
+                            "event_type": "3",
+                            "event_touch_type": "dragVerticalLeft",
+                            "event_trigger_type": "scrollStart",
+                            "params": {
+                                "type": "TEventProgressParam",
+                                "visible": true,
+                                "receivers": ["brightnessOverlayPlugin"]
+                            }
+                        }, {
+                            "event_name": "updateProgress",
+                            "event_type": "3",
+                            "event_touch_type": "dragVerticalLeft",
+                            "event_trigger_type": "scrollStop",
+                            "params": {
+                                "type": "TEventProgressParam",
+                                "visible": false,
+                                "receivers": ["brightnessOverlayPlugin"]
+                            }
+                        }, {
+                            "event_name": "updateProgress",
+                            "event_type": "4",
+                            "event_touch_type": "dragVerticalRight",
+                            "event_trigger_type": "scrollStart",
+                            "params": {
+                                "type": "TEventProgressParam",
+                                "visible": true,
+                                "receivers": ["volumeOverlayPlugin"]
+                            }
+                        }, {
+                            "event_name": "updateProgress",
+                            "event_type": "4",
+                            "event_touch_type": "dragVerticalRight",
+                            "event_trigger_type": "scrollStop",
+                            "params": {
+                                "type": "TEventProgressParam",
+                                "visible": false,
+                                "receivers": ["volumeOverlayPlugin"]
+                            }
+                        }, {
+                            "event_name": "updateProgress",
+                            "event_type": "5",
+                            "event_touch_type": "dragHorizontal",
+                            "event_trigger_type": "scrollStart",
+                            "params": {
+                                "type": "TEventProgressParam",
+                                "visible": true,
+                                "receivers": ["seekTimeOverlayPlugin"]
+                            }
+                        }, {
+                            "event_name": "updateProgress",
+                            "event_type": "5",
+                            "event_touch_type": "dragHorizontal",
+                            "event_trigger_type": "scrollStop",
+                            "params": {
+                                "type": "TEventProgressParam",
+                                "visible": false,
+                                "receivers": ["seekTimeOverlayPlugin"]
+                            }
+                        }]
+                    }
+                }, {
+                    "plugin_id": "volumeOverlayPlugin",
+                    "card": {
+                        "is_visible": false,
+                        "view_attribute": {
+                            "type": "TTextViewAttr",
+                            "font_size": 12,
+                            "text_color": "BK99"
+                        },
+                        "events": []
+                    },
+                    "full_screen": {
+                        "is_visible": false,
+                        "view_attribute": {
+                            "type": "TTextViewAttr",
+                            "font_size": 12,
+                            "text_color": "BK99"
+                        },
+                        "events": []
+                    }
+                }, {
+                    "plugin_id": "brightnessOverlayPlugin",
+                    "card": {
+                        "is_visible": false,
+                        "view_attribute": {
+                            "type": "TAttr"
+                        },
+                        "events": []
+                    },
+                    "full_screen": {
+                        "is_visible": false,
+                        "view_attribute": {
+                            "type": "TAttr"
+                        },
+                        "events": []
+                    }
+                }, {
+                    "plugin_id": "rateOverlayPlugin",
+                    "card": {
+                        "is_visible": false,
+                        "view_attribute": {
+                            "type": "TAttr"
+                        },
+                        "events": [{
+                            "event_name": "setSpeed",
+                            "event_type": "",
+                            "event_touch_type": "longPress",
+                            "params": {
+                                "type": "TEventChangeSpeed",
+                                "speed": 2
+                            }
+                        }, {
+                            "event_name": "statistic/network",
+                            "event_type": "",
+                            "event_touch_type": "longPress",
+                            "params": {
+                                "type": "TEventZa",
+                                "statistic_element_type": 16,
+                                "statistic_event_type_code": 1,
+                                "statistic_text": "长按倍速播放"
+                            }
+                        }]
+                    },
+                    "full_screen": {
+                        "is_visible": false,
+                        "view_attribute": {
+                            "type": "TAttr"
+                        },
+                        "events": [{
+                            "event_name": "setSpeed",
+                            "event_type": "",
+                            "event_touch_type": "longPress",
+                            "params": {
+                                "type": "TEventChangeSpeed",
+                                "speed": 2
+                            }
+                        }, {
+                            "event_name": "statistic/network",
+                            "event_type": "",
+                            "event_touch_type": "longPress",
+                            "params": {
+                                "type": "TEventZa",
+                                "statistic_element_type": 16,
+                                "statistic_event_type_code": 1,
+                                "statistic_text": "长按倍速播放"
+                            }
+                        }]
+                    }
+                }, {
+                    "plugin_id": "seekTimeOverlayPlugin",
+                    "card": {
+                        "is_visible": false,
+                        "view_attribute": {
+                            "type": "TTextViewAttr",
+                            "font_size": 12,
+                            "text_color": "BK99"
+                        },
+                        "events": [{
+                            "event_name": "seekTo",
+                            "event_type": "",
+                            "event_touch_type": "dragHorizontal"
+                        }]
+                    },
+                    "full_screen": {
+                        "is_visible": false,
+                        "view_attribute": {
+                            "type": "TTextViewAttr",
+                            "font_size": 12,
+                            "text_color": "BK99"
+                        },
+                        "events": [{
+                            "event_name": "seekTo",
+                            "event_type": "",
+                            "event_touch_type": "dragHorizontal"
+                        }]
+                    }
+                }, {
+                    "plugin_id": "toastPlugin",
+                    "data": {
+                        "type": "TDataToast"
+                    },
+                    "card": {
+                        "is_visible": true,
+                        "view_attribute": {
+                            "type": "TAttr",
+                            "margin": {
+                                "left_margin": 15,
+                                "right_margin": 15
+                            }
+                        }
+                    },
+                    "full_screen": {
+                        "is_visible": true,
+                        "view_attribute": {
+                            "type": "TAttr",
+                            "margin": {
+                                "left_margin": 15,
+                                "right_margin": 15
+                            }
+                        }
+                    }
+                }, {
+                    "plugin_id": "playControlBtnPlugin",
+                    "card": {
+                        "is_visible": true,
+                        "view_attribute": {
+                            "type": "TSelectButtonAttr",
+                            "default_selected": false,
+                            "select": {
+                                "type": "TButtonAttr",
+                                "icon": "player_video_horizontal_pause"
+                            },
+                            "unselect": {
+                                "type": "TButtonAttr",
+                                "icon": "player_video_horizontal_play"
+                            },
+                            "animator_visible": {
+                                "animator_type": "translateY",
+                                "from": 44,
+                                "to": 0
+                            },
+                            "animator_invisible": {
+                                "animator_type": "translateY",
+                                "from": 0,
+                                "to": 44
+                            }
+                        },
+                        "events": [{
+                            "event_name": "pause",
+                            "event_type": "",
+                            "event_touch_type": "click",
+                            "event_trigger_type": "select"
+                        }, {
+                            "event_name": "statistic/network",
+                            "event_type": "",
+                            "event_touch_type": "click",
+                            "event_trigger_type": "select",
+                            "params": {
+                                "type": "TEventZa",
+                                "statistic_element_type": 1,
+                                "statistic_event_type_code": 10,
+                                "statistic_action_code": 1003,
+                                "statistic_action": "pause"
+                            }
+                        }, {
+                            "event_name": "play",
+                            "event_type": "",
+                            "event_touch_type": "click",
+                            "event_trigger_type": "unselect"
+                        }, {
+                            "event_name": "statistic/network",
+                            "event_type": "",
+                            "event_touch_type": "click",
+                            "event_trigger_type": "unselect",
+                            "params": {
+                                "type": "TEventZa",
+                                "statistic_element_type": 1,
+                                "statistic_event_type_code": 10,
+                                "statistic_action_code": 1001,
+                                "statistic_action": "play"
+                            }
+                        }, {
+                            "event_name": "refreshVisibleTimer",
+                            "event_type": "",
+                            "event_touch_type": "click",
+                            "event_trigger_type": "unselect"
+                        }, {
+                            "event_name": "refreshVisibleTimer",
+                            "event_type": "",
+                            "event_touch_type": "click",
+                            "event_trigger_type": "select"
+                        }]
+                    },
+                    "full_screen": {
+                        "is_visible": true,
+                        "view_attribute": {
+                            "type": "TSelectButtonAttr",
+                            "default_selected": false,
+                            "select": {
+                                "type": "TButtonAttr",
+                                "icon": "player_video_horizontal_pause"
+                            },
+                            "unselect": {
+                                "type": "TButtonAttr",
+                                "icon": "player_video_horizontal_play"
+                            },
+                            "animator_visible": {
+                                "animator_type": "translateY",
+                                "from": 44,
+                                "to": 0
+                            },
+                            "animator_invisible": {
+                                "animator_type": "translateY",
+                                "from": 0,
+                                "to": 44
+                            }
+                        },
+                        "events": [{
+                            "event_name": "pause",
+                            "event_type": "",
+                            "event_touch_type": "click",
+                            "event_trigger_type": "select"
+                        }, {
+                            "event_name": "play",
+                            "event_type": "",
+                            "event_touch_type": "click",
+                            "event_trigger_type": "unselect"
+                        }, {
+                            "event_name": "statistic/network",
+                            "event_type": "",
+                            "event_touch_type": "click",
+                            "event_trigger_type": "select",
+                            "params": {
+                                "type": "TEventZa",
+                                "statistic_element_type": 1,
+                                "statistic_event_type_code": 10,
+                                "statistic_action_code": 1003,
+                                "statistic_action": "pause"
+                            }
+                        }, {
+                            "event_name": "statistic/network",
+                            "event_type": "",
+                            "event_touch_type": "click",
+                            "event_trigger_type": "unselect",
+                            "params": {
+                                "type": "TEventZa",
+                                "statistic_element_type": 1,
+                                "statistic_event_type_code": 10,
+                                "statistic_action_code": 1001,
+                                "statistic_action": "play"
+                            }
+                        }, {
+                            "event_name": "refreshVisibleTimer",
+                            "event_type": "",
+                            "event_touch_type": "click",
+                            "event_trigger_type": "select"
+                        }, {
+                            "event_name": "refreshVisibleTimer",
+                            "event_type": "",
+                            "event_touch_type": "click",
+                            "event_trigger_type": "select"
+                        }]
+                    }
+                }, {
+                    "plugin_id": "currentPlayTimeTextPlugin",
+                    "card": {
+                        "is_visible": true,
+                        "view_attribute": {
+                            "type": "TTextViewAttr",
+                            "font_size": 12,
+                            "text_color": "BK99",
+                            "animator_visible": {
+                                "animator_type": "translateY",
+                                "from": 44,
+                                "to": 0
+                            },
+                            "animator_invisible": {
+                                "animator_type": "translateY",
+                                "from": 0,
+                                "to": 44
+                            }
+                        }
+                    },
+                    "full_screen": {
+                        "is_visible": true,
+                        "view_attribute": {
+                            "type": "TTextViewAttr",
+                            "font_size": 12,
+                            "text_color": "BK99",
+                            "animator_visible": {
+                                "animator_type": "translateY",
+                                "from": 44,
+                                "to": 0
+                            },
+                            "animator_invisible": {
+                                "animator_type": "translateY",
+                                "from": 0,
+                                "to": 44
+                            }
+                        }
+                    }
+                }, {
+                    "plugin_id": "progressPlugin",
+                    "data": {
+                        "type": "TDataClipInProgress"
+                    },
+                    "card": {
+                        "is_visible": true,
+                        "view_attribute": {
+                            "type": "TAttr",
+                            "animator_visible": {
+                                "animator_type": "translateY",
+                                "from": 44,
+                                "to": 0
+                            },
+                            "animator_invisible": {
+                                "animator_type": "translateY",
+                                "from": 0,
+                                "to": 44
+                            }
+                        },
+                        "events": [{
+                            "event_name": "seekTo",
+                            "event_type": "",
+                            "event_touch_type": "dragHorizontal"
+                        }, {
+                            "event_name": "refreshVisibleTimer",
+                            "event_type": "",
+                            "event_touch_type": "dragHorizontal"
+                        }, {
+                            "event_name": "statistic/network",
+                            "event_type": "",
+                            "event_touch_type": "dragHorizontal",
+                            "params": {
+                                "type": "TEventZa",
+                                "statistic_event_type_code": 9,
+                                "statistic_element_type": 16,
+                                "statistic_action_code": 1001,
+                                "statistic_action": "play"
+                            }
+                        }]
+                    },
+                    "full_screen": {
+                        "is_visible": true,
+                        "view_attribute": {
+                            "type": "TAttr",
+                            "animator_visible": {
+                                "animator_type": "translateY",
+                                "from": 44,
+                                "to": 0
+                            },
+                            "animator_invisible": {
+                                "animator_type": "translateY",
+                                "from": 0,
+                                "to": 44
+                            }
+                        },
+                        "events": [{
+                            "event_name": "seekTo",
+                            "event_type": "",
+                            "event_touch_type": "dragHorizontal"
+                        }, {
+                            "event_name": "refreshVisibleTimer",
+                            "event_type": "",
+                            "event_touch_type": "dragHorizontal"
+                        }, {
+                            "event_name": "statistic/network",
+                            "event_type": "",
+                            "event_touch_type": "dragHorizontal",
+                            "params": {
+                                "type": "TEventZa",
+                                "statistic_event_type_code": 9,
+                                "statistic_element_type": 16,
+                                "statistic_action_code": 1001,
+                                "statistic_action": "play"
+                            }
+                        }]
+                    }
+                }, {
+                    "plugin_id": "durationTextPlugin",
+                    "card": {
+                        "is_visible": true,
+                        "view_attribute": {
+                            "type": "TTextViewAttr",
+                            "font_size": 12,
+                            "text_color": "BK99",
+                            "animator_visible": {
+                                "animator_type": "translateY",
+                                "from": 44,
+                                "to": 0
+                            },
+                            "animator_invisible": {
+                                "animator_type": "translateY",
+                                "from": 0,
+                                "to": 44
+                            }
+                        }
+                    },
+                    "full_screen": {
+                        "is_visible": true,
+                        "view_attribute": {
+                            "type": "TTextViewAttr",
+                            "font_size": 12,
+                            "text_color": "BK99",
+                            "animator_visible": {
+                                "animator_type": "translateY",
+                                "from": 44,
+                                "to": 0
+                            },
+                            "animator_invisible": {
+                                "animator_type": "translateY",
+                                "from": 0,
+                                "to": 44
+                            }
+                        }
+                    }
+                }, {
+                    "plugin_id": "fullScreenBtnPlugin",
+                    "card": {
+                        "is_visible": true,
+                        "view_attribute": {
+                            "type": "TAttr",
+                            "animator_visible": {
+                                "animator_type": "translateY",
+                                "from": 44,
+                                "to": 0
+                            },
+                            "animator_invisible": {
+                                "animator_type": "translateY",
+                                "from": 0,
+                                "to": 44
+                            }
+                        },
+                        "events": [{
+                            "event_name": "videoActionChangeWindowMode",
+                            "event_type": "",
+                            "event_touch_type": "click",
+                            "params": {
+                                "type": "TEventChangeWindowMode",
+                                "window_mode": "fullScreen"
+                            }
+                        }, {
+                            "event_name": "statistic/network",
+                            "event_type": "",
+                            "event_touch_type": "click",
+                            "params": {
+                                "type": "TEventZa",
+                                "statistic_event_type_code": 10,
+                                "statistic_element_type": 16,
+                                "statistic_text": "进入全屏",
+                                "statistic_block_text": "HalfScreen"
+                            }
+                        }, {
+                            "event_name": "statistic/network",
+                            "event_type": "",
+                            "event_touch_type": "click",
+                            "params": {
+                                "type": "TEventZa",
+                                "statistic_action_code": 1001
+                            }
+                        }]
+                    },
+                    "full_screen": {
+                        "is_visible": false
+                    }
+                }, {
+                    "plugin_id": "pageBackBtnPlugin",
+                    "card": {
+                        "is_visible": true,
+                        "view_attribute": {
+                            "type": "TAttr",
+                            "animator_visible": {
+                                "animator_type": "translateY",
+                                "from": -44,
+                                "to": 0
+                            },
+                            "animator_invisible": {
+                                "animator_type": "translateY",
+                                "from": 0,
+                                "to": -44
+                            }
+                        },
+                        "events": [{
+                            "event_name": "videoActionPageBack",
+                            "event_type": "",
+                            "event_touch_type": "click"
+                        }]
+                    },
+                    "full_screen": {
+                        "is_visible": true,
+                        "view_attribute": {
+                            "type": "TAttr",
+                            "animator_visible": {
+                                "animator_type": "translateY",
+                                "from": -53,
+                                "to": 0
+                            },
+                            "animator_invisible": {
+                                "animator_type": "translateY",
+                                "from": 0,
+                                "to": -53
+                            }
+                        },
+                        "events": [{
+                            "event_name": "videoActionChangeWindowMode",
+                            "event_type": "",
+                            "event_touch_type": "click",
+                            "params": {
+                                "type": "TEventChangeWindowMode",
+                                "window_mode": "card"
+                            }
+                        }]
+                    }
+                }, {
+                    "plugin_id": "floatWindowBtnPlugin",
+                    "card": {
+                        "is_visible": true,
+                        "view_attribute": {
+                            "type": "TAttr",
+                            "animator_visible": {
+                                "animator_type": "translateY",
+                                "from": -44,
+                                "to": 0
+                            },
+                            "animator_invisible": {
+                                "animator_type": "translateY",
+                                "from": 0,
+                                "to": -44
+                            }
+                        },
+                        "events": [{
+                            "event_id": "floatButtonChangeWindowMode",
+                            "event_name": "videoActionChangeWindowMode",
+                            "event_type": "",
+                            "event_touch_type": "click",
+                            "params": {
+                                "type": "TEventChangeWindowMode",
+                                "window_mode": "floatWindow",
+                                "window_mode_param": {
+                                    "type": "TEventFloatWindowParam",
+                                    "float_window_close_activity": true,
+                                    "float_window_implementation_mode": "SYS",
+                                    "float_window_play_info_type": "Manual"
+                                }
+                            }
+                        }]
+                    },
+                    "full_screen": {
+                        "is_visible": true,
+                        "view_attribute": {
+                            "type": "TAttr",
+                            "animator_visible": {
+                                "animator_type": "translateY",
+                                "from": -53,
+                                "to": 0
+                            },
+                            "animator_invisible": {
+                                "animator_type": "translateY",
+                                "from": 0,
+                                "to": -53
+                            }
+                        },
+                        "events": [{
+                            "event_id": "floatButtonChangeWindowMode",
+                            "event_name": "videoActionChangeWindowMode",
+                            "event_type": "",
+                            "event_touch_type": "click",
+                            "params": {
+                                "type": "TEventChangeWindowMode",
+                                "window_mode": "floatWindow",
+                                "window_mode_param": {
+                                    "type": "TEventFloatWindowParam",
+                                    "float_window_close_activity": true,
+                                    "float_window_implementation_mode": "SYS",
+                                    "float_window_play_info_type": "Manual"
+                                }
+                            }
+                        }]
+                    }
+                }, {
+                    "plugin_id": "titleTextPlugin",
+                    "data": {
+                        "type": "TDataText"
+                    },
+                    "full_screen": {
+                        "is_visible": true,
+                        "view_attribute": {
+                            "type": "TTextViewAttr",
+                            "font_size": 16,
+                            "text_color": "BK99",
+                            "margin": {
+                                "left_margin": 10
+                            },
+                            "max_lines": 1,
+                            "marquee_repeat_limit": -1,
+                            "gravity": "start|center_vertical",
+                            "ellipsize": "end",
+                            "text_selected_color": "BL01",
+                            "shadow_color": "BL01",
+                            "shadow_dx": 4,
+                            "shadow_dy": 4,
+                            "shadow_radius": 6,
+                            "animator_visible": {
+                                "animator_type": "translateY",
+                                "from": -53,
+                                "to": 0
+                            },
+                            "animator_invisible": {
+                                "animator_type": "translateY",
+                                "from": 0,
+                                "to": -53
+                            }
+                        }
+                    }
+                }, {
+                    "plugin_id": "ratePanelPlugin",
+                    "card": {
+                        "is_visible": false
+                    },
+                    "full_screen": {
+                        "is_visible": false,
+                        "view_attribute": {
+                            "type": "TTextViewAttr",
+                            "font_size": 15,
+                            "text_color": "BK99",
+                            "text_selected_color": "BL01"
+                        },
+                        "events": [{
+                            "event_name": "visible",
+                            "event_type": "0",
+                            "event_touch_type": "click",
+                            "params": {
+                                "type": "TEventVisible",
+                                "observers": {
+                                    "playControlBtnPlugin": false,
+                                    "currentPlayTimeTextPlugin": false,
+                                    "progressPlugin": false,
+                                    "durationTextPlugin": false,
+                                    "pageBackBtnPlugin": false,
+                                    "titleTextPlugin": false,
+                                    "floatWindowBtnPlugin": false,
+                                    "shareBtnPlugin": false,
+                                    "moreBtnPlugin": false,
+                                    "barragePlugin": false,
+                                    "barrageTextInputPlugin": false,
+                                    "switchRateBtnPlugin": false,
+                                    "switchQualityBtnPlugin": false,
+                                    "lockScreenBtnPlugin": false,
+                                    "compatibleContentProviderPlugin": false,
+                                    "topBackgroundPlugin": false,
+                                    "bottomBackgroundPlugin": false
+                                }
+                            }
+                        }, {
+                            "event_name": "setSpeed",
+                            "event_type": "",
+                            "event_touch_type": "click",
+                            "params": {
+                                "type": "TEventChangeSpeed",
+                                "speed": 1
+                            }
+                        }]
+                    }
+                }, {
+                    "plugin_id": "qualityPanelPlugin",
+                    "card": {
+                        "is_visible": false
+                    },
+                    "full_screen": {
+                        "is_visible": false,
+                        "view_attribute": {
+                            "type": "TTextViewAttr",
+                            "font_size": 15,
+                            "text_color": "BK99",
+                            "text_selected_color": "BL01"
+                        },
+                        "events": [{
+                            "event_name": "visible",
+                            "event_type": "0",
+                            "event_touch_type": "click",
+                            "params": {
+                                "type": "TEventVisible",
+                                "observers": {
+                                    "playControlBtnPlugin": false,
+                                    "currentPlayTimeTextPlugin": false,
+                                    "progressPlugin": false,
+                                    "durationTextPlugin": false,
+                                    "pageBackBtnPlugin": false,
+                                    "titleTextPlugin": false,
+                                    "floatWindowBtnPlugin": false,
+                                    "shareBtnPlugin": false,
+                                    "moreBtnPlugin": false,
+                                    "barragePlugin": false,
+                                    "barrageTextInputPlugin": false,
+                                    "switchRateBtnPlugin": false,
+                                    "switchQualityBtnPlugin": false,
+                                    "lockScreenBtnPlugin": false,
+                                    "topBackgroundPlugin": false,
+                                    "bottomBackgroundPlugin": false
+                                }
+                            }
+                        }, {
+                            "event_name": "setQuality",
+                            "event_type": "",
+                            "event_touch_type": "click"
+                        }]
+                    }
+                }, {
+                    "plugin_id": "menuPanelPlugin",
+                    "card": {
+                        "is_visible": false
+                    },
+                    "full_screen": {
+                        "is_visible": false,
+                        "view_attribute": {
+                            "type": "TMorePanelAttr",
+                            "visible_background_playback_switch": true
+                        }
+                    }
+                }, {
+                    "plugin_id": "sharePanelPlugin",
+                    "card": {
+                        "is_visible": false
+                    },
+                    "full_screen": {
+                        "is_visible": false
+                    }
+                }, {
+                    "plugin_id": "loadingPlugin",
+                    "card": {
+                        "is_visible": false
+                    },
+                    "full_screen": {
+                        "is_visible": false
+                    }
+                }, {
+                    "plugin_id": "errorPlugin",
+                    "card": {
+                        "is_visible": false,
+                        "view_attribute": {
+                            "type": "TErrorPanelAttr",
+                            "btn_text": "重新加载",
+                            "text": "视频加载失败，请点击重新加载"
+                        },
+                        "events": [{
+                            "event_trigger_type": "retryWhenError",
+                            "event_name": "videoActionReplay",
+                            "event_type": "",
+                            "event_touch_type": "click"
+                        }, {
+                            "event_trigger_type": "defaultVideoError",
+                            "event_name": "showPlaybackControlGroup",
+                            "event_type": "",
+                            "event_touch_type": "",
+                            "params": {
+                                "type": "TEventPlaybackControlGroupParam",
+                                "show": false,
+                                "auto_hide": false,
+                                "locked": false
+                            }
+                        }]
+                    },
+                    "full_screen": {
+                        "is_visible": false,
+                        "view_attribute": {
+                            "type": "TErrorPanelAttr",
+                            "btn_text": "重新加载",
+                            "text": "视频加载失败，请点击重新加载"
+                        },
+                        "events": [{
+                            "event_trigger_type": "retryWhenError",
+                            "event_name": "videoActionReplay",
+                            "event_type": "",
+                            "event_touch_type": "click"
+                        }]
+                    }
+                }, {
+                    "plugin_id": "barragePlugin",
+                    "data": {
+                        "type": "TDataBarrageButton"
+                    },
+                    "card": {
+                        "is_visible": false
+                    },
+                    "full_screen": {
+                        "is_visible": true,
+                        "view_attribute": {
+                            "type": "TAttr",
+                            "animator_visible": {
+                                "animator_type": "translateY",
+                                "from": 44,
+                                "to": 0
+                            },
+                            "animator_invisible": {
+                                "animator_type": "translateY",
+                                "from": 0,
+                                "to": 44
+                            }
+                        },
+                        "events": [{
+                            "event_name": "setBarrageEnable",
+                            "event_type": "",
+                            "event_touch_type": "click"
+                        }, {
+                            "event_name": "barrageSwitchChange",
+                            "event_type": "",
+                            "event_touch_type": "click"
+                        }]
+                    }
+                }, {
+                    "plugin_id": "barrageTextInputPlugin",
+                    "card": {
+                        "is_visible": false
+                    },
+                    "full_screen": {
+                        "is_visible": true,
+                        "view_attribute": {
+                            "type": "TTextViewAttr",
+                            "hint": "发个弹幕聊聊...",
+                            "animator_visible": {
+                                "animator_type": "translateY",
+                                "from": 44,
+                                "to": 0
+                            },
+                            "animator_invisible": {
+                                "animator_type": "translateY",
+                                "from": 0,
+                                "to": 44
+                            }
+                        },
+                        "events": [{
+                            "event_name": "openInputPanel",
+                            "event_type": "",
+                            "event_touch_type": "click"
+                        }, {
+                            "event_name": "statistic/network",
+                            "event_type": "0",
+                            "event_touch_type": "click",
+                            "params": {
+                                "type": "TEventZa",
+                                "statistic_element_type": 1,
+                                "statistic_event_type_code": 10,
+                                "statistic_text": "弹幕输入框",
+                                "statistic_block_text": "BarrageInput"
+                            }
+                        }]
+                    }
+                }, {
+                    "plugin_id": "switchQualityBtnPlugin",
+                    "card": {
+                        "is_visible": false
+                    },
+                    "full_screen": {
+                        "is_visible": true,
+                        "view_attribute": {
+                            "type": "TAttr",
+                            "animator_visible": {
+                                "animator_type": "translateY",
+                                "from": 44,
+                                "to": 0
+                            },
+                            "animator_invisible": {
+                                "animator_type": "translateY",
+                                "from": 0,
+                                "to": 44
+                            }
+                        },
+                        "events": [{
+                            "event_name": "showPlaybackControlGroup",
+                            "event_type": "0",
+                            "event_touch_type": "click",
+                            "params": {
+                                "type": "TEventPlaybackControlGroupParam",
+                                "show": false
+                            }
+                        }, {
+                            "event_name": "visible",
+                            "event_type": "0",
+                            "event_touch_type": "click",
+                            "params": {
+                                "type": "TEventVisible",
+                                "observers": {
+                                    "qualityPanelPlugin": true
+                                }
+                            }
+                        }]
+                    }
+                }, {
+                    "plugin_id": "switchRateBtnPlugin",
+                    "card": {
+                        "is_visible": false
+                    },
+                    "full_screen": {
+                        "is_visible": true,
+                        "view_attribute": {
+                            "type": "TAttr",
+                            "animator_visible": {
+                                "animator_type": "translateY",
+                                "from": 44,
+                                "to": 0
+                            },
+                            "animator_invisible": {
+                                "animator_type": "translateY",
+                                "from": 0,
+                                "to": 44
+                            }
+                        },
+                        "events": [{
+                            "event_name": "showPlaybackControlGroup",
+                            "event_type": "0",
+                            "event_touch_type": "click",
+                            "params": {
+                                "type": "TEventPlaybackControlGroupParam",
+                                "show": false
+                            }
+                        }, {
+                            "event_name": "visible",
+                            "event_type": "0",
+                            "event_touch_type": "click",
+                            "params": {
+                                "type": "TEventVisible",
+                                "observers": {
+                                    "ratePanelPlugin": true
+                                }
+                            }
+                        }]
+                    }
+                }, {
+                    "plugin_id": "moreBtnPlugin",
+                    "card": {
+                        "is_visible": true,
+                        "view_attribute": {
+                            "type": "TAttr",
+                            "animator_visible": {
+                                "animator_type": "translateY",
+                                "from": -44,
+                                "to": 0
+                            },
+                            "animator_invisible": {
+                                "animator_type": "translateY",
+                                "from": 0,
+                                "to": -44
+                            }
+                        },
+                        "events": [{
+                            "event_name": "showPlaybackControlGroup",
+                            "event_type": "0",
+                            "event_touch_type": "click",
+                            "params": {
+                                "type": "TEventPlaybackControlGroupParam",
+                                "show": false
+                            }
+                        }, {
+                            "event_name": "videoActionCardMorePanelShow",
+                            "event_type": "0",
+                            "event_touch_type": "click"
+                        }, {
+                            "event_name": "statistic/network",
+                            "event_type": "0",
+                            "event_touch_type": "click",
+                            "params": {
+                                "type": "TEventZa",
+                                "statistic_element_type": 1,
+                                "statistic_event_type_code": 10,
+                                "statistic_text": "更多面板",
+                                "statistic_block_text": "More"
+                            }
+                        }]
+                    },
+                    "full_screen": {
+                        "is_visible": true,
+                        "view_attribute": {
+                            "type": "TAttr",
+                            "animator_visible": {
+                                "animator_type": "translateY",
+                                "from": -53,
+                                "to": 0
+                            },
+                            "animator_invisible": {
+                                "animator_type": "translateY",
+                                "from": 0,
+                                "to": -53
+                            }
+                        },
+                        "events": [{
+                            "event_name": "showPlaybackControlGroup",
+                            "event_type": "0",
+                            "event_touch_type": "click",
+                            "params": {
+                                "type": "TEventPlaybackControlGroupParam",
+                                "show": false
+                            }
+                        }, {
+                            "event_name": "visible",
+                            "event_type": "0",
+                            "event_touch_type": "click",
+                            "params": {
+                                "type": "TEventVisible",
+                                "observers": {
+                                    "menuPanelPlugin": true
+                                }
+                            }
+                        }, {
+                            "event_name": "statistic/network",
+                            "event_type": "0",
+                            "event_touch_type": "click",
+                            "params": {
+                                "type": "TEventZa",
+                                "statistic_element_type": 1,
+                                "statistic_event_type_code": 10,
+                                "statistic_text": "更多面板",
+                                "statistic_block_text": "More"
+                            }
+                        }]
+                    }
+                }, {
+                    "plugin_id": "shareBtnPlugin",
+                    "card": {
+                        "is_visible": false
+                    },
+                    "full_screen": {
+                        "is_visible": true,
+                        "view_attribute": {
+                            "type": "TAttr",
+                            "animator_visible": {
+                                "animator_type": "translateY",
+                                "from": -53,
+                                "to": 0
+                            },
+                            "animator_invisible": {
+                                "animator_type": "translateY",
+                                "from": 0,
+                                "to": -53
+                            }
+                        },
+                        "events": [{
+                            "event_name": "showPlaybackControlGroup",
+                            "event_type": "0",
+                            "event_touch_type": "click",
+                            "params": {
+                                "type": "TEventPlaybackControlGroupParam",
+                                "show": false
+                            }
+                        }, {
+                            "event_name": "visible",
+                            "event_type": "0",
+                            "event_touch_type": "click",
+                            "params": {
+                                "type": "TEventVisible",
+                                "observers": {
+                                    "sharePanelPlugin": true
+                                }
+                            }
+                        }]
+                    }
+                }, {
+                    "plugin_id": "lockScreenBtnPlugin",
+                    "card": {
+                        "is_visible": false
+                    },
+                    "full_screen": {
+                        "is_visible": true,
+                        "view_attribute": {
+                            "type": "TSelectButtonAttr",
+                            "default_selected": false,
+                            "select": {
+                                "type": "TButtonAttr",
+                                "icon": "player_video_lock"
+                            },
+                            "unselect": {
+                                "type": "TButtonAttr",
+                                "icon": "player_video_unlock"
+                            }
+                        },
+                        "events": [{
+                            "event_name": "cancelVisibleTimer",
+                            "event_type": "0",
+                            "event_touch_type": "click",
+                            "event_trigger_type": "unselect"
+                        }, {
+                            "event_name": "showPlaybackControlGroup",
+                            "event_type": "0",
+                            "event_touch_type": "click",
+                            "event_trigger_type": "unselect",
+                            "params": {
+                                "type": "TEventPlaybackControlGroupParam",
+                                "show": true,
+                                "auto_hide": true,
+                                "locked": true
+                            }
+                        }, {
+                            "event_name": "visible",
+                            "event_type": "0",
+                            "event_touch_type": "click",
+                            "event_trigger_type": "select",
+                            "params": {
+                                "type": "TEventVisible",
+                                "observers": {
+                                    "gesturePlugin": true
+                                }
+                            }
+                        }, {
+                            "event_name": "showPlaybackControlGroup",
+                            "event_type": "0",
+                            "event_touch_type": "click",
+                            "event_trigger_type": "select",
+                            "params": {
+                                "type": "TEventPlaybackControlGroupParam",
+                                "show": true,
+                                "auto_hide": true,
+                                "locked": false
+                            }
+                        }, {
+                            "event_name": "statistic/network",
+                            "event_type": "0",
+                            "event_touch_type": "click",
+                            "event_trigger_type": "select",
+                            "params": {
+                                "type": "TEventZa",
+                                "statistic_element_type": 1,
+                                "statistic_event_type_code": 10,
+                                "statistic_text": "解锁",
+                                "statistic_block_text": "UnLockScreen"
+                            }
+                        }, {
+                            "event_name": "statistic/network",
+                            "event_type": "0",
+                            "event_touch_type": "click",
+                            "event_trigger_type": "unselect",
+                            "params": {
+                                "type": "TEventZa",
+                                "statistic_element_type": 1,
+                                "statistic_event_type_code": 10,
+                                "statistic_text": "锁定",
+                                "statistic_block_text": "LockScreen"
+                            }
+                        }]
+                    }
+                }, {
+                    "plugin_id": "miniProgressPlugin",
+                    "data": {
+                        "type": "TDataClipInProgress"
+                    },
+                    "card": {
+                        "is_visible": false
+                    },
+                    "full_screen": {
+                        "is_visible": false
+                    }
+                }, {
+                    "plugin_id": "barrageOutputPlugin",
+                    "data": {
+                        "type": "TDataBarrageOutput"
+                    },
+                    "card": {
+                        "is_visible": true
+                    },
+                    "full_screen": {
+                        "is_visible": true
+                    }
+                }, {
+                    "plugin_id": "compatibleEndPlugin",
+                    "card": {
+                        "is_visible": true
+                    },
+                    "full_screen": {
+                        "is_visible": true
+                    }
+                }, {
+                    "plugin_id": "compatibleContentProviderPlugin",
+                    "card": {
+                        "is_visible": true,
+                        "view_attribute": {
+                            "type": "TAttr",
+                            "animator_visible": {
+                                "animator_type": "translateY",
+                                "from": 44,
+                                "to": 0
+                            },
+                            "animator_invisible": {
+                                "animator_type": "translateY",
+                                "from": 0,
+                                "to": 44
+                            }
+                        }
+                    },
+                    "full_screen": {
+                        "is_visible": true,
+                        "view_attribute": {
+                            "type": "TAttr",
+                            "animator_visible": {
+                                "animator_type": "translateY",
+                                "from": 53,
+                                "to": 0
+                            },
+                            "animator_invisible": {
+                                "animator_type": "translateY",
+                                "from": 0,
+                                "to": 53
+                            }
+                        }
+                    }
+                }, {
+                    "plugin_id": "compatibleInteractivePlugin",
+                    "card": {
+                        "is_visible": true
+                    },
+                    "full_screen": {
+                        "is_visible": true
+                    }
+                }, {
+                    "plugin_id": "startPlayScenePlugin",
+                    "card": {
+                        "is_visible": false,
+                        "events": [{
+                            "event_name": "visible",
+                            "event_type": "0",
+                            "event_touch_type": "",
+                            "event_trigger_type": "defaultVideoStart",
+                            "params": {
+                                "type": "TEventVisible",
+                                "observers": {
+                                    "coverImagePlugin": false,
+                                    "playStartBtnPlugin": false,
+                                    "coverTipsTextPlugin": false,
+                                    "errorPlugin": false,
+                                    "pageBackBtnPlugin": true,
+                                    "floatWindowBtnPlugin": true,
+                                    "moreBtnPlugin": true,
+                                    "shareBtnPlugin": true
+                                }
+                            }
+                        }, {
+                            "event_name": "showPlaybackControlGroup",
+                            "event_type": "0",
+                            "event_touch_type": "",
+                            "event_trigger_type": "defaultVideoStart",
+                            "params": {
+                                "type": "TEventPlaybackControlGroupParam",
+                                "show": true,
+                                "auto_hide": true
+                            }
+                        }, {
+                            "event_name": "updateSelectedState",
+                            "event_type": "0",
+                            "event_touch_type": "",
+                            "event_trigger_type": "defaultVideoStart",
+                            "params": {
+                                "type": "TEvenUpdateSelectedStateParam",
+                                "selected": true,
+                                "receivers": ["playControlBtnPlugin"]
+                            }
+                        }, {
+                            "event_name": "visible",
+                            "event_type": "0",
+                            "event_touch_type": "",
+                            "event_trigger_type": "changeWindowModeOnStarted",
+                            "params": {
+                                "type": "TEventVisible",
+                                "observers": {
+                                    "pageBackBtnPlugin": true,
+                                    "floatWindowBtnPlugin": true
+                                }
+                            }
+                        }, {
+                            "event_name": "showPlaybackControlGroup",
+                            "event_type": "0",
+                            "event_touch_type": "",
+                            "event_trigger_type": "changeWindowModeOnStarted",
+                            "params": {
+                                "type": "TEventPlaybackControlGroupParam",
+                                "show": true
+                            }
+                        }]
+                    },
+                    "full_screen": {
+                        "is_visible": false,
+                        "events": [{
+                            "event_name": "visible",
+                            "event_type": "0",
+                            "event_touch_type": "",
+                            "event_trigger_type": "defaultVideoStart",
+                            "params": {
+                                "type": "TEventVisible",
+                                "observers": {
+                                    "coverImagePlugin": false,
+                                    "playStartBtnPlugin": false,
+                                    "coverTipsTextPlugin": false
+                                }
+                            }
+                        }, {
+                            "event_name": "showPlaybackControlGroup",
+                            "event_type": "0",
+                            "event_touch_type": "",
+                            "event_trigger_type": "defaultVideoStart",
+                            "params": {
+                                "type": "TEventPlaybackControlGroupParam",
+                                "show": true,
+                                "auto_hide": true
+                            }
+                        }, {
+                            "event_name": "updateSelectedState",
+                            "event_type": "0",
+                            "event_touch_type": "",
+                            "event_trigger_type": "defaultVideoStart",
+                            "params": {
+                                "type": "TEvenUpdateSelectedStateParam",
+                                "selected": true,
+                                "receivers": ["playControlBtnPlugin"]
+                            }
+                        }]
+                    }
+                }, {
+                    "plugin_id": "pauseScenePlugin",
+                    "card": {
+                        "is_visible": false,
+                        "events": [{
+                            "event_name": "showPlaybackControlGroup",
+                            "event_type": "0",
+                            "event_touch_type": "",
+                            "event_trigger_type": "defaultVideoPause",
+                            "params": {
+                                "type": "TEventPlaybackControlGroupParam",
+                                "show": true,
+                                "auto_hide": true
+                            }
+                        }, {
+                            "event_name": "updateSelectedState",
+                            "event_type": "0",
+                            "event_touch_type": "",
+                            "event_trigger_type": "defaultVideoPause",
+                            "params": {
+                                "type": "TEvenUpdateSelectedStateParam",
+                                "selected": false,
+                                "receivers": ["playControlBtnPlugin"]
+                            }
+                        }]
+                    },
+                    "full_screen": {
+                        "is_visible": false,
+                        "events": [{
+                            "event_name": "showPlaybackControlGroup",
+                            "event_type": "0",
+                            "event_touch_type": "",
+                            "event_trigger_type": "defaultVideoPause",
+                            "params": {
+                                "type": "TEventPlaybackControlGroupParam",
+                                "show": true,
+                                "auto_hide": true
+                            }
+                        }, {
+                            "event_name": "updateSelectedState",
+                            "event_type": "0",
+                            "event_touch_type": "",
+                            "event_trigger_type": "defaultVideoPause",
+                            "params": {
+                                "type": "TEvenUpdateSelectedStateParam",
+                                "selected": false,
+                                "receivers": ["playControlBtnPlugin"]
+                            }
+                        }]
+                    }
+                }, {
+                    "plugin_id": "defaultEndScenePlugin",
+                    "card": {
+                        "is_visible": false,
+                        "events": [{
+                            "event_name": "showPlaybackControlGroup",
+                            "event_type": "0",
+                            "event_touch_type": "",
+                            "event_trigger_type": "defaultVideoEnd",
+                            "params": {
+                                "type": "TEventPlaybackControlGroupParam",
+                                "show": false
+                            }
+                        }, {
+                            "event_name": "visible",
+                            "event_type": "0",
+                            "event_touch_type": "",
+                            "event_trigger_type": "defaultVideoEnd",
+                            "params": {
+                                "type": "TEventVisible",
+                                "observers": {
+                                    "pageBackBtnPlugin": false,
+                                    "floatWindowBtnPlugin": false,
+                                    "moreBtnPlugin": false
+                                }
+                            }
+                        }, {
+                            "event_name": "visible",
+                            "event_type": "0",
+                            "event_touch_type": "",
+                            "event_trigger_type": "changeWindowModeOnEnd",
+                            "params": {
+                                "type": "TEventVisible",
+                                "observers": {
+                                    "pageBackBtnPlugin": true,
+                                    "floatWindowBtnPlugin": true,
+                                    "moreBtnPlugin": true,
+                                    "coverImagePlugin": true
+                                }
+                            }
+                        }, {
+                            "event_name": "updateSelectedState",
+                            "event_type": "0",
+                            "event_touch_type": "",
+                            "event_trigger_type": "defaultVideoEnd",
+                            "params": {
+                                "type": "TEvenUpdateSelectedStateParam",
+                                "selected": false,
+                                "receivers": ["playControlBtnPlugin"]
+                            }
+                        }]
+                    },
+                    "full_screen": {
+                        "is_visible": false,
+                        "events": [{
+                            "event_name": "showPlaybackControlGroup",
+                            "event_type": "0",
+                            "event_touch_type": "",
+                            "event_trigger_type": "defaultVideoEnd",
+                            "params": {
+                                "type": "TEventPlaybackControlGroupParam",
+                                "show": false
+                            }
+                        }, {
+                            "event_name": "visible",
+                            "event_type": "0",
+                            "event_touch_type": "",
+                            "event_trigger_type": "defaultVideoEnd",
+                            "params": {
+                                "type": "TEventVisible",
+                                "observers": {
+                                    "ratePanelPlugin": false,
+                                    "qualityPanelPlugin": false,
+                                    "menuPanelPlugin": false,
+                                    "sharePanelPlugin": false,
+                                    "pageBackBtnPlugin": false,
+                                    "titleTextPlugin": false,
+                                    "floatWindowBtnPlugin": false,
+                                    "moreBtnPlugin": false,
+                                    "shareBtnPlugin": false
+                                }
+                            }
+                        }, {
+                            "event_name": "updateSelectedState",
+                            "event_type": "0",
+                            "event_touch_type": "",
+                            "event_trigger_type": "defaultVideoEnd",
+                            "params": {
+                                "type": "TEvenUpdateSelectedStateParam",
+                                "selected": false,
+                                "receivers": ["playControlBtnPlugin"]
+                            }
+                        }]
+                    }
+                }, {
+                    "plugin_id": "defaultStopScenePlugin",
+                    "card": {
+                        "is_visible": false,
+                        "events": [{
+                            "event_name": "showPlaybackControlGroup",
+                            "event_type": "0",
+                            "event_touch_type": "",
+                            "event_trigger_type": "defaultVideoStop",
+                            "params": {
+                                "type": "TEventPlaybackControlGroupParam",
+                                "show": true
+                            }
+                        }, {
+                            "event_name": "visible",
+                            "event_type": "0",
+                            "event_touch_type": "",
+                            "event_trigger_type": "defaultVideoStop",
+                            "params": {
+                                "type": "TEventVisible",
+                                "observers": {
+                                    "pageBackBtnPlugin": true,
+                                    "floatWindowBtnPlugin": true,
+                                    "moreBtnPlugin": true
+                                }
+                            }
+                        }, {
+                            "event_name": "updateSelectedState",
+                            "event_type": "0",
+                            "event_touch_type": "",
+                            "event_trigger_type": "defaultVideoStop",
+                            "params": {
+                                "type": "TEvenUpdateSelectedStateParam",
+                                "selected": false,
+                                "receivers": ["playControlBtnPlugin"]
+                            }
+                        }, {
+                            "event_name": "visible",
+                            "event_type": "0",
+                            "event_touch_type": "",
+                            "event_trigger_type": "changeWindowModeOnStopped",
+                            "params": {
+                                "type": "TEventVisible",
+                                "observers": {
+                                    "pageBackBtnPlugin": true,
+                                    "floatWindowBtnPlugin": true,
+                                    "moreBtnPlugin": true,
+                                    "coverImagePlugin": true
+                                }
+                            }
+                        }, {
+                            "event_name": "updateSelectedState",
+                            "event_type": "0",
+                            "event_touch_type": "",
+                            "event_trigger_type": "changeWindowModeOnStopped",
+                            "params": {
+                                "type": "TEvenUpdateSelectedStateParam",
+                                "selected": false,
+                                "receivers": ["playControlBtnPlugin"]
+                            }
+                        }]
+                    },
+                    "full_screen": {
+                        "is_visible": false,
+                        "events": [{
+                            "event_name": "showPlaybackControlGroup",
+                            "event_type": "0",
+                            "event_touch_type": "",
+                            "event_trigger_type": "defaultVideoStop",
+                            "params": {
+                                "type": "TEventPlaybackControlGroupParam",
+                                "show": false
+                            }
+                        }, {
+                            "event_name": "visible",
+                            "event_type": "0",
+                            "event_touch_type": "",
+                            "event_trigger_type": "defaultVideoStop",
+                            "params": {
+                                "type": "TEventVisible",
+                                "observers": {
+                                    "ratePanelPlugin": false,
+                                    "qualityPanelPlugin": false,
+                                    "menuPanelPlugin": false,
+                                    "sharePanelPlugin": false,
+                                    "pageBackBtnPlugin": false,
+                                    "floatWindowBtnPlugin": false,
+                                    "titleTextPlugin": false,
+                                    "moreBtnPlugin": false,
+                                    "shareBtnPlugin": false
+                                }
+                            }
+                        }, {
+                            "event_name": "updateSelectedState",
+                            "event_type": "0",
+                            "event_touch_type": "",
+                            "event_trigger_type": "defaultVideoStop",
+                            "params": {
+                                "type": "TEvenUpdateSelectedStateParam",
+                                "selected": false,
+                                "receivers": ["playControlBtnPlugin"]
+                            }
+                        }]
+                    }
+                }]
+            }
+        },
+        "template_id": "zvideo_detail_99",
+        "template_version": 2
+    }
+}

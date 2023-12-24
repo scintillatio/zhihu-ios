@@ -1,0 +1,313 @@
+{
+    "version":1,
+    "data":{
+        "gaiaX":{
+            "extend":{
+                "templateId":"gx_article_publish_tool_bar",
+                "source":"article",
+                "height":48,
+                "sceneCode":"article_publish",
+                "viewState":{
+                    "AaItem_isHighLight": false,
+                    "AaItem_enable": false,
+                    "AaItem_responseState": true,
+                    "AaItem_isDefaultWidth": true,
+                    "AaItem_display": true,
+                    "PictureSelectorItem_isHighLight": false,
+                    "PictureSelectorItem_enable": false,
+                    "PictureSelectorItem_responseState": true,
+                    "PictureSelectorItem_isDefaultWidth": true,
+                    "PictureSelectorItem_display": true,
+                    "GoodsItem_isHighLight": false,
+                    "GoodsItem_enable": false,
+                    "GoodsItem_responseState": true,
+                    "GoodsItem_isDefaultWidth": true,
+                    "GoodsItem_display": false,
+                    "AddItem_isHighLight": false,
+                    "AddItem_enable": false,
+                    "AddItem_responseState": true,
+                    "AddItem_isDefaultWidth": true,
+                    "AddItem_display": true,
+                    "UndoSelectorItem_isHighLight": false,
+                    "UndoSelectorItem_enable": false,
+                    "UndoSelectorItem_responseState": false,
+                    "UndoSelectorItem_isDefaultWidth": true,
+                    "UndoSelectorItem_display": true,
+                    "RedoSelectorItem_isHighLight": false,
+                    "RedoSelectorItem_enable": false,
+                    "RedoSelectorItem_isDefaultWidth": true,
+                    "RedoSelectorItem_display": true,
+                    "RedoSelectorItem_responseState": false,
+                    "SettingSelectorItem_isHighLight": false,
+                    "SettingSelectorItem_enable": true,
+                    "SettingSelectorItem_responseState": false,
+                    "SettingSelectorItem_isDefaultWidth": true,
+                    "SettingSelectorItem_display": true
+                }
+            }
+        },
+        "keyboard":{
+
+        },
+        "topic":{
+            "extend":{
+                "maxTopic":3,
+                "minTopic":1
+            }
+        },
+        "topicUIV2":{
+            "extend":{
+                "enableSmartMatchedTopic":true,
+                "defaultMaxPickedCount":3
+            }
+        },
+        "at":{
+
+        },
+        "uploadImageV2":{
+            "extend":{
+                "source":"article"
+            }
+        },
+        "uploadVideoV2":{
+
+        },
+        "hybrid":{
+            "extend":{
+                "url":"https://www.zhihu.com/appview/entity-editor",
+                "appid":"300008",
+                "placeholder":"请输入正文"
+            }
+        },
+        "navigationTitleUI":{
+            "extend":{
+                "title":"写文章"
+            }
+        },
+        "hybridUI":{
+
+        },
+        "commonDraft":{
+
+        },
+        "toolBarUI":{
+
+        },
+        "control":{
+
+        },
+        "customLink":{
+
+        },
+        "guidePage":{
+            "extend":{
+                "url":"https://www.zhihu.com/appview/editor/guide?scene=article",
+                "title":"新功能引导"
+            }
+        },
+        "guideUI":{
+            "extend":{
+                "itemType":"route",
+                "title":"看看有哪些新功能？",
+                "headImage":"local:zhicon_icon_16_question_circle"
+            }
+        },
+        "mediaSelectorV2":{
+
+        },
+        "mediaSelectorV3":{
+
+        },
+        "toolBar":{
+
+        },
+        "settingContainerUI":{
+            "extend":{
+                "plugins":[
+                    [
+                        "contributionUI", "columnUI", "createStatementUI", "reprintUI", "contentSourceUI"
+                    ],
+                    [
+                        "guideUI"
+                    ]
+                ]
+            }
+        },
+        "title":{
+            "extend":{
+                "minLength":1,
+                "maxLength":50
+            }
+        },
+        "closeUI":{
+            "extend":{
+                "icon":"local:zhicon_icon_24_xmark"
+            }
+        },
+        "postUI": {
+            "extend": {
+                "title": "发布",
+                "style": "button"
+            }
+        },
+        "articleTitleUI":{
+            "extend":{
+                "placeholder":"请输入标题",
+                "maxLength":100
+            }
+        },
+        "articleDraftUI":{
+        },
+        "addContainerUI":{
+
+        },
+        "addLinkUI":{
+
+        },
+        "addVideoUI":{
+            "extend":{
+                "isSupportVideoAlbum":true
+            }
+        },
+        "addAttachmentUI":{
+            "extend":{
+                "url":"zhihu://editor/attachment/baidu",
+                "maxFileCount":10
+            }
+        },
+        "addUserUI":{
+
+        },
+        "historyUI":{
+            "extend":{
+                "type":"article"
+            }
+        },
+        "contribution": {
+            
+        },
+        "contributionUI":{
+            "extend":{
+                "itemType":"button",
+                "title":"投稿至问题",
+                "subTitle":"未选择",
+                "hasHint":true
+            }
+        },
+        "column": {
+            
+        },
+        "columnUI":{
+            "extend":{
+                "itemType":"button",
+                "subTitle":"未收录",
+                "title":"收录到专栏"
+            }
+        },
+        "creationStatement": {
+            
+        },
+        "createStatementUI":{
+            "extend":{
+                "itemType":"button",
+                "title":"创作声明",
+                "subTitle":"无声明",
+                "hasHint":true
+            }
+        },
+        "reprint":{
+            "extend":{
+                "default":"need_review"
+            }
+        },
+        "reprintUI":{
+            "extend":{
+                "itemType":"button",
+                "subTitle":"转载申请需要审核",
+                "title":"转载设置"
+            }
+        },
+        "italicUI":{
+
+        },
+        "blodUI":{
+
+        },
+        "headerOneUI":{
+
+        },
+        "headerTwoUI":{
+
+        },
+        "blockquoteUI":{
+
+        },
+        "dividerUI":{
+
+        },
+        "orderedListUI":{
+
+        },
+        "unorderedListUI":{
+
+        },
+        "aaContainerUI":{
+            "extend":{
+                "plugins":[
+                    [
+                        "headerOneUI", "headerTwoUI"
+                    ],
+                    [
+                        "blodUI", "italicUI"
+                    ],
+                    [
+                        "blockquoteUI", "dividerUI", "orderedListUI", "unorderedListUI"
+                    ]
+                ]
+            }
+        },
+        "addContainerUI":{
+            "extend":{
+                "plugins":[
+                    [
+                        "addAttachmentUI", "addLinkUI", "addUserUI", "addVideoUI", "historyUI"
+                    ]
+                ]
+            }
+        },
+        "videoEntity": {
+            
+        },
+        "mcnV2": {
+            
+        },
+        "inputStatisticsUI": {
+            
+        },
+        "hybridFooterView": {
+            
+        },
+        "media":{
+            
+        },
+        "hybridFooterUI":{
+            
+        },
+        "hybridInfo": {
+            "extend":{
+            },
+            "tars":"publish_content_source"
+        },
+        "contentSourceUI": {
+            "extend":{
+                "itemType":"button",
+                "title":"内容来源",
+                "subTitle":"未选择",
+                "hasHint":false,
+                "key": "contentSource",
+                "url": "https://www.zhihu.com/publish-setting/content-source?type=article",
+            },
+            "tars":"publish_content_source"
+        }
+    }
+}

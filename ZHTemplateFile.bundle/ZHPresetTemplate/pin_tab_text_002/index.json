@@ -1,0 +1,75 @@
+{
+  "id": "pin_tab_text_002",
+  "type": "gaia-template",
+  "package": {
+    "id": "pin_tab_text_002",
+    "version": "0.0.1",
+    "modify-timestamp": "Mon Dec 05 2022 16:34:36 GMT+0800 (中国标准时间)",
+    "dependencies": {}
+  },
+  "layers": [
+    {
+      "id": "container_root",
+      "type": "view",
+      "layers": [
+        { "id": "mark_image_view", "type": "image" },
+        { "id": "content_text", "type": "richtext" },
+        {
+          "id": "container_vertical",
+          "type": "view",
+          "layers": [
+            {
+              "id": "container_author",
+              "type": "view",
+              "layers": [
+                { "id": "image_author", "type": "image" },
+                { "id": "text_author", "type": "text" },
+                {
+                  "id": "container_like",
+                  "type": "view",
+                  "layers": [
+                    { "id": "applaudIcon", "type": "image" },
+                    { "id": "applaudCount", "type": "text" }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "container_tag",
+              "type": "view",
+              "layers": [
+                {
+                  "id": "tag_1",
+                  "type": "view",
+                  "layers": [
+                    { "id": "container_1_alpha", "type": "view" },
+                    { "id": "tag_1_image", "type": "image" },
+                    { "id": "tag_1_text", "type": "text" }
+                  ]
+                },
+                {
+                  "id": "tag_2",
+                  "type": "view",
+                  "layers": [
+                    { "id": "container_2_alpha", "type": "view" },
+                    { "id": "tag_2_image", "type": "image" },
+                    { "id": "tag_2_text", "type": "text" }
+                  ]
+                },
+                {
+                  "id": "tag_3",
+                  "type": "view",
+                  "layers": [
+                    { "id": "container_3_alpha", "type": "view" },
+                    { "id": "tag_3_image", "type": "image" },
+                    { "id": "tag_3_text", "type": "text" }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

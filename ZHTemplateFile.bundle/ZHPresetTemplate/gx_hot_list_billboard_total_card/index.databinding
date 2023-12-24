@@ -1,0 +1,257 @@
+{
+  "track": {
+    "gx_hot_list_billboard_total_card": {
+      "show": {
+        "index": "$feed_index - 1",
+        "contentType": "$content_type",
+        "contentToken": "$content_id",
+        "attachedInfo": "$attached_info",
+        "blockText": "'mainHotRank'",
+        "locationType": "'card'",
+        "configMap": {
+          "card_label": "$card_label.type"
+        }
+      },
+      "click": {
+        "index": "$feed_index - 1",
+        "contentType": "$content_type",
+        "contentToken": "$content_id",
+        "attachedInfo": "$attached_info",
+        "blockText": "'mainHotRank'",
+        "locationType": "'card'",
+        "linkUrl": "$target.link.url",
+        "configMap": {
+          "card_label": "$card_label.type"
+        },
+        "actionType": "'openUrl'"
+      }
+    },
+    "hint_container": {
+      "click": {
+        "index": "$feed_index - 1",
+        "contentType": "$content_type",
+        "contentToken": "$content_id",
+        "attachedInfo": "$attached_info",
+        "locationType": "'text'",
+        "locationText": "$hint_diff",
+        "blockText": "'BillboardNewAnswer'",
+        "linkUrl": "$target.link.url",
+        "configMap": {
+          "card_label": "$card_label.type"
+        },
+        "actionType": "'openUrl'"
+      }
+    }
+  },
+  "event": {
+    "gx_hot_list_billboard_total_card": {
+      "type": "'tap'",
+      "actionType": "'event_open_url'",
+      "param": "$target.link.url"
+    },
+    "hint_container": {
+      "type": "'tap'",
+      "actionType": "'event_open_url'",
+      "param": "$target.link.url",
+      "qSort": "1"
+    },
+    "approval_text_container": {
+      "type": "'tap'",
+      "actionType": "'vote_left'",
+      "param": "''"
+    },
+    "oppose_text_container": {
+      "type": "'tap'",
+      "actionType": "'vote_right'",
+      "param": "''"
+    }
+  },
+  "data": {
+    "img_index": {
+      "extend": { "display": "($feed_index < 4) ? 'flex' :'none'" },
+      "value": "$feed_index > 2 ? 'local:zhtemplate_feed_hot_num_3' : ($feed_index > 1 ? 'local:zhtemplate_feed_hot_num_2' : 'local:zhtemplate_feed_hot_num_1')"
+    },
+    "tv_index": {
+      "extend": {
+        "display": "($feed_index > 3) ? 'flex' : 'none'",
+        "fit-content": "false"
+      },
+      "value": "StringOfIntValue($feed_index)"
+    },
+    "atmosphere_label": {
+      "extend": { "display": "($card_label.icon != null) ? 'flex' : 'none'" },
+      "value": {
+        "lightImg": "$card_label.icon",
+        "nightImg": "$card_label.night_icon"
+      }
+    },
+    "content_title": { "value": "$target.title_area.text" },
+    "icon_tag": {
+      "extend": {
+        "display": "($target.tag_area.url != null) ? 'flex' : 'none'",
+        "width": "$target.tag_area.width",
+        "height": "$target.tag_area.height"
+      },
+      "value": {
+        "lightImg": "$target.tag_area.normal_url",
+        "nightImg": "$target.tag_area.night_url"
+      }
+    },
+    "avatars_container": {
+      "extend": {
+        "display": "(size($target.metrics_area.avatars) > 0) ? 'flex' : 'none'"
+      }
+    },
+    "avatar_1": { "value": "$target.metrics_area.avatars[0]" },
+    "avatar_2": { "value": "$target.metrics_area.avatars[1]" },
+    "avatar_3": { "value": "$target.metrics_area.avatars[2]" },
+    "mertrics_area": {
+      "extend": {
+        "display": "($target.metrics_area.text != null) ? 'flex' : 'none'"
+      }
+    },
+    "mertrics_background": {
+      "extend": { "background-color": "$target.metrics_area.background" }
+    },
+    "mertrics_text": {
+      "extend": {
+        "padding-left": "((size($target.metrics_area.background) > 0) && ($target.metrics_area.font_color != '') && ($target.metrics_area.font_color != null)) ? '5' : '0'",
+        "padding-right": "((size($target.metrics_area.background) > 0) && ($target.metrics_area.font_color != '')&& ($target.metrics_area.font_color != null)) ? '5' : '0'",
+        "font-size": "((size($target.metrics_area.background) > 0) && ($target.metrics_area.font_color != '')&& ($target.metrics_area.font_color != null)) ? '11' : '12'",
+        "font-weight": "((size($target.metrics_area.background) > 0) && ($target.metrics_area.font_color != '')&& ($target.metrics_area.font_color != null)) ? '700' : ''",
+        "fit-content": "true"
+      },
+      "value": "$target.metrics_area.text"
+    },
+    "hint_container": {
+      "extend": {
+        "display": "(($hint_diff != null) && ($hint_diff !='')) ? 'flex' : 'none'"
+      }
+    },
+    "hint_update": {
+      "extend": { "fit-content": "true" },
+      "value": "$hint_diff"
+    },
+    "text_tag_area": {
+      "extend": {
+        "display": "($target.text_tag_area.text != null) ? 'flex' : 'none'"
+      }
+    },
+    "bg_text_tag": {
+      "extend": {
+        "background-color": "$target.text_tag_area.background",
+        "opacity": "0.1"
+      }
+    },
+    "text_tag_text": {
+      "extend": {
+        "fit-content": "true",
+        "color": "$target.text_tag_area.font_color"
+      },
+      "value": "$target.text_tag_area.text"
+    },
+    "image_container": {
+      "extend": {
+        "display": "(($target.image_area.url != null) && ($target.image_area.url != '')) ? 'flex' : 'none'"
+      }
+    },
+    "content_img": {
+      "value": "$target.image_area.url",
+      "extend": { "isGif": "true" }
+    },
+    "video_cover": {
+      "extend": {
+        "display": "($target.image_area.video_length != null) ? 'flex' : 'none'"
+      }
+    },
+    "video_cover_background": {
+      "value": "'local:zhtemplate_ic_rank_feed_video_shadow'"
+    },
+    "video_ic_play": { "value": "'local:zhtemplate_ic_plaza_play'" },
+    "video_duration": {
+      "extend": { "fit-content": "true" },
+      "value": "$target.image_area.video_length"
+    },
+    "vote_container": {
+      "extend": { "display": "($target.poll.type == 0) ? 'flex' : 'none'" }
+    },
+    "vote_img": { "value": "'local:zhtemplate_feed_hot_vote_normal'" },
+    "vote_text": {
+      "extend": { "fit-content": "false" },
+      "value": "$vote_text"
+    },
+    "vote_arrow_right": { "value": "'local:zhicon_icon_24_arrow_right'" },
+    "pk_container": {
+      "extend": {
+        "display": "(($target.poll.type == 1) && (size($target.poll.options) >= 2)) ? 'flex' : 'none'"
+      }
+    },
+    "vote_title": {
+      "extend": {
+        "fit-content": "true",
+        "display": "(($target.poll.type == 1) && (size($target.poll.options) >= 2)) ? 'flex' : 'none'"
+      },
+      "value": "(($target.poll.type == 1) && (size($target.poll.options) >= 2)) ? $target.poll.title : null"
+    },
+    "unselected_container": {
+      "extend": {
+        "display": "(($target.poll.type == 1) &&($target.poll.is_voted == false)) ? 'flex' : 'none' "
+      }
+    },
+    "bg_approval": { "value": "'local:zhtemplate_feed_ic_hot_vote_blue'" },
+    "approval_text": { "value": "$target.poll.options[0].title" },
+    "bg_oppose": { "value": "'local:zhtemplate_feed_ic_hot_vote_red'" },
+    "oppose_text": { "value": "$target.poll.options[1].title" },
+    "selected_container": {
+      "extend": {
+        "display": "(($target.poll.type == 1) &&($target.poll.is_voted == true)) ? 'flex' : 'none' "
+      }
+    },
+    "approval_percent": {
+      "extend": { "fit-content": "true" },
+      "value": "StringOfIntValue($approval_percent) + '%'"
+    },
+    "approval_selected_text": {
+      "extend": { "fit-content": "true" },
+      "value": "$target.poll.options[0].is_selected ? ($target.poll.options[0].title + ' · 已选') : ($target.poll.options[0].title)"
+    },
+    "oppose_selected_text": {
+      "extend": { "fit-content": "true" },
+      "value": "$target.poll.options[1].is_selected ? ($target.poll.options[1].title + ' · 已选') : ($target.poll.options[1].title)"
+    },
+    "oppose_percent": {
+      "extend": { "fit-content": "true" },
+      "value": "StringOfIntValue($oppose_percent) + '%'"
+    },
+    "vote_progress_container": {
+      "extend": {
+        "display": "(($target.poll.type == 1) &&($target.poll.is_voted == true)) ? 'flex' : 'none' ",
+        "justify-content": "(($oppose_percent) > 99) ? 'flex-end' :(($approval_percent >99) ? 'flex-start' : 'space-between')"
+      }
+    },
+    "approval_progress": {
+      "value": "'local:zhtemplate_feed_ic_hot_progress_blue'",
+      "extend": {
+        "width": "(($approval_percent) > 99) ? '105%' : (($approval_percent < 2) ? '15px' : (($approval_percent) + '%'))",
+        "display": "(($approval_percent) > 0) ? 'flex' : 'none'",
+        "flex-grow": "(($oppose_percent < 3) && ($oppose_percent > 0)) ? '1' : null",
+        "max-width": "(($approval_percent) > 99) ? null : '97%'"
+      }
+    },
+    "oppose_progress": {
+      "value": "'local:zhtemplate_feed_ic_hot_progress_red'",
+      "extend": {
+        "width": "((($oppose_percent) > 99) ? '105%' : (($oppose_percent < 2) ? '15px' : (($oppose_percent) + '%')))",
+        "display": "(($oppose_percent) > 0) ? 'flex' : 'none'",
+        "flex-grow": "(($approval_percent < 3) && ($approval_percent > 0)) ? '1' : null",
+        "max-width": "(($oppose_percent) > 99) ? null : '97%'"
+      }
+    },
+    "image_activity_gif": {
+      "value": "$target.animation.url",
+      "extend": {
+        "display": "(($target.animation.url != null) && ($target.animation.url != '')) ? 'flex' : 'none'"
+      }
+    }
+  }
+}

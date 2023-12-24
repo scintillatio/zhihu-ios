@@ -1,0 +1,90 @@
+{
+  "id": "gx_hotrank_everyseeing_card",
+  "type": "gaia-template",
+  "package": {
+    "id": "gx_hotrank_everyseeing_card",
+    "version": "0.0.1",
+    "modify-timestamp": "Tue Oct 11 2022 18:45:42 GMT+0800 (中国标准时间)",
+    "dependencies": {}
+  },
+  "layers": [
+    {
+      "id": "container_vertical",
+      "type": "view",
+      "layers": [
+        { "id": "title_label", "type": "text" },
+        {
+          "id": "summary_container",
+          "type": "view",
+          "layers": [
+            { "id": "summary_title_label", "type": "text" },
+            { "id": "summary_image_view", "type": "image" }
+          ]
+        },
+        {
+          "id": "approval_area_container",
+          "type": "view",
+          "layers": [
+            {
+              "id": "approval_info_container",
+              "type": "view",
+              "layers": [
+                {
+                  "id": "approval_avatars_container",
+                  "type": "view",
+                  "layers": [
+                    {
+                      "id": "approval_avatar_1_container",
+                      "type": "view",
+                      "layers": [{ "id": "approval_avatar_1", "type": "image" }]
+                    },
+                    {
+                      "id": "approval_avatar_2_container",
+                      "type": "view",
+                      "layers": [{ "id": "approval_avatar_2", "type": "image" }]
+                    },
+                    {
+                      "id": "approval_avatar_3_container",
+                      "type": "view",
+                      "layers": [{ "id": "approval_avatar_3", "type": "image" }]
+                    }
+                  ]
+                },
+                { "id": "approval_title_label", "type": "text" }
+              ]
+            },
+            {
+              "id": "tag_zhi_add_area_container",
+              "type": "view",
+              "layers": [
+                { "id": "tag_zhi_add_bg_view", "type": "view" },
+                { "id": "tag_tag_zhi_add_title_label", "type": "text" }
+              ]
+            },
+            {
+              "id": "tag_personalized_area_container",
+              "type": "view",
+              "layers": [
+                { "id": "tag_personalized_bg_view", "type": "view" },
+                { "id": "tag_personalized_title_label", "type": "text" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "taskstroll_area_container",
+          "type": "view",
+          "layers": [
+            {
+              "id": "taskstroll_avatar_container",
+              "type": "view",
+              "layers": [{ "id": "taskstroll_avatar", "type": "image" }]
+            },
+            { "id": "taskstroll_title_label", "type": "richtext" }
+          ]
+        },
+        { "id": "divider_line", "type": "view" }
+      ]
+    }
+  ]
+}

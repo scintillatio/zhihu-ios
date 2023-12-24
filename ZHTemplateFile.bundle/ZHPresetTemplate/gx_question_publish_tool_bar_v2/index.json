@@ -1,0 +1,51 @@
+{
+  "id": "gx_question_publish_tool_bar_v2",
+  "type": "gaia-template",
+  "package": {
+    "id": "gx_question_publish_tool_bar_v2",
+    "version": "0.0.1",
+    "modify-timestamp": "Tue Oct 31 2023 14:13:38 GMT+0800 (中国标准时间)",
+    "constraint-size": { "width": 375, "height": 44, "zoom": 1 },
+    "dependencies": {}
+  },
+  "layers": [
+    { "id": "TopLine", "type": "view" },
+    {
+      "id": "ItemContainer",
+      "type": "view",
+      "layers": [
+        {
+          "id": "PictureSelectorItem",
+          "type": "view",
+          "layers": [{ "id": "PictureSelectorImage", "type": "image" }]
+        },
+        {
+          "id": "AtSelectorItem",
+          "type": "view",
+          "layers": [{ "id": "AtSelectorImage", "type": "image" }]
+        },
+        {
+          "id": "LinkSelectorItem",
+          "type": "view",
+          "layers": [{ "id": "LinkSelectorImage", "type": "image" }]
+        },
+        {
+          "id": "UndoSelectorItem",
+          "type": "view",
+          "layers": [{ "id": "UndoSelectorImage", "type": "image" }]
+        },
+        {
+          "id": "RedoSelectorItem",
+          "type": "view",
+          "layers": [{ "id": "RedoSelectorImage", "type": "image" }]
+        },
+        {
+          "id": "SettingSelectorItem",
+          "type": "view",
+          "layers": [{ "id": "SettingSelectorImage", "type": "image" }]
+        }
+      ]
+    },
+    { "id": "BottomLine", "type": "view" }
+  ]
+}

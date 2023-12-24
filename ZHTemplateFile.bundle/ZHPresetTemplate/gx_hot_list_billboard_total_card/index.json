@@ -1,0 +1,178 @@
+{
+  "id": "gx_hot_list_billboard_total_card",
+  "type": "gaia-template",
+  "package": {
+    "id": "gx_hot_list_billboard_total_card",
+    "version": "0.0.1",
+    "modify-timestamp": "Thu Sep 15 2022 16:40:07 GMT+0800 (中国标准时间)",
+    "dependencies": {}
+  },
+  "layers": [
+    {
+      "id": "rank_container",
+      "type": "view",
+      "layers": [
+        {
+          "id": "index_container",
+          "type": "view",
+          "layers": [
+            { "id": "img_index", "type": "image" },
+            { "id": "tv_index", "type": "text" },
+            { "id": "atmosphere_label", "type": "image" }
+          ]
+        },
+        {
+          "id": "content_container",
+          "type": "view",
+          "layers": [
+            {
+              "id": "title_container",
+              "type": "view",
+              "layers": [
+                { "id": "content_title", "type": "text" },
+                {
+                  "id": "label_container",
+                  "type": "view",
+                  "layers": [
+                    { "id": "icon_tag", "type": "image" },
+                    {
+                      "id": "avatars_container",
+                      "type": "view",
+                      "layers": [
+                        {
+                          "id": "avatar_container1",
+                          "type": "view",
+                          "layers": [{ "id": "avatar_1", "type": "image" }]
+                        },
+                        {
+                          "id": "avatar_container2",
+                          "type": "view",
+                          "layers": [{ "id": "avatar_2", "type": "image" }]
+                        },
+                        {
+                          "id": "avatar_container3",
+                          "type": "view",
+                          "layers": [{ "id": "avatar_3", "type": "image" }]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "mertrics_area",
+                      "type": "view",
+                      "layers": [
+                        { "id": "mertrics_background", "type": "view" },
+                        { "id": "mertrics_text", "type": "text" }
+                      ]
+                    },
+                    {
+                      "id": "hint_container",
+                      "type": "view",
+                      "layers": [
+                        { "id": "bg_hint", "type": "view" },
+                        { "id": "hint_update", "type": "text" }
+                      ]
+                    },
+                    {
+                      "id": "text_tag_area",
+                      "type": "view",
+                      "layers": [
+                        { "id": "bg_text_tag", "type": "view" },
+                        { "id": "text_tag_text", "type": "text" }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "image_container",
+              "type": "view",
+              "layers": [
+                { "id": "content_img", "type": "image" },
+                {
+                  "id": "video_cover",
+                  "type": "view",
+                  "layers": [
+                    { "id": "video_cover_background", "type": "view" },
+                    { "id": "video_ic_play", "type": "image" },
+                    { "id": "video_duration", "type": "text" }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vote_container",
+      "type": "view",
+      "layers": [
+        { "id": "vote_img", "type": "image" },
+        { "id": "vote_text", "type": "text" },
+        { "id": "vote_arrow_right", "type": "image" }
+      ]
+    },
+    {
+      "id": "pk_container",
+      "type": "view",
+      "layers": [
+        { "id": "vote_title", "type": "text" },
+        {
+          "id": "unselected_container",
+          "type": "view",
+          "layers": [
+            {
+              "id": "approval_text_container",
+              "type": "view",
+              "layers": [
+                { "id": "bg_approval", "type": "image" },
+                { "id": "approval_text", "type": "text" }
+              ]
+            },
+            {
+              "id": "oppose_text_container",
+              "type": "view",
+              "layers": [
+                { "id": "bg_oppose", "type": "image" },
+                { "id": "oppose_text", "type": "text" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "selected_container",
+          "type": "view",
+          "layers": [
+            {
+              "id": "approval_selected_container",
+              "type": "view",
+              "layers": [
+                { "id": "approval_percent", "type": "text" },
+                { "id": "approval_selected_text", "type": "text" }
+              ]
+            },
+            {
+              "id": "oppose_selected_container",
+              "type": "view",
+              "layers": [
+                { "id": "oppose_selected_text", "type": "text" },
+                { "id": "oppose_percent", "type": "text" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "vote_progress_container",
+          "type": "view",
+          "layers": [
+            { "id": "approval_progress", "type": "image" },
+            { "id": "oppose_progress", "type": "image" }
+          ]
+        }
+      ]
+    },
+    { "id": "image_activity_gif", "type": "image" },
+    { "id": "divider_line", "type": "view" }
+  ]
+}

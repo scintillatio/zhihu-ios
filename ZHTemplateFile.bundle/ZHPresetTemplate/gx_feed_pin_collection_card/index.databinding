@@ -1,0 +1,183 @@
+{
+  "event": {
+    "gx_feed_pin_collection_card": {
+      "type": "'tap'",
+      "param": "$jump_url",
+      "actionType": "'event_open_url'"
+    },
+    "image_pin1": {
+      "type": "'tap'",
+      "param": "$jump_url",
+      "actionType": "'event_open_url'"
+    },
+    "image_pin2": {
+      "type": "'tap'",
+      "param": "$jump_url",
+      "actionType": "'event_open_url'"
+    },
+    "image_pin3": {
+      "type": "'tap'",
+      "param": "$jump_url",
+      "actionType": "'event_open_url'"
+    }
+  },
+  "data": {
+    "gx_feed_pin_collection_card": {
+      "extend": {
+        "click-animation": true
+      }
+    },
+    "pin_theme_icon": {
+      "value": {
+        "lightImg": "'https://pic1.zhimg.com/80/v2-de547e1919d19041ea48b77a2482479e_1440w.png'",
+        "nightImg": "'https://picx.zhimg.com/80/v2-9ff0299369571e01c73703e5f0bdab31_1440w.png'"
+      }
+    },
+    "theme_title": {
+      "value": "$title"
+    },
+    "theme_desc": {
+      "value": "$discuss_count + ' 人正在讨论'"
+    },
+    "arrow_right": {
+      "value": "'local:zhicon_icon_16_arrow_right'"
+    },
+    "image_pin1": {
+      "value": "$contents[0].image_url"
+    },
+    "pin_content": {
+      "value": "(size($contents[0].title) > 0) ? $contents[0].title : $contents[0].content",
+      "extend": {
+        "display": "((size($contents[0].title) >= 0) || (size($contents[0].content) >= 0)) ? 'flex' : 'none'"
+      }
+    },
+    "pin_reaction_desc": {
+      "value": "(($contents[0].reaction_map.LIKE.count > 0) || ($contents[0].reaction_map.ZFAV.count > 0)) ? ($contents[0].reaction_map.LIKE.count + ' 喜欢' + ' · ' + $contents[0].reaction_map.ZFAV.count + ' 收藏' ) : (($contents[0].reaction_map.LIKE.count > 0) ? ($contents[0].reaction_map.LIKE.count + ' 喜欢') : ($contents[0].reaction_map.ZFAV.count + ' 收藏'))",
+      "extend": {
+        "display": "(($contents[0].reaction_map.LIKE.count > 0) || ($contents[0].reaction_map.ZFAV.count > 0)) ? 'flex' : 'none'"
+      }
+    },
+    "image_pin2": {
+      "value": "$contents[1].image_url"
+    },
+    "image_pin3": {
+      "value": "$contents[2].image_url"
+    },
+    "pin_message_area": {
+      "extend": {
+        "display": "(((size($contents[0].title) >= 0) || (size($contents[0].content) >= 0)) && (($contents[0].reaction_map.LIKE.count > 0) || ($contents[0].reaction_map.ZFAV.count > 0))) ? 'flex' : 'none'"
+      }
+    }
+  },
+  "track": {
+    "gx_feed_pin_collection_card": {
+      "click": {
+        "moduleId": "'universal_single_card'",
+        "contentId": "$contents[0].pin_id",
+        "contentType": "'pin'",
+        "locationType": "'card'",
+        "actionType": "'openUrl'",
+        "attachInfo": "$contents[0].attached_info",
+        "configMap": {
+          "pin_aggr_card_theme": "$theme_name",
+          "pin_aggr_card_click_position": 0,
+          "image_index": 0
+        }
+      },
+      "show": {
+        "moduleId": "'universal_single_card'",
+        "contentId": "$contents[0].pin_id",
+        "contentType": "'pin'",
+        "attachInfo": "$contents[0].attached_info",
+        "locationType": "'card'",
+        "configMap": {
+          "pin_aggr_card_theme": "$theme_name"
+        }
+      }
+    },
+    "image_pin1": {
+      "show": {
+        "moduleId": "'pin_picture_card'",
+        "contentId": "$contents[0].pin_id",
+        "contentType": "'pin'",
+        "locationType": "'image'",
+        "attachInfo": "$contents[0].attached_info",
+        "configMap": {
+          "pin_aggr_card_theme": "$theme_name",
+          "pin_aggr_card_click_position": 1,
+          "image_index": 1
+        }
+      },
+      "click": {
+        "contentId": "$contents[0].pin_id",
+        "contentType": "'pin'",
+        "locationType": "'card'",
+        "attachInfo": "$contents[0].attached_info",
+        "actionType": "'openUrl'",
+        "moduleId": "'universal_single_card'",
+        "configMap": {
+          "pin_aggr_card_theme": "$theme_name",
+          "pin_aggr_card_click_position": 1,
+          "image_index": 1,
+          "image_id": "$contents[0].image_token"
+        }
+      }
+    },
+    "image_pin2": {
+      "show": {
+        "contentId": "$contents[1].pin_id",
+        "contentType": "'pin'",
+        "locationType": "'image'",
+        "attachInfo": "$contents[1].attached_info",
+        "moduleId": "'pin_picture_card'",
+        "configMap": {
+          "pin_aggr_card_theme": "$theme_name",
+          "image_index": 2,
+          "pin_aggr_card_click_position": 2
+        }
+      },
+      "click": {
+        "contentId": "$contents[1].pin_id",
+        "contentType": "'pin'",
+        "locationType": "'card'",
+        "attachInfo": "$contents[1].attached_info",
+        "actionType": "'openUrl'",
+        "configMap": {
+          "pin_aggr_card_theme": "$theme_name",
+          "image_index": 2,
+          "pin_aggr_card_click_position": 2,
+          "image_id": "$contents[1].image_token"
+        },
+        "moduleId": "'universal_single_card'"
+      }
+    },
+    "image_pin3": {
+      "show": {
+        "contentId": "$contents[2].pin_id",
+        "contentType": "'pin'",
+        "locationType": "'image'",
+        "attachInfo": "$contents[2].attached_info",
+        "moduleId": "'pin_picture_card'",
+        "configMap": {
+          "pin_aggr_card_theme": "$theme_name",
+          "image_index": 3,
+          "pin_aggr_card_click_position": 3
+        }
+      },
+      "click": {
+        "contentId": "$contents[2].pin_id",
+        "contentType": "'pin'",
+        "locationType": "'card'",
+        "attachInfo": "$contents[2].attached_info",
+        "actionType": "'openUrl'",
+        "configMap": {
+          "pin_aggr_card_theme": "$theme_name",
+          "image_index": 3,
+          "pin_aggr_card_click_position": 3,
+          "image_id": "$contents[2].image_token"
+        },
+        "moduleId": "'universal_single_card'"
+      }
+    }
+  }
+}

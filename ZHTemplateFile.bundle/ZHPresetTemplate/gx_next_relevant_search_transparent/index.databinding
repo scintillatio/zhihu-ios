@@ -1,0 +1,188 @@
+{
+  "track": {
+    "container": {
+      "show": {
+        "locationType": "'Block'",
+        "contentType": "'Unknown'",
+        "moduleId": "'related_search_query_area'",
+        "configMap": { "detail_big_card_area": "'1'" }
+      }
+    },
+    "Tag0": {
+      "click": {
+        "actionType": "'Search'",
+        "moduleId": "'related_search_query'",
+        "locationType": "'button'",
+        "contentType": "'Unknown'",
+        "attachedInfo": "$related_search_info.queries[0].attached_info",
+        "configMap": { "detail_big_card_area": "'1'" }
+      },
+      "show": {
+        "locationType": "'button'",
+        "contentType": "'Unknown'",
+        "attachedInfo": "$related_search_info.queries[0].attached_info",
+        "moduleId": "'related_search_query'",
+        "enable": "$related_search_info.queries[0] != null ? true : false",
+        "configMap": { "detail_big_card_area": "'1'" }
+      }
+    },
+    "Tag1": {
+      "click": {
+        "actionType": "'Search'",
+        "moduleId": "'related_search_query'",
+        "locationType": "'button'",
+        "contentType": "'Unknown'",
+        "attachedInfo": "$related_search_info.queries[1].attached_info",
+        "configMap": { "detail_big_card_area": "'1'" }
+      },
+      "show": {
+        "locationType": "'button'",
+        "contentType": "'Unknown'",
+        "attachedInfo": "$related_search_info.queries[1].attached_info",
+        "moduleId": "'related_search_query'",
+        "enable": "$related_search_info.queries[1] != null ? true : false",
+        "configMap": { "detail_big_card_area": "'1'" }
+      }
+    },
+    "Tag2": {
+      "click": {
+        "actionType": "'Search'",
+        "moduleId": "'related_search_query'",
+        "contentType": "'Unknown'",
+        "locationType": "'button'",
+        "attachedInfo": "$related_search_info.queries[2].attached_info",
+        "configMap": { "detail_big_card_area": "'1'" }
+      },
+      "show": {
+        "locationType": "'button'",
+        "contentType": "'Unknown'",
+        "attachedInfo": "$related_search_info.queries[2].attached_info",
+        "moduleId": "'related_search_query'",
+        "enable": "$related_search_info.queries[2] != null ? true : false",
+        "configMap": { "detail_big_card_area": "'1'" }
+      }
+    },
+    "Tag3": {
+      "click": {
+        "actionType": "'Search'",
+        "moduleId": "'related_search_query'",
+        "contentType": "'Unknown'",
+        "locationType": "'button'",
+        "attachedInfo": "$related_search_info.queries[3].attached_info",
+        "configMap": { "detail_big_card_area": "'1'" }
+      },
+      "show": {
+        "locationType": "'button'",
+        "contentType": "'Unknown'",
+        "attachedInfo": "$related_search_info.queries[3].attached_info",
+        "moduleId": "'related_search_query'",
+        "enable": "$related_search_info.queries[3] != null ? true : false",
+        "configMap": { "detail_big_card_area": "'1'" }
+      }
+    },
+    "Tag4": {
+      "click": {
+        "actionType": "'Search'",
+        "moduleId": "'related_search_query'",
+        "contentType": "'Unknown'",
+        "locationType": "'button'",
+        "attachedInfo": "$related_search_info.queries[4].attached_info",
+        "configMap": { "detail_big_card_area": "'1'" }
+      },
+      "show": {
+        "locationType": "'button'",
+        "contentType": "'Unknown'",
+        "attachedInfo": "$related_search_info.queries[4].attached_info",
+        "enable": "$related_search_info.queries[4] != null ? true : false",
+        "moduleId": "'related_search_query'",
+        "configMap": { "detail_big_card_area": "'1'" }
+      }
+    },
+    "Tag5": {
+      "click": {
+        "actionType": "'Search'",
+        "contentType": "'Unknown'",
+        "moduleId": "'related_search_query'",
+        "locationType": "'button'",
+        "attachedInfo": "$related_search_info.queries[5].attached_info",
+        "configMap": { "detail_big_card_area": "'1'" }
+      },
+      "show": {
+        "locationType": "'button'",
+        "contentType": "'Unknown'",
+        "attachedInfo": "$related_search_info.queries[5].attached_info",
+        "moduleId": "'related_search_query'",
+        "enable": "$related_search_info.queries[5] != null ? true : false",
+        "configMap": { "detail_big_card_area": "'1'" }
+      }
+    }
+  },
+  "data": {
+    "title": { "value": "'相关搜索'" },
+    "row0": {
+      "extend": {
+        "display": "$related_search_info.queries[0] != null ? 'flex' : 'none'"
+      }
+    },
+    "text0": { "value": "$related_search_info.queries[0].display_query" },
+    "text1": { "value": "$related_search_info.queries[1].display_query" },
+    "row1": {
+      "extend": {
+        "display": "$related_search_info.queries[2] != null ? 'flex' : 'none'"
+      }
+    },
+    "text2": { "value": "$related_search_info.queries[2].display_query" },
+    "text3": { "value": "$related_search_info.queries[3].display_query" },
+    "row2": {
+      "extend": {
+        "display": "$related_search_info.queries[4] != null ? 'flex' : 'none'"
+      }
+    },
+    "text4": { "value": "$related_search_info.queries[4].display_query" },
+    "text5": { "value": "$related_search_info.queries[5].display_query" }
+  },
+  "event": {
+    "Tag0": [
+      {
+        "type": "'tap'",
+        "param": "$related_search_info.queries[0].link_url",
+        "actionType": "'event_open_url'"
+      }
+    ],
+    "Tag1": [
+      {
+        "type": "'tap'",
+        "param": "$related_search_info.queries[1].link_url",
+        "actionType": "'event_open_url'"
+      }
+    ],
+    "Tag2": [
+      {
+        "type": "'tap'",
+        "param": "$related_search_info.queries[2].link_url",
+        "actionType": "'event_open_url'"
+      }
+    ],
+    "Tag3": [
+      {
+        "type": "'tap'",
+        "param": "$related_search_info.queries[3].link_url",
+        "actionType": "'event_open_url'"
+      }
+    ],
+    "Tag4": [
+      {
+        "type": "'tap'",
+        "param": "$related_search_info.queries[4].link_url",
+        "actionType": "'event_open_url'"
+      }
+    ],
+    "Tag5": [
+      {
+        "type": "'tap'",
+        "param": "$related_search_info.queries[5].link_url",
+        "actionType": "'event_open_url'"
+      }
+    ]
+  }
+}

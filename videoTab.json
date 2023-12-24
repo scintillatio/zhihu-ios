@@ -1,0 +1,138 @@
+[
+        {
+            "tab_type": "recommand",
+             "normal": {
+                 "type": "text",
+                 "color": "#999999",
+                 "color_night": "#999999",
+                 "title": "推荐"
+             },
+             "selected": {
+                 "type": "text",
+                 "color": "#121212",
+                 "color_night": "#FFFFFF",
+                 "title": "推荐"
+             }
+        },
+        {
+            "tab_type": "movie",
+             "normal": {
+                 "type": "text",
+                 "color": "#999999",
+                 "color_night": "#999999",
+                 "title": "影视"
+             },
+             "selected": {
+                 "type": "text",
+                 "color": "#121212",
+                 "color_night": "#FFFFFF",
+                 "title": "影视"
+             }
+        },
+        {
+            "tab_type": "art",
+             "normal": {
+                 "type": "text",
+                 "color": "#999999",
+                 "color_night": "#999999",
+                 "title": "艺术"
+             },
+             "selected": {
+                 "type": "text",
+                 "color": "#121212",
+                 "color_night": "#FFFFFF",
+                 "title": "艺术"
+             }
+        },
+        {
+            "tab_type": "art",
+             "normal": {
+                 "type": "text",
+                 "color": "#999999",
+                 "color_night": "#999999",
+                 "title": "艺术"
+             },
+             "selected": {
+                 "type": "text",
+                 "color": "#121212",
+                 "color_night": "#FFFFFF",
+                 "title": "艺术"
+             }
+        },
+        {
+            "tab_type": "art",
+             "normal": {
+                 "type": "text",
+                 "color": "#999999",
+                 "color_night": "#999999",
+                 "title": "艺术"
+             },
+             "selected": {
+                 "type": "text",
+                 "color": "#121212",
+                 "color_night": "#FFFFFF",
+                 "title": "艺术"
+             }
+        },
+        {
+            "tab_type": "art",
+             "normal": {
+                 "type": "text",
+                 "color": "#999999",
+                 "color_night": "#999999",
+                 "title": "艺术"
+             },
+             "selected": {
+                 "type": "text",
+                 "color": "#121212",
+                 "color_night": "#FFFFFF",
+                 "title": "艺术"
+             }
+        },
+        {
+            "tab_type": "art",
+             "normal": {
+                 "type": "text",
+                 "color": "#999999",
+                 "color_night": "#999999",
+                 "title": "艺术"
+             },
+             "selected": {
+                 "type": "text",
+                 "color": "#121212",
+                 "color_night": "#FFFFFF",
+                 "title": "艺术"
+             }
+        },
+        {
+            "tab_type": "art",
+             "normal": {
+                 "type": "text",
+                 "color": "#999999",
+                 "color_night": "#999999",
+                 "title": "艺术"
+             },
+             "selected": {
+                 "type": "text",
+                 "color": "#121212",
+                 "color_night": "#FFFFFF",
+                 "title": "艺术"
+             }
+        },
+        {
+            "tab_type": "art",
+             "normal": {
+                 "type": "text",
+                 "color": "#999999",
+                 "color_night": "#999999",
+                 "title": "艺术"
+             },
+             "selected": {
+                 "type": "text",
+                 "color": "#121212",
+                 "color_night": "#FFFFFF",
+                 "title": "艺术"
+             }
+        }
+]
+

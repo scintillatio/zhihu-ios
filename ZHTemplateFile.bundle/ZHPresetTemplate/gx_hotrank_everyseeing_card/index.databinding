@@ -1,0 +1,180 @@
+{
+    "data": {
+        "title_label": {
+            "value": "$target.title_area.text",
+            "extend": {
+                "fit-content": "true"
+            }
+        },
+        "summary_container": {
+            "extend": {
+                "min-height": "(size($target.image_area.url) > 0) ? '60px' : '0px'"
+            }
+        },
+        "summary_title_label": {
+            "value": "size($target.author_area.name) > 0 ? ($target.author_area.name + ': ' + $target.excerpt_area.text) : $target.excerpt_area.text",
+            "extend": {
+                "fit-content": "true",
+                "margin-right": "(size($target.image_area.url) > 0) ? '98px' : '0px'"
+            }
+        },
+        "summary_image_view": {
+            "value": "$target.image_area.url",
+            "extend": {
+                "display": "(size($target.image_area.url) > 0) ? 'flex' : 'none'"
+            }
+        },
+        "approval_area_container": {
+            "extend": {
+                "display": "(size($target.rec_reason_area.action_text) > 0) ? 'flex' : 'none'"
+            }
+        },
+        "approval_avatars_container": {
+            "extend": {
+                "display": "(size($target.rec_reason_area.avatars) > 0) ? 'flex' : 'none'"
+            }
+        },
+        "approval_avatar_1_container": {
+            "extend": {
+                "display": "(size($target.rec_reason_area.avatars) >= 1) ? 'flex' : 'none'"
+            }
+        },
+        "approval_avatar_2_container": {
+            "extend": {
+                "display": "(size($target.rec_reason_area.avatars) >= 2) ? 'flex' : 'none'"
+            }
+        },
+        "approval_avatar_3_container": {
+            "extend": {
+                "display": "(size($target.rec_reason_area.avatars) >= 3) ? 'flex' : 'none'"
+            }
+        },
+        "approval_avatar_1": {
+            "value": "(size($target.rec_reason_area.avatars) >= 1) ? $target.rec_reason_area.avatars[0] : ''"
+        },
+        "approval_avatar_2": {
+            "value": "(size($target.rec_reason_area.avatars) >= 2) ? $target.rec_reason_area.avatars[1] : ''"
+        },
+        "approval_avatar_3": {
+            "value": "(size($target.rec_reason_area.avatars) >= 3) ? $target.rec_reason_area.avatars[2] : ''"
+        },
+        "approval_title_label": {
+            "value": "(size($target.rec_reason_area.main_text) > 0) ? $target.rec_reason_area.main_text + ' ' + $target.rec_reason_area.action_text : $target.rec_reason_area.action_text",
+            "extend": {
+                "fit-content": "true"
+            }
+        },
+        "tag_zhi_add_area_container": {
+            "extend": {
+                "display": "(size($target.metrics_area.text) > 0) ? 'flex' : 'none'"
+            }
+        },
+        "tag_zhi_add_bg_view": {
+            "extend": {
+                "background-color": "(size($target.metrics_area.background) > 0) ? $target.metrics_area.background : ''",
+                "fit-content": "true"
+            }
+        },
+        "tag_tag_zhi_add_title_label": {
+            "value": "(size($target.metrics_area.text) > 0) ? $target.metrics_area.text : ''",
+            "extend": {
+                "color": "(size($target.metrics_area.font_color) > 0) ? $target.metrics_area.font_color : ''",
+                "fit-content": "true"
+            }
+        },
+        "tag_personalized_area_container": {
+            "extend": {
+                "display": "(size($target.rec_reason_area.tag_area.text) > 0) ? 'flex' : 'none'"
+            }
+        },
+        "tag_personalized_title_label": {
+            "value": "(size($target.rec_reason_area.tag_area.text) > 0) ? $target.rec_reason_area.tag_area.text : ''",
+            "extend": {
+                "fit-content": "true"
+            }
+        },
+        "taskstroll_area_container": {
+            "extend": {
+                "display": "(size($extra.ui_content.desc) > 0) ? 'flex' : 'none'"
+            }
+        },
+        "taskstroll_avatar": {
+            "value": "(size($extra.ui_content.avatar) > 0) ? $extra.ui_content.avatar : ''"
+        },
+        "taskstroll_title_label": {
+            "value": "'<gxRichTextClipTag>' + $extra.ui_content.name + ' ' + $extra.ui_content.action + '<gxRichTextClipTag>' + $extra.ui_content.desc",
+            "extend": {
+                "highlight-tag": "'<gxRichTextClipTag>'",
+                "highlight-color": "'GBK06A'",
+                "fit-content": "true"
+            }
+        }
+    },
+    "event": {
+        "gx_hotrank_everyseeing_card": {
+            "type": "'tap'",
+            "actionType": "'event_open_url'",
+            "param": "$target.link.url"
+        },
+        "taskstroll_area_container": {
+            "type": "'tap'",
+            "actionType": "'event_open_url'",
+            "param": "$extra.ui_content.link_url",
+            "extraType": "$extra.za_info.content_type",
+            "linkUrl": "$target.link.url"
+        }
+    },
+    "track": {
+        "gx_hotrank_everyseeing_card": {
+            "show": {
+                "index": "$feed_index",
+                "pageId": "'45'",
+                "viewUrl": "'fakeurl://billboard'",
+                "contentType": "($extra.za_info.content_type == 'PIN') ? 'pin' : $content_type",
+                "contentId": "($extra.za_info.content_type == 'PIN') ? $extra.za_info.content_id : null",
+                "contentToken": "($extra.za_info.content_type == 'PIN') ? $extra.za_info.content_token : $content_id",
+                "attachedInfo": "($extra.za_info.content_type == 'PIN') ? $extra.za_info.attach_info :$attached_info",
+                "parentContentToken": "($extra.za_info.content_type == 'PIN') ?  $content_id : null",
+                "parentContentType": "($extra.za_info.content_type == 'PIN') ? $content_type : null",
+                "blockText": "'Everyone_Seeing'",
+                "locationType": "'card'",
+                "configMap": {
+                    "everyone_seeing_reason": "$target.rec_reason_area.tag_area.text"
+                }
+            },
+            "click": {
+                "index": "$feed_index",
+                "pageId": "'45'",
+                "viewUrl": "'fakeurl://billboard'",
+                "contentType": "$content_type",
+                "contentToken": "$content_id",
+                "attachedInfo": "$attached_info",
+                "blockText": "'Everyone_Seeing'",
+                "locationType": "'card'",
+                "actionType": "'openUrl'",
+                "linkUrl": "$target.link.url",
+                "configMap": {
+                    "everyone_seeing_reason": "$target.rec_reason_area.tag_area.text"
+                }
+            }
+        },
+        "taskstroll_area_container": {
+            "click": {
+                "index": "$feed_index",
+                "pageId": "'45'",
+                "viewUrl": "'fakeurl://billboard'",
+                "contentType": "($extra.za_info.content_type == 'PIN') ? 'pin' : $content_type",
+                "contentId": "($extra.za_info.content_type == 'PIN') ? $extra.za_info.content_id : null",
+                "contentToken": "($extra.za_info.content_type == 'PIN') ? $extra.za_info.content_token :  $content_id",
+                "attachedInfo": "($extra.za_info.content_type == 'PIN') ? $extra.za_info.attach_info :$attached_info",
+                "parentContentToken": "($extra.za_info.content_type == 'PIN') ?  $content_id : null",
+                "parentContentType": "($extra.za_info.content_type == 'PIN') ? $content_type : null",
+                "locationType": "($extra.za_info.content_type == 'COMMENT') ? 'block' : 'card'",
+                "actionType": "'openUrl'",
+                "linkUrl": "$target.link.url",
+                "blockText": "'Everyone_Seeing'",
+                "moduleId": "($extra.za_info.content_type == 'COMMENT') ? 'billboard_hot_comment' : null"
+            }
+        }
+    }
+}

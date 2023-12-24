@@ -1,0 +1,178 @@
+{
+  "event": {
+    "invite_list_content": {
+      "type": "'tap'",
+      "actionType": "'open_url'",
+      "param": "$content.target_link"
+    },
+    "avatarContainer": {
+      "type": "'tap'",
+      "actionType": "'open_url'",
+      "param": "$head.target_link"
+    },
+    "name": {
+      "type": "'tap'",
+      "actionType": "'open_url'",
+      "param": "$head.target_link"
+    },
+    "closeContainer": {
+      "type": "'tap'",
+      "actionType": "'click_close'",
+      "param": "$target.link.url"
+    },
+    "buttonView": { "type": "'tap'", "actionType": "'click_write_answer_btn'" }
+  },
+  "track": {
+    "invite_list_content": {
+      "show": {
+        "blockText": "'InviteCard'",
+        "attachedInfo": "$attach_info",
+        "contentToken": "($extra.button_type == 5) ? $extra.campaign_id : $string_question_id",
+        "contentType": "($extra.button_type == 5) ? 'Topic' : 'Question'",
+        "cardText": "($extra.button_type == 5) ? 'TopicCard' : null",
+        "locationType": "'Card'",
+        "configMap": {
+          "recommend_id": "size($additional_info) > 0 ? $additional_info[0].id : '0'"
+        }
+      },
+      "click": {
+        "blockText": "'InviteCard'",
+        "attachedInfo": "$attach_info",
+        "contentToken": "($extra.button_type == 5) ? $extra.campaign_id : $string_question_id",
+        "contentType": "($extra.button_type == 5) ? 'Topic' : 'Question'",
+        "cardText": "($extra.button_type == 5) ? 'TopicCard' : null",
+        "locationType": "'Card'",
+        "actionType": "'OpenUrl'",
+        "linkUrl": "$content.target_link",
+        "configMap": {
+          "recommend_id": "size($additional_info) > 0 ? $additional_info[0].id : '0'"
+        }
+      }
+    },
+    "closeContainer": {
+      "click": {
+        "contentToken": "($extra.button_type == 5) ? $extra.campaign_id : $string_question_id",
+        "attachedInfo": "$attach_info",
+        "contentType": "($extra.button_type == 5) ? 'Topic' : 'Question'",
+        "blockText": "'关闭'",
+        "locationType": "'Button'",
+        "actionType": "'Close'",
+        "cardText": "($extra.button_type == 5) ? 'TopicCard' : null",
+        "configMap": {
+          "recommend_id": "size($additional_info) > 0 ? $additional_info[0].id : '0'"
+        }
+      }
+    },
+    "buttonView": {
+      "click": {
+        "contentToken": "($extra.button_type == 5) ? $extra.campaign_id : $string_question_id",
+        "attachedInfo": "$attach_info",
+        "contentType": "($extra.button_type == 5) ? 'Topic' : 'Question'",
+        "blockText": "'WriteAnswer'",
+        "locationType": "'Button'",
+        "actionType": "'OpenUrl'",
+        "cardText": "($extra.button_type == 5) ? 'TopicCard' : null",
+        "linkUrl": "($extra.button_type == 5) ? $extra.button_target_link : null",
+        "configMap": {
+          "recommend_id": "size($additional_info) > 0 ? $additional_info[0].id : '0'"
+        }
+      }
+    }
+  },
+  "data": {
+    "avatar": {
+      "value": "$head.avatar_url",
+      "extend": { "display": "size($head.avatar_urls) < 2 ? 'flex' : 'none'" }
+    },
+    "leftSmallAvatar": {
+      "value": "$head.avatar_urls[0]",
+      "extend": { "display": "size($head.avatar_urls) > 1 ? 'flex' : 'none'" }
+    },
+    "rightSmallAvatar": {
+      "value": "$head.avatar_urls[1]",
+      "extend": { "display": "size($head.avatar_urls) > 1 ? 'flex' : 'none'" }
+    },
+    "bage1": {
+      "value": "$bage_labe_one",
+      "extend": { "display": "$bage_labe_one != '' ? 'flex' : 'none'" }
+    },
+    "bage2": {
+      "value": "$bage_labe_two",
+      "extend": { "display": "$bage_labe_two != '' ? 'flex' : 'none'" }
+    },
+    "name": { "value": "$content.title" },
+    "tag1": {
+      "value": "$head.labels[0].text",
+      "extend": { "display": "size($head.labels) > 0 ? 'flex' : 'none'" }
+    },
+    "tag2": {
+      "value": "$head.labels[1].text",
+      "extend": { "display": "size($head.labels) > 1 ? 'flex' : 'none'" }
+    },
+    "tag3": {
+      "value": "$head.labels[2].text",
+      "extend": { "display": "size($head.labels) > 2 ? 'flex' : 'none'" }
+    },
+    "tag4": {
+      "value": "$head.labels[3].text",
+      "extend": { "display": "size($head.labels) > 3 ? 'flex' : 'none'" }
+    },
+    "tag5": {
+      "value": "$head.labels[4].text",
+      "extend": { "display": "size($head.labels) > 4 ? 'flex' : 'none'" }
+    },
+    "tag6": {
+      "value": "$head.labels[5].text",
+      "extend": { "display": "size($head.labels) > 5 ? 'flex' : 'none'" }
+    },
+    "desc": {
+      "extend": {
+        "customText": "'timeProcessor'",
+        "subTitle": "$content.sub_title",
+        "timeStamp": "$created_str"
+      }
+    },
+    "close": { "value": "'local:zhicon_icon_16_xmark'" },
+    "upTitleText": {
+      "value": "$additional_info[0].text",
+      "extend": {
+        "fit-content": "'true'",
+        "display": "size($additional_info) > 0 ? 'flex' : 'none'",
+        "customText": "'reasonProcessor'",
+        "reason": "$additional_info[0].text"
+      }
+    },
+    "tagImage": { "value": "$target_source.extra.question_tag_icon" },
+    "titleText": {
+      "value": "$target_source.text",
+      "extend": {
+        "fit-content": "'true'",
+        "display": "(($target_source.text != null) && ($target_source.text != '')) ? 'flex' : 'none'",
+        "customText": "'titleProcessor'",
+        "title": "$target_source.text",
+        "showTag": "(($target_source.extra.question_tag_icon != null) && ($target_source.extra.question_tag_icon != '')) ? true : false"
+      }
+    },
+    "subTitleText": {
+      "value": "$target_source.full_text",
+      "extend": {
+        "fit-content": "'true'",
+        "display": "(($target_source.full_text != null) && ($target_source.full_text != '')) ? 'flex' : 'none'"
+      }
+    },
+    "detailText": { "value": "$target_source.sub_text" },
+    "buttonView": {
+      "extend": {
+        "background-color": "$extra.button_type == 2 ? 'G_#056DE814_#558EFF14' : 'GBL01A'"
+      }
+    },
+    "buttonIcon": {
+      "value": "$extra.button_type == 2 ? 'local:zhicon_icon_24_text_pencil' : 'local:zhicon_icon_16_pencil_paper'",
+      "extend": { "color": "$extra.button_type == 2 ? 'GBL01A' : 'GBK99B'" }
+    },
+    "buttonText": {
+      "value": "$extra.button_type == 2 ? '查看回答' : ($extra.button_type == 3 ? '拍视频' : ($extra.button_type == 4 ? '立即参与' : ($extra.button_type == 5 ? '发想法' : '写回答')))",
+      "extend": { "color": "$extra.button_type == 2 ? 'GBL01A' : 'GBK99B'" }
+    }
+  }
+}

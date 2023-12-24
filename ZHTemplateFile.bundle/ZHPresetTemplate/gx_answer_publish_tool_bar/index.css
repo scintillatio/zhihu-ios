@@ -1,0 +1,105 @@
+#gx_answer_publish_tool_bar {
+  justify-content: center;
+  align-items: center;
+  height: 46px;
+  background-color: GBK99A;
+  margin-left: 0px;
+  margin-right: 0px;
+  flex-grow: 1;
+  width: 100%;
+  flex-direction: column;
+}
+#TopLine {
+  height: 1px;
+  background-color: GBK09A;
+  width: 100%;
+}
+#ItemContainer {
+  height: 44px;
+  background-color: GBK99A;
+  align-self: stretch;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+#AaItem {
+  width: 16.66%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#AaImage {
+  width: 24px;
+  height: 24px;
+  border-radius: 0px;
+}
+#PictureSelectorItem {
+  width: 16.66%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#PictureSelectorImage {
+  width: 24px;
+  height: 24px;
+  border-radius: 0px;
+}
+#GoodsItem {
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  width: 0%;
+}
+#GoodsImage {
+  width: 24px;
+  height: 24px;
+  border-radius: 0px;
+}
+#AddItem {
+  width: 16.66%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#AddImage {
+  width: 24px;
+  height: 24px;
+  border-radius: 0px;
+}
+#UndoSelectorItem {
+  width: 16.66%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#UndoSelectorImage {
+  width: 24px;
+  height: 24px;
+  border-radius: 0px;
+}
+#RedoSelectorItem {
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  width: 16.66%;
+}
+#RedoSelectorImage {
+  width: 24px;
+  height: 24px;
+  border-radius: 0px;
+}
+#SettingSelectorItem {
+  width: 16.66%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#SettingSelectorImage {
+  width: 24px;
+  height: 24px;
+  border-radius: 0px;
+}
+#BottomLine {
+  height: 1px;
+  background-color: GBK09A;
+  width: 100%;
+}

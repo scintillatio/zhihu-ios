@@ -1,0 +1,56 @@
+{
+  "id": "gx_article_publish_tool_bar",
+  "type": "gaia-template",
+  "package": {
+    "id": "gx_article_publish_tool_bar",
+    "version": "0.0.1",
+    "modify-timestamp": "Tue Oct 11 2022 16:52:50 GMT+0800 (中国标准时间)",
+    "constraint-size": { "width": 375, "height": 44, "zoom": 1 },
+    "dependencies": {}
+  },
+  "layers": [
+    { "id": "TopLine", "type": "view" },
+    {
+      "id": "ItemContainer",
+      "type": "view",
+      "layers": [
+        {
+          "id": "AaItem",
+          "type": "view",
+          "layers": [{ "id": "AaImage", "type": "image" }]
+        },
+        {
+          "id": "PictureSelectorItem",
+          "type": "view",
+          "layers": [{ "id": "PictureSelectorImage", "type": "image" }]
+        },
+        {
+          "id": "GoodsItem",
+          "type": "view",
+          "layers": [{ "id": "GoodsImage", "type": "image" }]
+        },
+        {
+          "id": "AddItem",
+          "type": "view",
+          "layers": [{ "id": "AddImage", "type": "image" }]
+        },
+        {
+          "id": "UndoSelectorItem",
+          "type": "view",
+          "layers": [{ "id": "UndoSelectorImage", "type": "image" }]
+        },
+        {
+          "id": "RedoSelectorItem",
+          "type": "view",
+          "layers": [{ "id": "RedoSelectorImage", "type": "image" }]
+        },
+        {
+          "id": "SettingSelectorItem",
+          "type": "view",
+          "layers": [{ "id": "SettingSelectorImage", "type": "image" }]
+        }
+      ]
+    },
+    { "id": "BottomLine", "type": "view" }
+  ]
+}

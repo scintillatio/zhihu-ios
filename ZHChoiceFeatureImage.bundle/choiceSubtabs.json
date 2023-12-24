@@ -1,0 +1,362 @@
+{
+    "show_tab": true,
+    "selected_sections": [
+        {
+            "section_id": 1000,
+            "section_name": "精选",
+            "tab_type": "recommend",
+            "link_name": "recommend",
+            "show_type": "fixed",
+            "icon_url": "https://pic1.zhimg.com/80/v2-d5fccbb6e455075764c15cfcde242b80_1440w.png",
+            "color": "",
+            "sub_page_id": 0,
+            "business_url": "",
+            "activity_url": ""
+        },
+        {
+            "section_id": 1002,
+            "section_name": "直播",
+            "tab_type": "live",
+            "link_name": "live",
+            "show_type": "fixed",
+            "icon_url": "https://pic1.zhimg.com/80/v2-d5fccbb6e455075764c15cfcde242b80_1440w.png",
+            "color": "",
+            "sub_page_id": 0,
+            "business_url": "",
+            "activity_url": ""
+        },
+        {
+            "section_id": 2,
+            "section_name": "科学",
+            "tab_type": "section",
+            "link_name": "science",
+            "show_type": "adjustable",
+            "icon_url": "https://pic2.zhimg.com/80/v2-81123ca39054b2fb861afbe33922dcca_1440w.png",
+            "color": "",
+            "sub_page_id": 0,
+            "business_url": "https://api.zhihu.com/content-distribution-core/sections/2",
+            "activity_url": ""
+        },
+        {
+            "section_id": 52,
+            "section_name": "知识",
+            "tab_type": "section",
+            "link_name": "knowledge",
+            "show_type": "adjustable",
+            "icon_url": "https://pic4.zhimg.com/80/v2-3c4f9dbd6e2c974931cd0c7097461eeb_1440w.png",
+            "color": "",
+            "sub_page_id": 0,
+            "business_url": "",
+            "activity_url": ""
+        },
+        {
+            "section_id": 3,
+            "section_name": "心理",
+            "tab_type": "section",
+            "link_name": "mood",
+            "show_type": "adjustable",
+            "icon_url": "https://pic1.zhimg.com/80/v2-924e50738f1f7ae931183828713730de_1440w.png",
+            "color": "",
+            "sub_page_id": 0,
+            "business_url": "https://api.zhihu.com/content-distribution-core/sections/3",
+            "activity_url": ""
+        },
+        {
+            "section_id": 4,
+            "section_name": "影视",
+            "tab_type": "section",
+            "link_name": "film",
+            "show_type": "adjustable",
+            "icon_url": "https://pic4.zhimg.com/80/v2-899acf0fea0b9ceecab9c812533f4620_1440w.png",
+            "color": "",
+            "sub_page_id": 0,
+            "business_url": "https://api.zhihu.com/content-distribution-core/sections/4",
+            "activity_url": ""
+        },
+        {
+            "section_id": 5,
+            "section_name": "娱乐",
+            "tab_type": "section",
+            "link_name": "entertainment",
+            "show_type": "adjustable",
+            "icon_url": "https://pic1.zhimg.com/80/v2-0b4d663c5b0a03751bcdda06a0b09c9b_1440w.png",
+            "color": "",
+            "sub_page_id": 0,
+            "business_url": "https://api.zhihu.com/content-distribution-core/sections/5",
+            "activity_url": ""
+        },
+        {
+            "section_id": 11,
+            "section_name": "游戏",
+            "tab_type": "section",
+            "link_name": "game",
+            "show_type": "adjustable",
+            "icon_url": "https://pic4.zhimg.com/80/v2-cfff3cdb319539106381125ba64a68b9_1440w.png",
+            "color": "",
+            "sub_page_id": 0,
+            "business_url": "https://api.zhihu.com/content-distribution-core/sections/11",
+            "activity_url": ""
+        },
+        {
+            "section_id": 12,
+            "section_name": "亲子",
+            "tab_type": "section",
+            "link_name": "parent",
+            "show_type": "adjustable",
+            "icon_url": "https://pic1.zhimg.com/80/v2-2f4c722301260e6480691c070030a4da_1440w.png",
+            "color": "",
+            "sub_page_id": 0,
+            "business_url": "https://api.zhihu.com/content-distribution-core/sections/12",
+            "activity_url": ""
+        },
+        {
+            "section_id": 8,
+            "section_name": "时尚",
+            "tab_type": "section",
+            "link_name": "fashion",
+            "show_type": "adjustable",
+            "icon_url": "https://pic1.zhimg.com/80/v2-c130b72e43cd1f71a48c8c4e3ed1006b_1440w.png",
+            "color": "",
+            "sub_page_id": 0,
+            "business_url": "https://api.zhihu.com/content-distribution-core/sections/8",
+            "activity_url": ""
+        },
+        {
+            "section_id": 9,
+            "section_name": "数码",
+            "tab_type": "section",
+            "link_name": "digital",
+            "show_type": "adjustable",
+            "icon_url": "https://pic1.zhimg.com/80/v2-d5fccbb6e455075764c15cfcde242b80_1440w.png",
+            "color": "",
+            "sub_page_id": 0,
+            "business_url": "https://api.zhihu.com/content-distribution-core/sections/9",
+            "activity_url": ""
+        }
+    ],
+    "guess_like_sections": [
+        {
+            "section_id": 51,
+            "section_name": "高赞",
+            "tab_type": "",
+            "link_name": "highupvoted",
+            "show_type": "adjustable",
+            "icon_url": "https://pic2.zhimg.com/80/v2-4d11eb5f645f02f8b150c4e16e6994c1_1440w.png",
+            "color": "GRD07A",
+            "sub_page_id": 0,
+            "business_url": ""
+        },
+        {
+            "section_id": 53,
+            "section_name": "脑洞",
+            "tab_type": "",
+            "link_name": "brainhole",
+            "show_type": "adjustable",
+            "icon_url": "https://pic4.zhimg.com/80/v2-68b3370a6da496ebf090cbde186c4d3b_1440w.png",
+            "color": "GGN01A",
+            "sub_page_id": 0,
+            "business_url": ""
+        },
+        {
+            "section_id": 18,
+            "section_name": "动漫",
+            "tab_type": "",
+            "link_name": "anime",
+            "show_type": "adjustable",
+            "icon_url": "https://pic2.zhimg.com/80/v2-53a581a492b6a9c75c174704cf4945c0_1440w.png",
+            "color": "GYL01A",
+            "sub_page_id": 0,
+            "business_url": "https://api.zhihu.com/content-distribution-core/sections/18"
+        },
+        {
+            "section_id": 10,
+            "section_name": "体育",
+            "tab_type": "",
+            "link_name": "physical",
+            "show_type": "adjustable",
+            "icon_url": "https://pic1.zhimg.com/80/v2-14dcb4c782665d948eb439225dcd3bce_1440w.png",
+            "color": "GBL01A",
+            "sub_page_id": 0,
+            "business_url": "https://api.zhihu.com/content-distribution-core/sections/10"
+        }
+    ],
+    "more_sections": [
+        {
+            "section_id": 7,
+            "section_name": "校园",
+            "tab_type": "",
+            "link_name": "campus",
+            "show_type": "adjustable",
+            "icon_url": "https://pic2.zhimg.com/80/v2-b6c06bbf13ffaee78522efe6d025fe84_1440w.png",
+            "color": null,
+            "sub_page_id": null,
+            "business_url": "https://api.zhihu.com/content-distribution-core/sections/7"
+        },
+        {
+            "section_id": 13,
+            "section_name": "财经",
+            "tab_type": "",
+            "link_name": "finance",
+            "show_type": "adjustable",
+            "icon_url": "https://pic1.zhimg.com/80/v2-2d8c44b56a69d20a3a1b3932e131723e_1440w.png",
+            "color": null,
+            "sub_page_id": null,
+            "business_url": "https://api.zhihu.com/content-distribution-core/sections/13"
+        },
+        {
+            "section_id": 14,
+            "section_name": "法律",
+            "tab_type": "",
+            "link_name": "legal",
+            "show_type": "adjustable",
+            "icon_url": "https://pic1.zhimg.com/80/v2-d278ac07f92e3eb7967c65da4230bf74_1440w.png",
+            "color": null,
+            "sub_page_id": 0,
+            "business_url": "https://api.zhihu.com/content-distribution-core/sections/14"
+        },
+        {
+            "section_id": 15,
+            "section_name": "职场",
+            "tab_type": "",
+            "link_name": "work",
+            "show_type": "adjustable",
+            "icon_url": "https://pic4.zhimg.com/80/v2-0e7a7e0ebd7a4af4e0a69980d471ae2b_1440w.png",
+            "color": null,
+            "sub_page_id": null,
+            "business_url": "https://api.zhihu.com/content-distribution-core/sections/15"
+        },
+        {
+            "section_id": 16,
+            "section_name": "宠物",
+            "tab_type": "",
+            "link_name": "pet",
+            "show_type": "adjustable",
+            "icon_url": "https://pic4.zhimg.com/80/v2-325e18e6f61939bef0e003b42704ed39_1440w.png",
+            "color": null,
+            "sub_page_id": null,
+            "business_url": "https://api.zhihu.com/content-distribution-core/sections/16"
+        },
+        {
+            "section_id": 17,
+            "section_name": "旅行",
+            "tab_type": "",
+            "link_name": "travel",
+            "show_type": "adjustable",
+            "icon_url": "https://pic1.zhimg.com/80/v2-291a20b818e1a1e1622a6a61e8747571_1440w.png",
+            "color": null,
+            "sub_page_id": null,
+            "business_url": "https://api.zhihu.com/content-distribution-core/sections/17"
+        },
+        {
+            "section_id": 24,
+            "section_name": "电竞",
+            "tab_type": "",
+            "link_name": "gamesports",
+            "show_type": "adjustable",
+            "icon_url": "https://pic1.zhimg.com/80/v2-a5c3fe1a1e4e43d53f6773e72f7071d0_1440w.png",
+            "color": null,
+            "sub_page_id": 0,
+            "business_url": "https://api.zhihu.com/content-distribution-core/sections/24"
+        },
+        {
+            "section_id": 25,
+            "section_name": "健康",
+            "tab_type": "",
+            "link_name": "health",
+            "show_type": "adjustable",
+            "icon_url": "https://pic1.zhimg.com/80/v2-59cd059c7ad6d4390689c734477b664c_1440w.png",
+            "color": null,
+            "sub_page_id": 0,
+            "business_url": "https://api.zhihu.com/content-distribution-core/sections/25"
+        },
+        {
+            "section_id": 26,
+            "section_name": "种草",
+            "tab_type": "",
+            "link_name": "zhongcao",
+            "show_type": "adjustable",
+            "icon_url": "https://pic1.zhimg.com/80/v2-03118121c987087c7f216438324ddce5_1440w.png",
+            "color": null,
+            "sub_page_id": 0,
+            "business_url": "https://api.zhihu.com/content-distribution-core/sections/26"
+        },
+        {
+            "section_id": 23,
+            "section_name": "故事",
+            "tab_type": "",
+            "link_name": "story",
+            "show_type": "adjustable",
+            "icon_url": "https://pic1.zhimg.com/80/v2-dcf536a79a16dcf5d329692ef358c573_1440w.png",
+            "color": null,
+            "sub_page_id": 0,
+            "business_url": "https://api.zhihu.com/content-distribution-core/sections/23"
+        },
+        {
+            "section_id": 19,
+            "section_name": "汽车",
+            "tab_type": "",
+            "link_name": "car",
+            "show_type": "adjustable",
+            "icon_url": "https://pic4.zhimg.com/80/v2-5fe4d69996585f7cd7bec251b6cc2a9a.png",
+            "color": null,
+            "sub_page_id": null,
+            "business_url": "https://api.zhihu.com/content-distribution-core/sections/19"
+        },
+        {
+            "section_id": 21,
+            "section_name": "美食",
+            "tab_type": "",
+            "link_name": "food",
+            "show_type": "adjustable",
+            "icon_url": "https://pic2.zhimg.com/80/v2-caa30c4a3a8cf9bf5be2d4af92fbbe5e_1440w.png",
+            "color": null,
+            "sub_page_id": null,
+            "business_url": "https://api.zhihu.com/content-distribution-core/sections/21"
+        },
+        {
+            "section_id": 22,
+            "section_name": "考研",
+            "tab_type": "",
+            "link_name": "kaoyan",
+            "show_type": "adjustable",
+            "icon_url": "https://pic2.zhimg.com/80/v2-03bd1add0d0bf4d4d5b05c315822f840_1440w.png",
+            "color": null,
+            "sub_page_id": null,
+            "business_url": "https://api.zhihu.com/content-distribution-core/sections/22"
+        },
+        {
+            "section_id": 56,
+            "section_name": "时事",
+            "tab_type": "",
+            "link_name": "political",
+            "show_type": "adjustable",
+            "icon_url": "https://pic2.zhimg.com/80/v2-608557429ce1edad9bd3e17bf4e7b1be.png",
+            "color": null,
+            "sub_page_id": null,
+            "business_url": ""
+        },
+        {
+            "section_id": 20,
+            "section_name": "家居",
+            "tab_type": "",
+            "link_name": "home",
+            "show_type": "adjustable",
+            "icon_url": "https://pic4.zhimg.com/80/v2-da820cdfb89652fde8dcbc10beed7cb9.png",
+            "color": null,
+            "sub_page_id": null,
+            "business_url": "https://api.zhihu.com/content-distribution-core/sections/20"
+        },
+        {
+            "section_id": 57,
+            "section_name": "国际",
+            "tab_type": "",
+            "link_name": "international",
+            "show_type": "adjustable",
+            "icon_url": "https://pic2.zhimg.com/80/v2-d23cc025fa6d7a5039a8fb5e893adacd_1440w.png",
+            "color": null,
+            "sub_page_id": null,
+            "business_url": ""
+        }
+    ],
+    "version": 3
+}

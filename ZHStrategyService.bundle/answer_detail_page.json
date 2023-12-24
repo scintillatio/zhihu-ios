@@ -1,0 +1,146 @@
+{
+    "code": 200,
+    "data": {
+        "scene": "answer_detail_page",
+        "strategy_data": [
+            {
+                "scene": "answer_detail_page",
+                "content_id": "",
+                "content_type": "",
+                "page_id": "42",
+                "strategy": [
+                    {
+                        "id": "answer_favorite_guide",
+                        "group_id": "community_favorite",
+                        "priority": 300,
+                        "interrupt_low_priority": true,
+                        "queue_type": "guideQueue",
+                        "frequency_control": {},
+                        "trigger_condition": {
+                            "type": "And",
+                            "and_condition": [
+                                {
+                                    "type": "Feature",
+                                    "feature": {
+                                        "feature_type": "CustomAction",
+                                        "mapping_type": "feature",
+                                        "page_ids": [
+                                            "42"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Expression",
+                                    "expression": {
+                                        "attribute": "customAction",
+                                        "operator": "equal",
+                                        "target": "short_container_collection_dialog"
+                                    }
+                                },
+                                {
+                                    "type": "Expression",
+                                    "expression": {
+                                        "attribute": "pageId",
+                                        "operator": "equal",
+                                        "target": "42"
+                                    }
+                                }
+                            ]
+                        },
+                        "trigger_action": {
+                            "action": "short_container_collection_dialog",
+                            "show_duration": 5
+                        }
+                    },
+                    {
+                        "id": "sc_invited_people_push_guide",
+                        "group_id": "grow_push",
+                        "priority": 200,
+                        "interrupt_low_priority": false,
+                        "queue_type": "popWindowQueue",
+                        "frequency_control": {},
+                        "trigger_condition": {
+                            "type": "And",
+                            "and_condition": [
+                                {
+                                    "type": "Feature",
+                                    "feature": {
+                                        "feature_type": "CustomAction",
+                                        "mapping_type": "feature",
+                                        "page_ids": [
+                                            "42"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Expression",
+                                    "expression": {
+                                        "attribute": "customAction",
+                                        "operator": "equal",
+                                        "target": "sc_invited_people_push_guide"
+                                    }
+                                },
+                                {
+                                    "type": "Expression",
+                                    "expression": {
+                                        "attribute": "pageId",
+                                        "operator": "equal",
+                                        "target": "42"
+                                    }
+                                }
+                            ]
+                        },
+                        "trigger_action": {
+                            "action": "sc_invited_people_push_guide",
+                            "show_duration": 120
+                        }
+                    },
+                    {
+                        "id": "sc_posted_answer_push_guide",
+                        "group_id": "grow_push",
+                        "priority": 200,
+                        "interrupt_low_priority": false,
+                        "queue_type": "popWindowQueue",
+                        "frequency_control": {},
+                        "trigger_condition": {
+                            "type": "And",
+                            "and_condition": [
+                                {
+                                    "type": "Feature",
+                                    "feature": {
+                                        "feature_type": "CustomAction",
+                                        "mapping_type": "feature",
+                                        "page_ids": [
+                                            "42"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Expression",
+                                    "expression": {
+                                        "attribute": "customAction",
+                                        "operator": "equal",
+                                        "target": "sc_posted_answer_push_guide"
+                                    }
+                                },
+                                {
+                                    "type": "Expression",
+                                    "expression": {
+                                        "attribute": "pageId",
+                                        "operator": "equal",
+                                        "target": "42"
+                                    }
+                                }
+                            ]
+                        },
+                        "trigger_action": {
+                            "action": "sc_posted_answer_push_guide",
+                            "show_duration": 120
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "message": ""
+}

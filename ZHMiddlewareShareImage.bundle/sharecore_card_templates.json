@@ -1,0 +1,144 @@
+{
+  "templates": [{
+      "id": "default",
+      "background": {
+        "color": "#ffffff"
+      },
+      "body": {
+        "quote_icon": {
+          "color": "#F6F6F6"
+        },
+        "content": {
+          "color": "#121212"
+        },
+        "author": {
+          "name_color": "#444444",
+          "badge_desc_color": "#999999"
+        },
+        "logo": {
+          "color": "#056DE8"
+        }
+      },
+      "footer": {
+        "title_color": "#121212",
+        "qr_desc_color": "#66121212",
+        "qr_fill_color": "#121212",
+        "qr_background_color": "#FFFFFF",
+        "background_color": "#F6F6F6",
+        "sharp_corners_color": "#FFFFFF"
+      }
+    },{
+        "id": "gold",
+        "background": {
+          "color": "#21211F"
+        },
+        "body": {
+          "quote_icon": {
+            "color": "#4CDCC196"
+          },
+          "content": {
+            "color": "#DCC196"
+          },
+          "author": {
+            "name_color": "#E6DCC196",
+            "badge_desc_color": "#B3DCC196"
+          },
+          "logo": {
+            "color": "#B3DCC196"
+          }
+        },
+        "footer": {
+          "title_color": "#121212",
+          "qr_desc_color": "#66121212",
+          "qr_fill_color": "#121212",
+          "qr_background_color": "#DCC196",
+          "background_color": "#DCC196",
+          "sharp_corners_color": "#21211F"
+        }
+      },{
+        "id": "blue",
+        "background": {
+          "color": "#0066FF"
+        },
+        "body": {
+          "quote_icon": {
+            "color": "#4CFFFFFF"
+          },
+          "content": {
+            "color": "#FFFFFF"
+          },
+          "author": {
+            "name_color": "#FFFFFF",
+            "badge_desc_color": "#B2FFFFFF"
+          },
+          "logo": {
+            "color": "#B2FFFFFF"
+          }
+        },
+        "footer": {
+          "title_color": "#121212",
+          "qr_desc_color": "#66121212",
+          "qr_fill_color": "#121212",
+          "qr_background_color": "#FFFFFF",
+          "background_color": "#FFFFFF",
+          "sharp_corners_color": "#0066FF"
+        }
+      },{
+      "id": "purple",
+      "background": {
+        "color": "#3E4C95"
+      },
+      "body": {
+        "quote_icon": {
+          "color": "#4cFFFFFF"
+        },
+        "content": {
+          "color": "#FFFFFF"
+        },
+        "author": {
+          "name_color": "#FFFFFF",
+          "badge_desc_color": "#B2FFFFFF"
+        },
+        "logo": {
+          "color": "#B2FFFFFF"
+        }
+      },
+      "footer": {
+        "title_color": "#121212",
+        "qr_desc_color": "#66121212",
+        "qr_fill_color": "#121212",
+        "qr_background_color": "#FFFFFF",
+        "background_color": "#FFFFFF",
+        "sharp_corners_color": "#3E4C95"
+      }
+    },{
+      "id": "green",
+      "background": {
+        "color": "#1EADC3"
+      },
+      "body": {
+        "quote_icon": {
+          "color": "#4CFFFFFF"
+        },
+        "content": {
+          "color": "#FFFFFF"
+        },
+        "author": {
+          "name_color": "#FFFFFF",
+          "badge_desc_color": "#B2FFFFFF"
+        },
+        "logo": {
+          "color": "#B2FFFFFF"
+        }
+      },
+      "footer": {
+        "title_color": "#121212",
+        "qr_desc_color": "#66121212",
+        "qr_fill_color": "#121212",
+        "qr_background_color": "#FFFFFF",
+        "background_color": "#FFFFFF",
+        "sharp_corners_color": "#1EADC3"
+      }
+    }
+  ]
+}

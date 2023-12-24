@@ -1,0 +1,160 @@
+{
+    "version":4,
+    "data":{
+        "gaiaX":{
+            "extend":{
+                "templateId":"gx_question_publish_tool_bar_v2",
+                "source":"question",
+                "height":48,
+                "sceneCode":"question_publish",
+                "viewState":{
+                    "PictureSelectorItem_isHighLight":false,
+                    "PictureSelectorItem_enable":false,
+                    "PictureSelectorItem_responseState":true,
+                    "AtSelectorItem_isHighLight":false,
+                    "AtSelectorItem_enable":false,
+                    "AtSelectorItem_responseState":true,
+                    "LinkSelectorItem_isHighLight":false,
+                    "LinkSelectorItem_enable":false,
+                    "LinkSelectorItem_responseState":true,
+                    "UndoSelectorItem_isHighLight":false,
+                    "UndoSelectorItem_enable":false,
+                    "UndoSelectorItem_responseState":false,
+                    "RedoSelectorItem_isHighLight":false,
+                    "RedoSelectorItem_enable":false,
+                    "RedoSelectorItem_responseState":false,
+                    "SettingSelectorItem_isHighLight":false,
+                    "SettingSelectorItem_enable":true,
+                    "SettingSelectorItem_responseState":false
+                }
+            }
+        },
+        "keyboard":{
+            
+        },
+        "mediaSelector":{
+            
+        },
+        "media":{
+            
+        },
+        "imageEdit":{
+            
+        },
+        "topic":{
+            "extend":{
+                "maxTopic":5,
+                "minTopic":1
+            }
+        },
+        "topicUIV2":{
+            "extend":{
+                "enableSmartMatchedTopic":true,
+                "defaultMaxPickedCount":5
+            }
+        },
+        "at":{
+
+        },
+        "uploadImageV2":{
+            "extend":{
+                "source":"question"
+            }
+        },
+        "uploadVideoV2":{
+            
+        },
+        "postUI":{
+            "extend":{
+                "title":"发布问题",
+                "style":"label"
+            }
+        },
+        "hybrid":{
+            "extend":{
+                "url":"https://www.zhihu.com/appview/entity-editor",
+                "appid":"30005",
+                "placeholder":"详细说明问题，快速获得专业解答（选填）"
+            }
+        },
+        "closeUI":{
+            "extend":{
+                "title":"取消"
+            }
+        },
+        "navigationTitleUI":{
+            "extend":{
+                "title":"提问题"
+            }
+        },
+        "hybridUI":{
+
+        },
+        "commonDraft":{
+
+        },
+        "toolBarUI":{
+
+        },
+        "control":{
+
+        },
+        "titleUI": {
+            "extend":{
+                "placeholder":"输入问题并以问号结尾（必填）",
+                "minLength": 4,
+                "maxLength": 50
+            }
+        },
+        "customLink": {
+            
+        },
+        "guidePage":{
+            "extend":{
+                "url":"https://www.zhihu.com/appview/editor/guide?scene=question",
+                "title":"如何更好地进行提问？"
+            }
+            
+        },
+        "anonymity":{
+        },
+        "questionFloatGuideUI":{
+            
+        },
+        "guideUI":{
+            "extend":{
+                "itemType":"route",
+                "title":"如何更好地进行提问",
+                "headImage":"local:zhicon_icon_16_question_circle"
+            }
+        },
+        "toolBar": {
+            
+        },
+        "settingContainerUI": {
+            "extend": {
+                "plugins": [["guideUI"]]
+            }
+        },
+        "title": {
+            "extend": {
+                "minLength": 4,
+                "maxLength": 50
+            }
+        },
+        "reason": {
+            "extend":{
+                "reasons":[
+                    "标点或格式错误",
+                    "不构成提问",
+                    "包含主观判断",
+                    "缺乏可信来源",
+                    "其他"
+                ]
+            }
+        },
+        "searchUI":{
+            
+        }
+    }
+}

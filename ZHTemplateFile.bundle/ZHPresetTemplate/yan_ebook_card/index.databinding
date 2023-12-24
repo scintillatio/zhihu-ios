@@ -1,0 +1,76 @@
+{
+  "event": {
+    "yan_ebook_card": [
+      { "type": "'tap'", "param": "$url", "actionType": "'event_open_url'" },
+      { "type": "$is_recommend == '1' ? '' : 'longpress'" }
+    ]
+  },
+  "track": {
+    "yan_ebook_card": {
+      "show": {
+        "locationType": "'Card'",
+        "moduleId": "$module_id",
+        "cardText": "$title",
+        "contentType": "'EBook'",
+        "contentId": "$id",
+        "moduleIndex": "$index",
+        "index": "$index",
+        "attachedInfo": "$attached_info",
+        "configMap": { "is_recommend": "$is_recommend", "tag_list": "$tag_list" }
+      },
+      "click": {
+        "locationType": "'Card'",
+        "moduleId": "$module_id",
+        "cardText": "$title",
+        "contentType": "'EBook'",
+        "contentId": "$id",
+        "moduleIndex": "$index",
+        "index": "$index",
+        "linkUrl": "$url",
+        "actionType": "'OpenUrl'",
+        "eventType": "'Click'",
+        "attachedInfo": "$attached_info",
+        "configMap": { "is_recommend": "$is_recommend", "tag_list": "$tag_list" }
+      }
+    }
+  },
+  "data": {
+    "cover_placeholder": {
+      "value": {
+        "lightImg": "$placeholder_light",
+        "nightImg": "$placeholder_night"
+      }
+    },
+    "cover": { "value": "$artwork" },
+    "title": { "value": "$title" },
+    "sub_title": { "value": "$author" },
+    "desc": { "value": "$labels_text" },
+    "bottom_text1": {
+      "value": "$score",
+      "extend": {
+        "display": "$score != null && $score != '' ? 'flex' : 'none'"
+      }
+    },
+    "divide_line": {
+      "extend": {
+        "display": "($score != null && $score != '') && ($word_count != null && $word_count != '') ? 'flex' : 'none'"
+      }
+    },
+    "bottom_text2": {
+      "value": "$word_count",
+      "extend": {
+        "display": "$word_count != null && $word_count != '' ? 'flex' : 'none'"
+      }
+    },
+    "progress": {
+      "value": "$progress_text",
+      "extend": { "display": "$is_recommend == '0' ? 'flex' : 'none'" }
+    },
+    "off_shelf_view": {
+      "extend": { "display": "($source == 'like' && $on_shelves == 'false') ? 'flex' : 'none'" }
+    },
+    "off_shelf_text": {
+      "value": "'- 已下架 -'"
+    }
+  }
+}

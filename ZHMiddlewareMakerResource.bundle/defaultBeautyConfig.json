@@ -1,0 +1,297 @@
+{
+    "id":"1623715989815713793",
+    "uuid":"1CABF258-D613-4351-A518-887C5A4BD596",
+    "category":"美颜",
+    "name":"自然",
+    "packageUrl":"https://zhstatic.zhihu.com/video-material/20230403170622/beauty/0/1CABF258-D613-4351-A518-887C5A4BD596.zip",
+    "coverUrl":"https://pic1.zhimg.com/v2-c20744a24e5c36a07ad80e0ee6e8fc37.jpg?source=ccfced1a",
+    "sort":0,
+    "type":8,
+    "updated_at":"20230324130111",
+    "progress":70,
+    "panel":{
+        "name":"Nature",
+        "uuid":"1CABF258-D613-4351-A518-887C5A4BD596",
+        "version":14,
+        "cover":"cover.png",
+        "minSdkVersion":"3.4.0",
+        "supportedAspectRatio":"9v16",
+        "translation":[
+            {
+                "originalText":"Nature",
+                "targetLanguage":"zh_CN",
+                "targetText":"自然"
+            }
+        ],
+        "effectContent":{
+            "adjust":[
+                {
+                    "type":"Sharpen",
+                    "canReplace":1,
+                    "params":[
+                        {
+                            "key":"Amount",
+                            "value":0.7,
+                            "type":"float"
+                        }
+                    ]
+                },
+                {
+                    "type":"Definition",
+                    "canReplace":1,
+                    "params":[
+                        {
+                            "key":"Intensity",
+                            "value":0,
+                            "type":"float"
+                        }
+                    ]
+                }
+            ],
+            "makeup":[
+                {
+                    "type":"Shadow",
+                    "canReplace":1,
+                    "params":[
+                        {
+                            "key":"Makeup Shadow Package Id",
+                            "value":"A2D9B418-B6C0-4961-8B0E-62472837C429",
+                            "type":"string"
+                        },
+                        {
+                            "key":"Makeup Shadow Intensity",
+                            "value":0.7,
+                            "type":"float"
+                        }
+                    ]
+                },
+                {
+                    "type":"Lip",
+                    "canReplace":1,
+                    "params":[
+                        {
+                            "key":"Makeup Lip Package Id",
+                            "value":"43E3FAAA-4F13-427A-AA71-281D06C252CC",
+                            "type":"string"
+                        },
+                        {
+                            "key":"Makeup Lip Intensity",
+                            "value":0.4,
+                            "type":"float"
+                        }
+                    ]
+                }
+            ],
+            "beauty":[
+                {
+                    "params":[
+                        {
+                            "key":"Beauty Effect",
+                            "value":true,
+                            "type":"boolean"
+                        }
+                    ]
+                },
+                {
+                    "canReplace":1,
+                    "params":[
+                        {
+                            "key":"Advanced Beauty Enable",
+                            "value":true,
+                            "type":"boolean"
+                        },
+                        {
+                            "key":"Advanced Beauty Type",
+                            "value":1,
+                            "type":"int"
+                        },
+                        {
+                            "key":"Advanced Beauty Intensity",
+                            "value":0.9,
+                            "type":"float"
+                        }
+                    ]
+                },
+                {
+                    "canReplace":1,
+                    "params":[
+                        {
+                            "key":"Whitening Lut Enabled",
+                            "value":true,
+                            "type":"boolean"
+                        },
+                        {
+                            "key":"Whitening Lut File",
+                            "value":"nv.mslut",
+                            "type":"path"
+                        },
+                        {
+                            "key":"Beauty Whitening",
+                            "value":0.9,
+                            "type":"float"
+                        }
+                    ]
+                },
+                {
+                    "canReplace":1,
+                    "params":[
+                        {
+                            "key":"Advanced Beauty Enable",
+                            "value":true,
+                            "type":"boolean"
+                        },
+                        {
+                            "key":"Advanced Beauty Matte Intensity",
+                            "value":0.8,
+                            "type":"float"
+                        }
+                    ]
+                }
+            ],
+            "shape":[
+                {
+                    "params":[
+                        {
+                            "key":"Face Mesh Internal Enabled",
+                            "value":true,
+                            "type":"boolean"
+                        }
+                    ]
+                },
+                {
+                    "type":"Face Size",
+                    "canReplace":1,
+                    "params":[
+                        {
+                            "key":"Face Mesh Face Size Custom Package Id",
+                            "value":"71607C15-A191-48F0-BD83-9388E90FFED3",
+                            "type":"string"
+                        },
+                        {
+                            "key":"Face Mesh Face Size Degree",
+                            "value":0.2,
+                            "type":"float"
+                        }
+                    ]
+                },
+                {
+                    "type":"Face Width",
+                    "canReplace":1,
+                    "params":[
+                        {
+                            "key":"Face Mesh Face Width Custom Package Id",
+                            "value":"F8354F71-F653-4782-8F07-31908DFAE23D",
+                            "type":"string"
+                        },
+                        {
+                            "key":"Face Mesh Face Width Degree",
+                            "value":0.2,
+                            "type":"float"
+                        }
+                    ]
+                },
+                {
+                    "type":"Eye Size",
+                    "canReplace":1,
+                    "params":[
+                        {
+                            "key":"Face Mesh Eye Size Custom Package Id",
+                            "value":"35829CD2-DAAD-4191-8060-0B26FB961490",
+                            "type":"string"
+                        },
+                        {
+                            "key":"Face Mesh Eye Size Degree",
+                            "value":0.3,
+                            "type":"float"
+                        }
+                    ]
+                },
+                {
+                    "type":"Nose Width",
+                    "canReplace":1,
+                    "params":[
+                        {
+                            "key":"Face Mesh Nose Width Custom Package Id",
+                            "value":"67236090-6D16-45B7-81DC-C7E4A23B3C78",
+                            "type":"string"
+                        },
+                        {
+                            "key":"Face Mesh Nose Width Degree",
+                            "value":0.25,
+                            "type":"float"
+                        }
+                    ]
+                }
+            ],
+            "microShape":[
+                {
+                    "params":[
+                        {
+                            "key":"Advanced Beauty Enable",
+                            "value":true,
+                            "type":"boolean"
+                        }
+                    ]
+                },
+                {
+                    "params":[
+                        {
+                            "key":"Beauty Shape",
+                            "value":true,
+                            "type":"boolean"
+                        }
+                    ]
+                },
+                {
+                    "type":"Head Size",
+                    "canReplace":1,
+                    "params":[
+                        {
+                            "key":"Warp Head Size Custom Package Id",
+                            "value":"316E3641-98BA-4E07-958E-9ED7D7F75E97",
+                            "type":"string"
+                        },
+                        {
+                            "key":"Head Size Warp Degree",
+                            "value":0.4,
+                            "type":"float"
+                        }
+                    ]
+                },
+                {
+                    "type":"Remove Dark Circles",
+                    "canReplace":1,
+                    "params":[
+                        {
+                            "key":"Advanced Beauty Remove Dark Circles Intensity",
+                            "value":1,
+                            "type":"float"
+                        }
+                    ]
+                },
+                {
+                    "type":"Remove Nasolabial Folds",
+                    "canReplace":1,
+                    "params":[
+                        {
+                            "key":"Advanced Beauty Remove Nasolabial Folds Intensity",
+                            "value":0.7,
+                            "type":"float"
+                        }
+                    ]
+                },
+                {
+                    "type":"Brighten Eyes",
+                    "canReplace":1,
+                    "params":[
+                        {
+                            "key":"Advanced Beauty Brighten Eyes Intensity",
+                            "value":0.7,
+                            "type":"float"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

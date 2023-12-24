@@ -1,0 +1,254 @@
+{
+  "event": {
+    "container_root": [
+      {
+        "type": "'tap'",
+        "param": "$target.url",
+        "actionType": "'event_open_url'"
+      },
+      { "type": "'longpress'" }
+    ],
+    "container_like": {
+      "type": "'tap'",
+      "actionType": "'event_interactive_applaud'",
+      "param": {
+        "content_id": "$__data_mapping.__reactions_mapping.content_id",
+        "scene_code": "$__data_mapping.__reactions_mapping.scene_code",
+        "count": "$__data_mapping.__reactions_mapping.reactions.APPLAUD.count",
+        "reacted": "$__data_mapping.__reactions_mapping.reactions.APPLAUD.reacted"
+      }
+    }
+  },
+  "track": {
+    "container_root": {
+      "click": {
+        "locationType": "'Card'",
+        "contentType": "'Pin'",
+        "contentId": "$target.content_id",
+        "index": "$__data_mapping.__reactions_mapping.za_info.index",
+        "blockText": "$target.content_type + '(' + $target.video.id + ')'",
+        "actionType": "'OpenUrl'",
+        "linkUrl": "$target.url",
+        "attachedInfo": "$attached_info"
+      },
+      "show": {
+        "locationType": "'Card'",
+        "contentType": "'Pin'",
+        "contentId": "$target.content_id",
+        "index": "$__data_mapping.__reactions_mapping.za_info.index",
+        "blockText": "$target.content_type + '(' + $target.video.id + ')'",
+        "actionType": "'OpenUrl'",
+        "linkUrl": "$target.url",
+        "attachedInfo": "$attached_info",
+        "configMap": {
+          "label": "$target.author.is_following ? '你的关注' : ''"
+        }
+      }
+    },
+    "container_like": {
+      "click": {
+        "contentType": "$__data_mapping.__reactions_mapping.za_info.type",
+        "contentId": "$__data_mapping.__reactions_mapping.za_info.object_id",
+        "contentToken": "$__data_mapping.__reactions_mapping.za_info.token",
+        "attachedInfo": "$__data_mapping.__reactions_mapping.za_info.attachedInfo",
+        "locationType": "'button'",
+        "locationText": "$__data_mapping.__reactions_mapping.reactions.APPLAUD.reacted == true ? '取消鼓掌' : '鼓掌'",
+        "actionType": "$__data_mapping.__reactions_mapping.reactions.APPLAUD.reacted == true ? 'unApplaud' : 'applaud'"
+      }
+    },
+    "tag_1": {
+      "show": {
+        "moduleId": "'topic_tag'",
+        "locationType": "'Text'",
+        "contentType": "'Topic'",
+        "contentToken": "$tags[0].content_token",
+        "contentId": "$tags[0].content_id"
+      }
+    },
+    "tag_2": {
+      "show": {
+        "moduleId": "'topic_tag'",
+        "locationType": "'Text'",
+        "contentType": "'Topic'",
+        "contentToken": "$tags[1].content_token",
+        "contentId": "$tags[1].content_id"
+      }
+    },
+    "tag_3": {
+      "show": {
+        "moduleId": "'topic_tag'",
+        "locationType": "'Text'",
+        "contentType": "'Topic'",
+        "contentToken": "$tags[2].content_token",
+        "contentId": "$tags[2].content_id"
+      }
+    }
+  },
+  "data": {
+    "container_root": {
+      "value": "$target.content_type + '(' + $target.video.id + ')'"
+    },
+    "image_big": {
+      "value": "$target.video.thumbnail",
+      "extend": {
+        "aspect-ratio": "(($target.images[0].width / $target.images[0].height) <= 0.8) ? '0.75' : '1'",
+        "image-retry": "true",
+        "background-color": "'GBK09B'"
+      }
+    },
+    "image_video": {
+      "value": "env('platform') == 'iOS' ? 'local:zhimg_topic_image_play_icon' :'local:zhicon_play_icon'",
+      "extend": {
+        "margin-top": "env('platform') == 'iOS' ? 0 : 4",
+        "width": "env('platform') == 'iOS' ? 22 : 16",
+        "height": "env('platform') == 'iOS' ? 22 : 16"
+      }
+    },
+    "text_video": {
+      "value": "$target.video.duration",
+      "extend": { "customText": "'time'", "fit-content": "true" }
+    },
+    "content": {
+      "extend": {
+        "color": "$style.text_style.font_color != null ? $style.text_style.font_color : 'GBK02A'",
+        "lines": "$style.text_style.max_line != null ? $style.text_style.max_line : '2'",
+        "fit-content": "true",
+        "customText": "'richText'",
+        "diaplay": "$target.big_card.summary == '' || $target.big_card.summary == null ? 'none' : 'flex'",
+        "font-size": "$style.text_style.font_size != null ? $style.text_style.font_size : 14"
+      },
+      "value": "$target.big_card"
+    },
+    "image_author": { "value": "$target.author.avatar_url" },
+    "text_author": {
+      "value": "$target.author.name",
+      "extend": { "fit-content": "false" }
+    },
+    "applaudIcon": {
+      "value": "$__data_mapping.__reactions_mapping.reactions.APPLAUD.reacted == true ? 'local:zhicon_icon_24_heart_fill' : 'local:zhicon_icon_24_heart'",
+      "extend": {
+        "color": "$__data_mapping.__reactions_mapping.reactions.APPLAUD.reacted == true ? 'GRD01A' : 'GBK05A'",
+        "opacity": "1.0"
+      }
+    },
+    "applaudCount": {
+      "value": "StringOfIntValue($__data_mapping.__reactions_mapping.reactions.APPLAUD.count)",
+      "extend": {
+        "fit-content": "true",
+        "color": "$__data_mapping.__reactions_mapping.reactions.APPLAUD.reacted == true ? 'GRD01A' : 'GBK05A'",
+        "customText": "'like'",
+        "margin-left": "env('platform') == 'iOS' ? 2 : 0"
+      }
+    },
+    "container_tag": {
+      "extend": { "display": "size($tags) == 0 ? 'none' : 'flex'" }
+    },
+    "tag_1": {
+      "extend": {
+        "border-radius": "$tags[0].text_style.angle",
+        "display": "size($tags) > 0 ? 'flex' : 'none'"
+      }
+    },
+    "container_1_alpha": {
+      "extend": {
+        "opacity": "$tags[0].text_style.background_alpha",
+        "border-color": "$tags[0].text_style.border_color",
+        "border-radius": "$tags[0].text_style.angle",
+        "background-color": "$tags[0].text_style.background_color"
+      }
+    },
+    "tag_1_image": {
+      "value": {
+        "lightImg": "$tags[0].tag_type == 1 ? 'local:zhicon_icon_24_hash' :$tags[0].avatar_urls[0].url",
+        "nightImg": "$tags[0].tag_type == 1 ? 'local:zhicon_icon_24_hash' :$tags[0].avatar_urls[0].url_night"
+      },
+      "extend": {
+        "color": "$tags[0].text_style.font_color != 0 && $tags[0].tag_type == 1? $tags[0].text_style.font_color : null",
+        "display": "$tags[0].tag_type == 1 || $tags[0].avatar_urls[0].url != null? 'flex' : 'none'",
+        "width": "$tags[0].tag_type == 1 ? '12':$tags[0].avatar_urls[0].width",
+        "height": "$tags[0].tag_type == 1 ? '12':$tags[0].avatar_urls[0].height",
+        "border-radius": "$tags[0].tag_type == 1 ? '6':$tags[0].avatar_urls[0].height / 2"
+      }
+    },
+    "tag_1_text": {
+      "extend": {
+        "font-size": "$tags[0].text_style.font_size != 0 ? $tags[0].text_style.font_size : '10'",
+        "color": "$tags[0].text_style.font_color != 0 ? $tags[0].text_style.font_color : 'GBK06A'",
+        "max-width": "size($tags) > 1 ? 70: ''"
+      },
+      "value": "$tags[0].content"
+    },
+    "tag_2": {
+      "extend": {
+        "border-radius": "$tags[1].text_style.angle",
+        "display": "size($tags) > 1 ? 'flex' : 'none'"
+      },
+      "value": "$tags[1].content_id"
+    },
+    "container_2_alpha": {
+      "extend": {
+        "opacity": "$tags[1].text_style.background_alpha",
+        "border-color": "$tags[1].text_style.border_color",
+        "border-radius": "$tags[1].text_style.angle",
+        "background-color": "$tags[1].text_style.background_color"
+      }
+    },
+    "tag_2_image": {
+      "value": {
+        "lightImg": "$tags[1].tag_type == 1 ? 'local:zhicon_icon_24_hash' :$tags[1].avatar_urls[0].url",
+        "nightImg": "$tags[1].tag_type == 1 ? 'local:zhicon_icon_24_hash' :$tags[1].avatar_urls[0].url_night"
+      },
+      "extend": {
+        "color": "$tags[1].text_style.font_color != 0 && $tags[1].tag_type == 1? $tags[1].text_style.font_color : null",
+        "display": "$tags[1].tag_type == 1 || $tags[1].avatar_urls[0].url != null? 'flex' : 'none'",
+        "width": "$tags[1].tag_type == 1 ? '12':$tags[1].avatar_urls[0].width",
+        "height": "$tags[1].tag_type == 1 ? '12':$tags[1].avatar_urls[0].height",
+        "border-radius": "$tags[1].tag_type == 1 ? '6':$tags[1].avatar_urls[0].height / 2"
+      }
+    },
+    "tag_2_text": {
+      "extend": {
+        "font-size": "$tags[1].text_style.font_size != 0 ? $tags[1].text_style.font_size : '10'",
+        "color": "$tags[1].text_style.font_color != 0 ? $tags[1].text_style.font_color : 'GBK06A'",
+        "max-width": "size($tags) > 2 ? 70: ''"
+      },
+      "value": "$tags[1].content"
+    },
+    "tag_3": {
+      "extend": {
+        "border-radius": "$tags[2].text_style.angle",
+        "display": "size($tags) > 2 ? 'flex' : 'none'"
+      },
+      "value": "$tags[2].content_id"
+    },
+    "container_3_alpha": {
+      "extend": {
+        "opacity": "$tags[2].text_style.background_alpha",
+        "border-color": "$tags[2].text_style.border_color",
+        "border-radius": "$tags[2].text_style.angle",
+        "background-color": "$tags[2].text_style.background_color"
+      }
+    },
+    "tag_3_image": {
+      "value": {
+        "lightImg": "$tags[2].tag_type == 1 ? 'local:zhicon_icon_24_hash' :$tags[2].avatar_urls[0].url",
+        "nightImg": "$tags[2].tag_type == 1 ? 'local:zhicon_icon_24_hash' :$tags[2].avatar_urls[0].url_night"
+      },
+      "extend": {
+        "color": "$tags[2].text_style.font_color != 0 && $tags[2].tag_type == 1? $tags[2].text_style.font_color : null",
+        "display": "$tags[2].tag_type == 1 || $tags[2].avatar_urls[0].url != null? 'flex' : 'none'",
+        "width": "$tags[2].tag_type == 1 ? '12':$tags[2].avatar_urls[0].width",
+        "height": "$tags[2].tag_type == 1 ? '12':$tags[2].avatar_urls[0].height",
+        "border-radius": "$tags[2].tag_type == 1 ? '6':$tags[2].avatar_urls[0].height / 2"
+      }
+    },
+    "tag_3_text": {
+      "extend": {
+        "font-size": "$tags[2].text_style.font_size != 0 ? $tags[2].text_style.font_size : '10'",
+        "color": "$tags[2].text_style.font_color != 0 ? $tags[2].text_style.font_color : 'GBK06A'",
+        "max-width": "size($tags) > 3 ? 70: ''"
+      },
+      "value": "$tags[2].content"
+    }
+  }
+}

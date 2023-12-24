@@ -1,0 +1,232 @@
+{
+    "version":2,
+    "data":{
+        "gaiaX":{
+            "extend":{
+                "templateId":"gx_explore_pin_publish_tool_bar_v2",
+                "source":"pin",
+                "height":48,
+                "sceneCode":"pin_publish",
+                "viewState":{
+                    "TextTemplateItem_isHighLight":false,
+                    "TextTemplateItem_enable":true,
+                    "AtItem_isHighLight":false,
+                    "AtItem_enable":true,
+                    "LocationItem_isHighLight":false,
+                    "LocationItem_enable":true,
+                    "MediaSelectorItem_isHighLight":false,
+                    "MediaSelectorItem_enable":true
+                }
+            }
+        },
+        "location":{
+
+        },
+        "bottomMediaFunc":{
+
+        },
+        "locationUI":{
+
+        },
+        "topic":{
+            "extend":{
+                "maxTopic":999,
+                "minTopic":0
+            }
+        },
+        "topicItemUI":{
+            "extend":{
+                "icon":"local:zhicon_icon_24_hash"
+            }
+        },
+        "capture":{
+            "extend":{
+                "maxDuration":180000,
+                "needCrop":true,
+                "sourceType":"pin"
+            }
+        },
+        "coverEditorId":{
+
+        },
+        "at":{
+
+        },
+        "media":{
+            "extend":{
+
+            }
+        },
+        "mediaSelector":{
+            "extend":{
+                "maxImage":9,
+                "minImage":0,
+                "maxVideo":1,
+                "minVideo":0,
+                "mix":false
+            }
+        },
+        "uploadImageV2":{
+            "extend":{
+                "source":"pin"
+            }
+        },
+        "uploadVideoV2":{
+            "extend":{
+
+            }
+        },
+        "videoEdit":{
+            "extend":{
+                "maxDuration":180000,
+                "needCrop":true,
+                "sourceType":"pin"
+            }
+        },
+        "pinConfigId":{
+
+        },
+        "postUI":{
+            "extend":{
+                "title":"发布",
+                "style":"button"
+            }
+        },
+        "publishFunc":{
+
+        },
+        "topicRecommendBottomUI":{
+
+        },
+        "inlineTopicUI":{
+
+        },
+        "hybrid":{
+            "extend":{
+                "url":"https://www.zhihu.com/appview/short-content-editor",
+                "appid":"300123",
+                "placeholder":"与亿万知友分享你此刻的想法..."
+            }
+        },
+        "closeUI":{
+            "extend":{
+                "icon":"local:zhicon_icon_24_xmark"
+            }
+        },
+        "hybridUI":{
+
+        },
+        "lottery":{
+
+        },
+        "commercial_vip_draw":{
+
+        },
+        "draft":{
+
+        },
+        "keyboard":{
+
+        },
+        "commonDraft":{
+
+        },
+        "imageDisplayUI":{
+
+        },
+        "videoDisplayUI":{
+
+        },
+        "extra_info":{
+
+        },
+        "commentsPermission":{
+            "extend":{
+                "comment_permission":"all",
+                "title":"任何人都可以评论",
+                "icon":"local:zhicon_icon_24_location_fill"
+            }
+        },
+        "commentsPermissionUI":{
+
+        },
+        "toolBarUI":{
+
+        },
+        "control":{
+
+        },
+        "toolBar":{
+
+        },
+        "pinMediaDisplayUI":{
+
+        },
+        "hybridFooterUI":{
+
+        },
+        "inputStatisticsV2UI":{
+            "extend":{
+                "warningCount":500,
+                "maxLength":2000
+            }
+        },
+        "imageEdit":{
+
+        },
+        "coverEditor":{
+
+        },
+        "mediaPre":{
+
+        },
+        "pinAlbumUI":{
+
+        },
+        "pinTitleUI":{
+            "extend":{
+                "maxLength":20
+            }
+        },
+        "title":{
+            "extend":{
+                "minLength":0,
+                "maxLength":20
+            }
+        },
+        "pinAlbumItemUI":{
+
+        },
+        "mediaUpload":{
+            "ab":{
+                "key":"st_nonblock_pin",
+                "value":"1"
+            },
+            "tars":"pin_image_non_block"
+        },
+        "quickInputUI":{
+
+        },
+        "textTemplate":{
+
+        },
+        "pinBottomManager":{
+
+        },
+        "guidePage":{
+            "extend":{
+                "url_light":"https://www.zhihu.com/xen/market/ecom-page/1687134927219593216",
+                "url_night":"https://www.zhihu.com/xen/market/ecom-page/1687146037448544256"
+            }
+        },
+        "aiTitle":{
+            
+        },
+        "aiTitleUI":{
+            
+        },
+        "creationGuideUI":{
+            
+        }
+    }
+}

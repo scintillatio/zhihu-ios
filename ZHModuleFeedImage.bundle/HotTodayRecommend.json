@@ -1,0 +1,24 @@
+[
+    {
+        "showData": true,
+        "background_color": "#C8EEFF",
+        "background_image": "https://pic4.zhimg.com/80/v2-ecf58af6ff86fa92aaacf3022c532c7a_720w.png",
+        "detail": " 7:00 更新 ",
+        "icon": "",
+        "icon_type": "date",
+        "link": "https://www.zhihu.com/hot/daily?zh_hide_nav_bar=true",
+        "font_color": "#094289",
+        "title": "日报精选"
+    },
+    {
+        "showData": false,
+        "background_color": "#BCF4E6",
+        "background_image": "https://pic2.zhimg.com/80/v2-9d79606f08d95d4efc2e09b01085f89d_720w.png",
+        "detail": "宝藏内容",
+        "icon": "https://pic2.zhimg.com/80/v2-ad4d5c637a3ef81c8fc6bf2ef0e682ec_720w.png",
+        "icon_type": "image",
+        "link": "https://www.zhihu.com/hot/highlight?zh_hide_nav_bar=true",
+        "font_color": "#015038",
+        "title": "进站必看"
+    }
+]

@@ -1,0 +1,118 @@
+{
+  "desc": "详情页起播之前的配置",
+  "config": {
+    "card": {
+      "layout_id": "inline_before_start"
+    }
+  },
+  "blocks": [
+    {
+      "block_id": "card_cover_block",
+      "plugins": [
+        "coverImagePlugin",
+        "playStartBtnPlugin",
+        "initLoadingPlugin",
+        "errorPlugin"
+      ]
+    },
+    {
+      "block_id": "video_screen",
+      "plugins": [
+        "videoPlayerPlugin"
+      ]
+    }
+  ],
+  "plugins": [
+    {
+      "plugin_id": "coverImagePlugin",
+      "data": {
+        "type": "TDataImageCover",
+        "video_width": 1920,
+        "video_height": 1080,
+        "cover_image_width": 1920,
+        "cover_image_height": 1080
+      },
+      "card": {
+        "is_visible": true,
+        "view_attribute": {
+          "type": "TCoverAttr",
+          "scale_type": "AspectFit",
+          "use_blur_placeholder": false,
+          "gradient_height": 40,
+          "radius": 6
+        }
+      }
+    },
+    {
+      "plugin_id": "playStartBtnPlugin",
+      "card": {
+        "is_visible": false,
+        "view_attribute": {
+          "type": "TImageAttr",
+          "width": 48,
+          "height": 48,
+          "icon": "video_player_ic_play",
+          "gravity": "center",
+          "layout_gravity": "center"
+        }
+      }
+    },
+    {
+      "plugin_id": "videoPlayerPlugin",
+      "data": {
+        "type": "TDataVideoScaleType",
+        "scale_type": "AspectFit"
+      }
+    },
+    {
+      "plugin_id": "initLoadingPlugin",
+      "card": {
+        "is_visible": false,
+        "view_attribute": {
+          "type": "TAttr",
+          "layout_gravity": "center",
+          "gravity": "center",
+          "width": 60,
+          "height": 60
+        }
+      }
+    },
+    {
+      "plugin_id": "errorPlugin",
+      "card": {
+        "is_visible": false,
+        "view_attribute": {
+          "type": "TErrorPanelAttr",
+          "btn_text": "重新加载",
+          "text": "视频加载失败，请点击重新加载"
+        },
+        "events": [
+          {
+            "event_id": "onClickRetry",
+            "event_trigger_type": "retryWhenError",
+            "event_name": "videoActionReplay",
+            "event_type": "",
+            "event_touch_type": "click"
+          }
+        ]
+      },
+      "full_screen": {
+        "is_visible": false,
+        "view_attribute": {
+          "type": "TErrorPanelAttr",
+          "btn_text": "重新加载",
+          "text": "视频加载失败，请点击重新加载"
+        },
+        "events": [
+          {
+            "event_id": "onClickRetry",
+            "event_trigger_type": "retryWhenError",
+            "event_name": "videoActionReplay",
+            "event_type": "",
+            "event_touch_type": "click"
+          }
+        ]
+      }
+    }
+  ]
+}
